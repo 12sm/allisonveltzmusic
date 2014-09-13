@@ -9,7 +9,142 @@
 
 body { }
 
+div#e2ma_signup_image_container {
+display: none;
+}
+.av-bg {
+padding-top: 200px;
+padding-bottom: 20px;
+background: url(../img/top-photo.jpg) no-repeat;
+background-size: contain;
+}
 
+div#e2ma_signup_message {
+display: none;
+}
+input#e2ma_signup_reset_button{
+   display: none!important;
+}
+.e2ma_signup_form_required_footnote {
+display: none!important;
+}
+.sign-up{
+   background: url(../img/sign-up.png);
+}
+a{
+   color: #BB2F7E;
+   text-decoration: none;
+}
+a:hover{
+   color: #13A468;
+   text-decoration: none;
+}
+h1, h2, h3{
+   font-family: 'abril-fatface';
+}
+h1{
+   font-size: 40px;
+   font-style: italic;
+   color: #BB2F7E;
+}
+h2{
+   font-size: 38px;
+   color: #BB2F7E;
+   font-style: italic;
+}
+h3{
+   font-size: 30px;
+   color: #BB2F7E;
+   font-style: italic;
+}
+.blue{
+   font-family: 'ff-market-web';
+   font-size: 21px;
+   color: #13A468;
+}
+.e2ma_signup_form_label {
+display: none;
+}
+.e2ma_signup_form_element{
+   margin-left: 0px!important;
+}
+.e2ma_signup_form_row {
+width: 70%;
+margin: 0 auto;
+border: transparent!important;
+}
+.e2ma_signup_form {
+width: 100%!important;
+}
+.e2ma_signup_form_button_row {
+ float: none!important;
+}
+input#e2ma_signup_submit_button {
+border: transparent;
+margin: 0 auto;
+width: 99%!important;
+background: transparent;
+}
+.sign-up {
+background: url(../img/sign-up.png);
+padding: 10px 25px;
+text-align: center;
+border: 5px solid #A7A7A7;
+}
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+   color: #635562;
+   font-size: 14px;
+   font-family: 'adriane';
+}
+#e2ma_signup_submit_button{
+   font-family: 'abril-fatface';
+   font-size: 18px;
+   color: #BB2F7E;
+}
+#e2ma_signup_submit_button:hover{
+   color: #13A468;
+}
+.line-bg{
+   background: url(../img/video-tile.jpg);
+   padding: 5% 0px;
+}
+.line-bg h1 {
+margin-top: 0px;
+text-align: center;
+}
+.center-text{
+   text-align: center;
+}
+.tweet-box{
+   background: url(../img/tweet-me.jpg);
+border: 5px solid #A7A7A7;
+padding: 25px 0;
+}
+textarea#question_text {
+width: 75%;
+min-height: 150px;
+clear: both;
+}
+a#talk_btn {
+display: block;
+color: #BB2F7E;
+font-size: 26px;
+font-family: 'abril-fatface';
+text-decoration: none;
+}
+a#talk_btn:hover{
+   color: #13A468;
+   text-decoration: none;
+}
+.page-template-template-splash-php header {
+display: none;
+}
+.bottom-row{
+   padding: 5% 0px;
+}
 
 /* ==========================================================================
    Header
@@ -68,7 +203,43 @@ body { }
 #social li {margin:0px; padding: 0px list-style:none; display: block; float:left;}
 #social li a {padding: 10px;}
 
+#social-float>ul{
+   display: none;
+}
+  #social-float>ul>li>a>i{
+   color: #fff;
+   text-decoration: none;
+  }
+  .credits{
+   text-align: center;
+  }
+#social-float>ul>li>a>i:hover {
+color: #13A468!important;
+}
 
+ #social-float>#menu-social-navigation > li:nth-child(6){
+   margin-right: 10px;
+  }
+#social-float>#menu-social-navigation>li{
+   float: left;
+   margin-right: 22px;
+   color: #fff;
+}
+#social-float>ul{
+   float: right;
+   margin-top: 15px;
+   margin-right: 30px;
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(128,122,128, .33);
+   padding: 5px 0px 5px 9px;
+   display: block;
+   list-style: none;
+}
+#social-float{
+   display: none;
+}
 
 /* ==========================================================================
    WordPress Generated Classes
@@ -90,10 +261,44 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm) { }
+@media (min-width: 768px) {
+   .av-bg{
+   background-size: cover;
+}
+#social-float>ul{
+   display: block!important;
+}
+#social-float{
+   display: block!important;
+}
+#social{
+   display: none;
+}
+#social-float > #menu-social-1> li {
+float: left;
+margin-right: 22px;
+color: #fff;
+font-size: 36px;
+}
+.av-bg {
+padding: 25px;
+}
+.sign-up {
+margin-top: 90px;
+}
+ }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md) { }
+@media (min-width: 992px) {
+.av-bg{
+   padding-top: 13%;
+   padding-bottom: 10%;
+   background-position: 50% 50%;
+}
+.sign-up {
+margin-top: 0px;
+}
+ }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg) { }
