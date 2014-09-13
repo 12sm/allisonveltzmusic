@@ -46,6 +46,15 @@ var Roots = {
   home: {
     init: function() {
       // JavaScript to be fired on the home page
+      $(".owl-carousel").owlCarousel({
+
+      autoPlay: false, //Set AutoPlay to 3 seconds
+      items : 2,
+      itemsDesktop : [1199,2],
+      itemsDesktopSmall : [979,2],
+      itemsMobile: [479, 1]
+
+  });
     }
   },
   // About us page, note the change from about-us to about_us.
