@@ -1,11 +1,14 @@
 <!-- HOME SLIDER <!-->
-<div class='row'>
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+		<div class='row'>
 	<div class="owl-carousel">
 		<wpv-loop>
 			<a href="[wpv-post-url]">
 				<div class='col-sm-6'>
 					<i class='fa fa-angle-right blog-angle'></i>
-					<span clas'date'>[wpv-post-date]</span>
+					<span class='date'>[wpv-post-date format="jS, Y"]</span>
 					<h1>[wpv-post-title]</h1>
 					<p class="excerpt">[wpv-post-excerpt]</p>
 					<a class='btn btn-read' href="[wpv-post-url]">
@@ -16,3 +19,10 @@
 		</wpv-loop>
 	</div>
 </div>
+
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No items found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]
