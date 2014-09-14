@@ -441,6 +441,9 @@ background: rgba(0,0,0,.7);
 width: 100%;
 padding-bottom: 20%;
 }
+.content {
+padding-top: 100px;
+}
  }
 
 /* Medium devices (desktops, 992px and up) */
