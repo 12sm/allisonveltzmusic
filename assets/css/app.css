@@ -40,12 +40,12 @@ a:hover{
    text-decoration: none;
 }
 h1, h2, h3{
-   font-family: 'abril-fatface';
+   font-family: 'Roboto';
 }
 h1{
-   font-size: 40px;
-   font-style: italic;
-   color: #BB2F7E;
+   font-size: 32px;
+   font-weight: bold;
+   color: #fff;
 }
 h2{
    font-size: 38px;
@@ -53,9 +53,9 @@ h2{
    font-style: italic;
 }
 h3{
-   font-size: 30px;
-   color: #BB2F7E;
-   font-style: italic;
+   font-size: 10px;
+   color: #929292;
+   font-weight: bold;
 }
 .blue{
    font-family: 'ff-market-web';
