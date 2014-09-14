@@ -31,7 +31,20 @@
 	[/wpv-no-items-found]
 [wpv-layout-end]
 
-
-
-
-
+<!---- BLOG ARCHIVE <!-->
+<div class="row blog-row">
+	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<wpv-loop>
+			<div class="row blog-arc-single">
+				<div class="col-sm-12">
+					<h1>[wpv-post-title]</h1>
+					<p class="meta">[author] | [comment counter]</p>
+					<div class="archive-image">
+						[wpv=post-featured-image]
+					</div>
+					[wpv-post-excerpt]
+				</div>
+			</div>
+		</wpv-loop>
+	</div>
+</div>
