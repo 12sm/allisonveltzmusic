@@ -203,7 +203,7 @@ display: none;
    ========================================================================== */
 
 i.fa.fa-angle-right.blog-angle {
-float: left;
+text-align: center;
 display: block;
 font-size: 52px;
 clear: none;
