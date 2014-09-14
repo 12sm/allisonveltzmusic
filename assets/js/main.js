@@ -26,7 +26,7 @@ var Roots = {
       $('.navbar-nav>li>a').click(function(){
         $('.navbar-collapse').collapse('hide');
       });
-
+      $('.archive-image').imgLiquid();
       //body class update
       $('a').click(function(){
         link = $(this).attr('href').split('/');
