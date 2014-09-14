@@ -57,6 +57,12 @@ h3{
    color: #929292;
    font-weight: bold;
 }
+h4{
+   font-size: 18px;
+   text-transform: uppercase;
+   color: #fff;
+   font-weight: bold;
+}
 .blue{
    font-family: 'ff-market-web';
    font-size: 21px;
@@ -204,6 +210,24 @@ clear: none;
 }
 .home-slide a {
 white-space: normal;
+}
+.home-slide{
+   background: rgba(52,52,52, .7);
+}
+.home-slide h1 {
+margin-top: 0px;
+}
+.date{
+   color:#929292;
+   font-size: 12px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   line-height: 24px;
+}
+.excerpt{
+   color: #929292;
+   font-weight: normal;
+
 }
 /* ==========================================================================
    Footer
