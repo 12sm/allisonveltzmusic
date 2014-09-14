@@ -204,7 +204,15 @@ min-height: 80vh;
 .hentry .entry-content { }
 .hentry footer { }
 
-
+a.btn.read-more {
+background: #fff;
+color: #000;
+border-radius: 0px;
+padding: 2px;
+font-weight: bold;
+float: left;
+margin-top: 25px;
+}
 /* ==========================================================================
    HOME
    ========================================================================== */
