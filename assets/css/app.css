@@ -407,6 +407,9 @@ padding: 25px;
 .sign-up {
 margin-top: 90px;
 }
+.owl-carousel.home-carousel.owl-theme {
+margin-top: 20vh;
+}
  }
 
 /* Medium devices (desktops, 992px and up) */
@@ -424,6 +427,9 @@ margin-bottom: 100px;
 }
 .sign-up {
 margin-top: 0px;
+}
+.owl-carousel.home-carousel.owl-theme {
+margin-top: 40vh;
 }
  }
 
