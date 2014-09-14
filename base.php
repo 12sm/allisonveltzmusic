@@ -1,6 +1,6 @@
 <?php get_template_part('templates/head'); ?>
 <body <?php body_class(); ?>>
-  <div class="bg-grayscale">
+
 
     <!--[if lt IE 8]>
       <div class="alert alert-warning">
@@ -17,7 +17,7 @@
         get_template_part('templates/header');
       }
     ?>
-
+<div class="bg-grayscale">
     <div class="wrap container-fluid" role="document">
       <div class="content row">
         <main class="main <?php echo roots_main_class(); ?>" role="main">
