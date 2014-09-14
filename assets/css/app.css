@@ -213,7 +213,8 @@ color: #fff;
 white-space: normal;
 }
 .home-slide{
-   background: rgba(52,52,52, .7);
+   background: rgba(52,52,52, .9);
+   margin-right: 25px;
 }
 .home-slide h1 {
 margin-top: 0px;
