@@ -165,7 +165,7 @@ display: none;
    ========================================================================== */
 
 .content {
-min-height: 70vh;
+min-height: 80vh;
 }
 
 
@@ -417,9 +417,7 @@ margin-top: 20vh;
    .owl-carousel .owl-wrapper-outer {
 padding: 50px 0px;
 }
-   .owl-carousel {
-margin-bottom: 100px;
-}
+
 .av-bg{
    padding-top: 13%;
    padding-bottom: 10%;
@@ -429,7 +427,7 @@ margin-bottom: 100px;
 margin-top: 0px;
 }
 .owl-carousel.home-carousel.owl-theme {
-margin-top: 40vh;
+margin-top: 50vh;
 }
  }
 
