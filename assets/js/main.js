@@ -39,7 +39,7 @@ var Roots = {
         $('body').addClass(link[3]);
         }
       });
-      $.backstretch('../assets/img/bg.jpg');
+      $.backstretch('..wp-content/themes/allisonveltzmusic/assets/img/bg.jpg');
     }
   },
   // Home page
