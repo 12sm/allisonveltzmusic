@@ -396,6 +396,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+   .blog-title{
+      text-align: center;
+   }
    .about p{
       line-height: 2;
    }
