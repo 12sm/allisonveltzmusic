@@ -429,6 +429,10 @@ background: rgba(0,0,0,.7);
 .home .bg-grayscale{
    background: transparent;
 }
+.archive-image {
+width: 100%;
+padding-bottom: 20%;
+}
  }
 
 /* Medium devices (desktops, 992px and up) */
