@@ -418,6 +418,16 @@ margin-top: 90px;
 .owl-carousel.home-carousel.owl-theme {
 margin-top: 20vh;
 }
+.bg-grayscale {
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+background: rgba(0,0,0,.7);
+}
+.home .bg-grayscale{
+   background: transparent;
+}
  }
 
 /* Medium devices (desktops, 992px and up) */
