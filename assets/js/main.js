@@ -69,7 +69,7 @@ var Roots = {
     }
   },
 
- music single_music: {
+ single_music: {
     init: function(){
 
       /** Lyrics display **/
