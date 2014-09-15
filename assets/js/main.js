@@ -25,7 +25,6 @@ var Roots = {
       $('.fancybox').fancybox({
             'width'     : 680,
             'height'        : 495,
-            'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
             'type'          : 'swf',
             'swf'           : {
                  'wmode'        : 'transparent',
