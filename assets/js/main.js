@@ -22,7 +22,16 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      $('.fancybox').fancybox();
+      $('.fancybox').fancybox({
+            'width'     : 680,
+            'height'        : 495,
+            'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+            'type'          : 'swf',
+            'swf'           : {
+                 'wmode'        : 'transparent',
+                'allowfullscreen'   : 'true'
+            }
+      });
       // JavaScript to be fired on all pages
       $('.navbar-nav>li>a').click(function(){
         $('.navbar-collapse').collapse('hide');
