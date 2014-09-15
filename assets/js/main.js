@@ -67,6 +67,39 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on the about us page
     }
+  },
+
+  music, single_music: {
+    init: function(){
+
+      /** Lyrics display **/
+        $('.play').on('click', function(e){
+            var lyrics = $(this).find('.lyric-output').clone();
+
+            if (lyrics.length) {
+                $("#lyrics-base").html(lyrics).parent().removeClass("closed");
+                $("#lyrics-base").children().removeClass("hide");
+                $("#lyrics-base").scrollTop(0,0);
+            }else{
+                $("#lyrics-base").parent().addClass("closed");
+            }
+
+            if (inlinePlayer) {
+                inlinePlayer.events.finish = function() {
+
+                    // Remove Playing Class
+                    $('a.sm2_playing').removeClass('sm2_playing');
+
+                    // Blow away the last played track
+                    inlinePlayer.stopSound(inlinePlayer.lastSound);
+                };
+            }
+        });
+
+        /** Load first lyric **/
+        var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
+        $("#lyrics-base").html(lyrics);
+    }
   }
 };
 
