@@ -22,7 +22,7 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      $('.fancybox').fancybox({
+      $('.fancyvid').fancybox({
             'width'     : 680,
             'height'        : 495,
             'type'          : 'swf',
