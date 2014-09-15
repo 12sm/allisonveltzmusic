@@ -11,7 +11,7 @@ function get_Embed($atts){
 	        $matches
 	    );
 	$id = $matches[1];
-	echo  value="http://www.youtube.com/embed/" . $id;
+	echo  "http://www.youtube.com/embed/" . $id;
 }
 
 define( 'UPLOADS', ''.'assets' );
