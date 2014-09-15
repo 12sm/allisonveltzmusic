@@ -26,7 +26,6 @@ var Roots = {
             'width'     : 680,
             'height'        : 495,
             'type'          : 'iframe'
-            }
       });
       // JavaScript to be fired on all pages
       $('.navbar-nav>li>a').click(function(){
