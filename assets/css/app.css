@@ -275,7 +275,7 @@ border: 1px solid #ededed;
 
 #lyrics-base {
 max-height: 600px;
-overflow: scroll;
+overflow-y: auto;
 display:none;
 }
 
