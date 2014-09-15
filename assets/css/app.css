@@ -799,6 +799,7 @@ padding-top: 100px;
 @media (min-width: 992px) {
    #lyrics-base {
 display: block;
+background: #ffffff;
 }
    .owl-carousel .owl-wrapper-outer {
 padding: 50px 0px;
