@@ -793,6 +793,9 @@ padding-bottom: 20%;
 .content {
 padding-top: 100px;
 }
+.music.type-music {
+padding-top: 15vh;
+}
  }
 
 /* Medium devices (desktops, 992px and up) */
