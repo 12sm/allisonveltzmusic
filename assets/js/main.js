@@ -89,6 +89,10 @@ soundManager.setup({
     inlinePlayer = new InlinePlayer();
   });
       /** Lyrics display **/
+      /** Load first lyric **/
+        var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
+        $("#lyrics-base").html(lyrics);
+
         $('.play').on('click', function(e){
             var lyrics = $(this).find('.lyric-output').clone();
 
@@ -112,9 +116,7 @@ soundManager.setup({
             }
         });
 
-        /** Load first lyric **/
-        var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
-        $("#lyrics-base").html(lyrics);
+
     }
   }
 };
