@@ -10,8 +10,8 @@ function get_Embed($atts){
 	        $url,
 	        $matches
 	    );
-	$id = $matches;
-	echo  "http://www.youtube.com/embed/" . $id;
+	$id = $matches[0];
+	return  "http://www.youtube.com/embed/" . $id;
 }
 
 define( 'UPLOADS', ''.'assets' );
