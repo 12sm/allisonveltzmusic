@@ -17,5 +17,8 @@
         endif;
       ?>
     </nav>
+    <div id="audio-player">
+      <?php echo do_shortcode('[wpv-view name="Audio Player"]'); ?>
+    </div>
   </div>
 </header>
