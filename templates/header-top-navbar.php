@@ -16,9 +16,9 @@
           wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
         endif;
       ?>
+      <div id="audio-player">
+        <?php echo do_shortcode('[wpv-view name="Audio Player"]'); ?>
+      </div>
     </nav>
-    <div id="audio-player">
-      <?php echo do_shortcode('[wpv-view name="Audio Player"]'); ?>
-    </div>
   </div>
 </header>

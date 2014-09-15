@@ -858,6 +858,11 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+   div#audio-player {
+      max-width: 20%;
+      float: right;
+   }
    .blog-title{
       text-align: center;
    }
