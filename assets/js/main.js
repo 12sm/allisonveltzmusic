@@ -91,7 +91,7 @@ soundManager.setup({
       /** Lyrics display **/
       /** Load first lyric **/
         var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
-        $("#lyrics-base").html(lyrics);
+        $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
             var lyrics = $(this).find('.lyric-output').clone();
