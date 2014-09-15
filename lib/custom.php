@@ -10,7 +10,7 @@ function get_Embed($atts){
 	        $url,
 	        $matches
 	    );
-	$id = $matches[1];
+	$id = $matches;
 	echo  "http://www.youtube.com/embed/" . $id;
 }
 
