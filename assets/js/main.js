@@ -71,7 +71,7 @@ var Roots = {
 
  single_music: {
     init: function(){
-
+      alert('single-music firing!');
       /** Lyrics display **/
         $('.play').on('click', function(e){
             var lyrics = $(this).find('.lyric-output').clone();
