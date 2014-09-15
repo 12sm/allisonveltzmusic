@@ -271,11 +271,12 @@ padding: 0px!important;
 box-shadow: 0px 0px 15px 1px #ededed;
 -webkit-box-shadow: 0px 0px 15px 1px #ededed;
 border: 1px solid #ededed;
+background: #fff;
 }
 
 #lyrics-base {
 max-height: 600px;
-overflow-y: auto;
+overflow: auto;
 display:none;
 }
 
@@ -321,6 +322,9 @@ margin:0px;
 .song a.sm2_playing {background: rgba(205,130,185, 0.7); color:#fff;}
 .song a.sm2_playing .song-play:before {content:"\f04c";}
 
+li.song {
+background: #fff;
+}
 /* ==========================================================================
    PHOTOS
    ========================================================================== */
@@ -795,6 +799,9 @@ padding-top: 100px;
 }
 .music.type-music {
 padding-top: 15vh;
+}
+h2.album-title {
+margin-top: 0px;
 }
  }
 
