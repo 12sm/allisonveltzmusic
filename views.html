@@ -76,16 +76,26 @@
 
 
 <!-- VIDEO PAGE <!-->
+[wpv-layout-start]
+	[wpv-items-found]
 <div class='row'>
 	<wpv-loop>
 		<div class='col-sm-6'>
 			<div class="video-container">
+			<a href="[wpv-post-url]" title='[wpv-post-title]' class="fancybox">
 				<div class="archive-image video">
-					[wpv-post-video-thumbnail]
+					[wpv-post-featured-image size='medium']
 				</div>
 				<h4>[wpv-post-title]</h4>
-				<p>By: [wpv-post-author]</p>
+			</a>
+			<p>By: [wpv-post-author]</p>
 			</div>
 		</div>
 	</wpv-loop>
 </div>
+
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		[wpml-string context="wpv-views"]<strong>No videos found</strong>[/wpml-string]
+	[/wpv-no-items-found]
+[wpv-layout-end]

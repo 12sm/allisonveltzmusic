@@ -22,6 +22,7 @@ var Roots = {
   // All pages
   common: {
     init: function() {
+      $('.fancybox').fancybox();
       // JavaScript to be fired on all pages
       $('.navbar-nav>li>a').click(function(){
         $('.navbar-collapse').collapse('hide');
