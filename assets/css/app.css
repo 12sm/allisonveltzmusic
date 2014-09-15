@@ -797,6 +797,9 @@ padding-top: 100px;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+   #lyrics-base {
+display: block;
+}
    .owl-carousel .owl-wrapper-outer {
 padding: 50px 0px;
 }
