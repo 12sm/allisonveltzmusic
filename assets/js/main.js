@@ -23,8 +23,8 @@ var Roots = {
   common: {
     init: function() {
       $('.fancyvid').fancybox({
-            'width'     : 680,
-            'height'        : 495,
+            'width'     : 720,
+            'height'        : 480,
             'type'          : 'iframe'
       });
       // JavaScript to be fired on all pages
