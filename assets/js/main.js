@@ -27,7 +27,7 @@ var Roots = {
             'height'        : 495,
             'type'          : 'swf',
             'swf'           : {
-                 'wmode'        : 'transparent',
+                 'wmode'        : 'window',
                 'allowfullscreen'   : 'true'
             }
       });
