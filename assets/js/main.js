@@ -25,10 +25,7 @@ var Roots = {
       $('.fancyvid').fancybox({
             'width'     : 680,
             'height'        : 495,
-            'type'          : 'swf',
-            'swf'           : {
-                 'wmode'        : 'window',
-                'allowfullscreen'   : 'true'
+            'type'          : 'iframe'
             }
       });
       // JavaScript to be fired on all pages
