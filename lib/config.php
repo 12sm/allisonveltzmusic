@@ -60,7 +60,7 @@ function roots_display_sidebar() {
       'is_page',
       'is_single',
       'is_archive',
-      array('is_page', 'events')
+      array('is_page', '*')
     ),
     /**
      * Page template checks (via is_page_template())
