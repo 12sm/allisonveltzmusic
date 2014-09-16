@@ -132,9 +132,10 @@ photos: {
 });
   }
 },
+
  single_music: {
     init: function(){
-}
+
 
 soundManager.setup({
   // disable or enable debug output
