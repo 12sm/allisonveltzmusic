@@ -196,7 +196,7 @@ display: inline-block;
 }
 
 p.play, p.pause, .prev-track, .next-track {
-font-size: 12px!important;
+font-size: 18px!important;
 }
 
 .playlist {
