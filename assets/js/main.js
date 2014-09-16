@@ -101,7 +101,7 @@ var Roots = {
       });
       $('.archive-image').imgLiquid();
       //body class update
-      $('a').click(function(){
+      $('.navbar-nav>li>a').click(function(){
         link = $(this).attr('href').split('/');
         $('body').removeAttr('class');
 
