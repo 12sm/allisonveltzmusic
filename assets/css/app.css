@@ -313,6 +313,12 @@ padding-bottom: 1%;
    background: #272727;
    text-align: center;
 }
+.col-sm-12.photo-full-width {
+padding: 0;
+}
+div#slider, div#carousel{
+   border: transparent;
+}
 /* ==========================================================================
    Sidebar
    ========================================================================== */
