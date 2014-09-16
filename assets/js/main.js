@@ -130,6 +130,7 @@ photos: {
     sync: "#carousel"
   });
 
+$('.flex-active-slide').imgLiquid();
   }
 },
 
