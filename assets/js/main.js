@@ -91,9 +91,9 @@ var Roots = {
 
 
       $('.fancyvid').fancybox({
-            'autoSize' : false,
-            'width'    : "auto",
-            'height'  : "80%",
+            'autoSize'      : false,
+            'width'         : "auto",
+            'height'        : "80%",
             'type'          : 'iframe',
             'aspectRatio'   : true
       });
