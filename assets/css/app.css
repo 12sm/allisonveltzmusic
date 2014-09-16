@@ -1026,7 +1026,7 @@ background: rgba(0,0,0,.7);
    .blog-title{
       text-align: center;
    }
-   .about p{
+   .about .content p{
       line-height: 2;
    }
    .av-bg{
