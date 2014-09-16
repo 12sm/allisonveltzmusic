@@ -192,6 +192,57 @@ soundManager.setup({
 
 
     }
+  },
+  music: {
+    init: function(){
+
+
+soundManager.setup({
+  // disable or enable debug output
+  debugMode: true,
+  // use HTML5 audio for MP3/MP4, if available
+  preferFlash: false,
+  useFlashBlock: true,
+  // path to directory containing SM2 SWF
+  url: '/assets/js',
+  // optional: enable MPEG-4/AAC support (requires flash 9)
+  flashVersion: 9
+  });
+
+      soundManager.onready(function() {
+    // soundManager.createSound() etc. may now be called
+    inlinePlayer = new InlinePlayer();
+  });
+      /** Lyrics display **/
+      /** Load first lyric **/
+        var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
+        $("#lyrics-base").html(lyrics[0]);
+
+        $('.play').on('click', function(e){
+            var lyrics = $(this).find('.lyric-output').clone();
+
+            if (lyrics.length) {
+                $("#lyrics-base").html(lyrics).parent().removeClass("closed");
+                $("#lyrics-base").children().removeClass("hide");
+                $("#lyrics-base").scrollTop(0,0);
+            }else{
+                $("#lyrics-base").parent().addClass("closed");
+            }
+
+            if (inlinePlayer) {
+                inlinePlayer.events.finish = function() {
+
+                    // Remove Playing Class
+                    $('a.sm2_playing').removeClass('sm2_playing');
+
+                    // Blow away the last played track
+                    inlinePlayer.stopSound(inlinePlayer.lastSound);
+                };
+            }
+        });
+
+
+    }
   }
 };
 
