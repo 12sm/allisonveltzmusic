@@ -133,7 +133,7 @@ photos: {
 
 //$('.flex-active-slide').imgLiquid({verticalAllign: 'top'});
 
-$('#carousel>ul>li').imgLiquid({verticalAllign: 'top'});
+$('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
   }
 },
 
