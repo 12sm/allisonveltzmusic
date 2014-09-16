@@ -395,6 +395,7 @@ font-weight: bold;
 .songs-list,
 .songs-list-container {
 padding: 0px!important;
+list-style: none;
 }
 
 .lyrics-container {
