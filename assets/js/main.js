@@ -98,7 +98,9 @@ var Roots = {
   },
 photos: {
   init: function(){
-
+    $('.gal-hover').onmouseover(function(){
+      $('#slider.flexslider .slides > li').animate('height': '66vh');
+    });
   }
 },
 
