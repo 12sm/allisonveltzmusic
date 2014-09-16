@@ -10,7 +10,7 @@ function get_Embed($atts){
 	return  "http://www.youtube.com/embed/" . $id;
 }
 
-add_filter('post-gallery', 'my_post_gallery', 10, 2);
+add_shortcode('post-gallery', 'my_post_gallery', 10, 2);
 function my_post_gallery($output, $attr) {
     global $post;
 
