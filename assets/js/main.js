@@ -111,7 +111,7 @@ var Roots = {
 photos: {
   init: function(){
     $('.flexslider>ul').addClass('slides');
-    $('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
+    $('#slider>ul>li').imgLiquid({verticalAllign: 'top'});
   // The slider being synced must be initialized first
   $('#carousel').flexslider({
     animation: "slide",
@@ -133,7 +133,7 @@ photos: {
 
 //$('.flex-active-slide').imgLiquid({verticalAllign: 'top'});
 
-$('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
+$('#carousel>ul>li').imgLiquid({verticalAllign: 'top'});
   }
 },
 
