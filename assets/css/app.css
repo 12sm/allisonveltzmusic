@@ -977,7 +977,7 @@ html[xmlns] .slides {display: block;}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-   .container-fluid{
+   .wrap.container-fluid{
       background: rgba(0,0,0,.7);
    }
    .home .wrap.container-fluid{
