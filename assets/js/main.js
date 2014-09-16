@@ -110,6 +110,7 @@ var Roots = {
   },
 photos: {
   init: function(){
+    $('.flexslider>ul').addClass('slides');
   // The slider being synced must be initialized first
   $('#carousel').flexslider({
     animation: "slide",
