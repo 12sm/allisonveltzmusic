@@ -991,7 +991,8 @@ html[xmlns] .slides {display: block;}
    }
 
    div#audio-player {
-      max-width: 20%;
+      max-width: 40%;
+
       float: right;
       max-height: 25px;
       margin-top: 15px;
