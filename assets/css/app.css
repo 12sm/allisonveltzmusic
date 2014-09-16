@@ -245,6 +245,7 @@ display: none;
 .audiojs .play {
 background: none!important;
 width: 100%!important;
+line-height: inherit;
 }
 
 .audiojs .pause {
@@ -461,7 +462,7 @@ background: #fff;
 }
 p.song-title {
 color: #929292;
-margin-top: -5px;
+line-height: 1.7;
 margin-right: 15px;
 font-size: 14px;
 font-weight: bold;
