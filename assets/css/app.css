@@ -1084,12 +1084,13 @@ margin: 0 -15px;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-   .gal-hover {
-position: absolute;
-bottom: 200px;
+.gal-hover {
+position: fixed;
+bottom: 0px;
 left: 0;
 right: 0;
 height: 200px;
+z-index: 2;
 }
    body.photos{
       overflow: hidden;
