@@ -977,6 +977,13 @@ html[xmlns] .slides {display: block;}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+   .wrap.container-fluid{
+      background: rgba(0,0,0,.7);
+   }
+   .home .wrap.container-fluid{
+      background: transparent;
+   }
+
    div#audio-player {
       max-width: 20%;
       float: right;
@@ -1013,17 +1020,6 @@ margin-top: 90px;
 }
 .owl-carousel.home-carousel.owl-theme {
 margin-top: 20vh;
-}
-.bg-grayscale {
-position: absolute;
-top: 0;
-bottom: 0;
-right: 0;
-left: 0;
-background: rgba(0,0,0,.7);
-}
-.home .bg-grayscale{
-   background: transparent;
 }
 .archive-image {
 width: 100%;
