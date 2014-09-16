@@ -1087,8 +1087,8 @@ margin: 0 -15px;
    .container-fluid.col {
 margin: 0 5%;
 }
-   #slider.flexslider .slides > li {
-height: 60vh;
+#slider.flexslider .slides > li {
+height: 92vh;
 }
    #lyrics-base {
 display: block;
