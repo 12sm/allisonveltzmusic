@@ -23,6 +23,32 @@ var Roots = {
   common: {
     init: function() {
 
+       $('.flexslider>ul').addClass('slides');
+          $('#slider>ul>li').imgLiquid({verticalAlign: '15%'});
+        // The slider being synced must be initialized first
+        $('#carousel').flexslider({
+          animation: "slide",
+          controlNav: false,
+          animationLoop: false,
+          slideshow: false,
+          itemWidth: 210,
+          itemMargin: 5,
+          asNavFor: '#slider'
+        });
+
+        $('#slider').flexslider({
+          animation: "fade",
+          controlNav: false,
+          animationLoop: false,
+          slideshow: false,
+          sync: "#carousel"
+        });
+
+      //$('.flex-active-slide').imgLiquid({verticalAllign: 'top'});
+
+      $('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
+
+
       audiojs.events.ready(function() {
       var a = audiojs.createAll({
         trackEnded: function() {
@@ -110,30 +136,7 @@ var Roots = {
   },
 photos: {
   init: function(){
-    $('.flexslider>ul').addClass('slides');
-    $('#slider>ul>li').imgLiquid({verticalAlign: '15%'});
-  // The slider being synced must be initialized first
-  $('#carousel').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    itemWidth: 210,
-    itemMargin: 5,
-    asNavFor: '#slider'
-  });
 
-  $('#slider').flexslider({
-    animation: "fade",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    sync: "#carousel"
-  });
-
-//$('.flex-active-slide').imgLiquid({verticalAllign: 'top'});
-
-$('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
   }
 },
 
