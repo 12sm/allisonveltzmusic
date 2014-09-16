@@ -533,6 +533,19 @@ color: #13A468!important;
 }
 
 /* ==========================================================================
+   Events
+   ========================================================================== */
+#page>div#header {
+display: none;
+}
+
+#page hr {
+display: none;
+}
+#tribe-events-content .tribe-events-calendar td {
+background: #929292;
+}
+/* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
