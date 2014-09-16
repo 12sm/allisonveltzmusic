@@ -226,19 +226,8 @@ box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
 width: 100%;
 }
 
-.scrubber{
-   background-color: #fff!important;
-   border: 0px!important;
-   width: 59%!important;
-   height: 7px!important;
-   margin: 5px!important;
-}
-
 .scrubber-wrap {
-background: #FE0000;
-width: 100%;
-height: 17px;
-margin-top: 0px;
+display: none;
 }
 
 .time {
@@ -457,6 +446,9 @@ margin:0px;
 
 li.song {
 background: #fff;
+}
+p.song-title {
+color: #000;
 }
 /* ==========================================================================
    PHOTOS
