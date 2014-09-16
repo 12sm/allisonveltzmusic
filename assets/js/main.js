@@ -108,9 +108,33 @@ var Roots = {
       // JavaScript to be fired on the about us page
     }
   },
+photos: {
+  init: function(){
+    $(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+  }
+},
  single_music: {
     init: function(){
+}
 
 soundManager.setup({
   // disable or enable debug output
