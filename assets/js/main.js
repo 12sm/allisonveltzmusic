@@ -131,6 +131,7 @@ photos: {
   });
 
 //$('.flex-active-slide').imgLiquid({verticalAllign: 'top'});
+$('#slider>div>ul>li>img').addClass('img-responsive');
 $('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
   }
 },
