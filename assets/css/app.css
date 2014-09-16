@@ -988,13 +988,17 @@ html[xmlns] .slides {display: block;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-   .wrap.container-fluid{
-      background: rgba(0,0,0,.7);
-   }
-   .home .wrap.container-fluid{
-      background: transparent;
-   }
+   .overlay {
+position: fixed;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+background: rgba(0,0,0,.7);
+}
+.home .overlay{
+   background: transparent;
+}
 
    div#audio-player {
       width: 35%;
