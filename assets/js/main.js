@@ -193,7 +193,7 @@ soundManager.setup({
 
     }
   },
-  music: {
+  post_type_archive_music : {
     init: function(){
 
 
