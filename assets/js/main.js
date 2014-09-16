@@ -111,7 +111,7 @@ var Roots = {
 photos: {
   init: function(){
     $('.flexslider>ul').addClass('slides');
-    $('#slider>ul>li>img').addClass('img-responsive');
+    $('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
   // The slider being synced must be initialized first
   $('#carousel').flexslider({
     animation: "slide",
