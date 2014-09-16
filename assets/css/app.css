@@ -167,7 +167,7 @@ display: none;
    Header
    ========================================================================== */
 
-.banner { }
+.banner {  background: rgba(0,0,0,.7); color: color: #929292;}
 
 /*Music Controls*/
 .music-controls>li {
