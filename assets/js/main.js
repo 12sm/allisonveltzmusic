@@ -98,8 +98,11 @@ var Roots = {
   },
 photos: {
   init: function(){
-    $('.gal-hover').onmouseover(function(){
-      $('#slider.flexslider .slides > li').animate('height': '66vh');
+    $('.gal-hover').hover(function(){
+      $('#slider.flexslider .slides > li').animate({height: '66vh'}, 500);
+    },
+    function(){
+      $('#slider.flexslider .slides > li').animate({height: '92vh'}, 500);
     });
   }
 },
