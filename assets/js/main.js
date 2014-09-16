@@ -46,8 +46,6 @@ var Roots = {
           sync: "#carousel"
         });
 
-      //$('.flex-active-slide').imgLiquid({verticalAllign: 'top'});
-
       $('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
 
 
@@ -140,7 +138,31 @@ var Roots = {
   },
 photos: {
   init: function(){
+    $('.flexslider>ul').addClass('slides');
+        $('#slider>ul>li').imgLiquid({verticalAlign: '15%'});
+        var gallery = $('#slider').find('.slides').clone();
+        $('#carousel').html(gallery);
+        // The slider being synced must be initialized first
+        $('#carousel').flexslider({
+          animation: "slide",
+          controlNav: false,
+          animationLoop: false,
+          slideshow: false,
+          itemWidth: 210,
+          itemMargin: 5,
+          asNavFor: '#slider'
+        });
 
+        $('#slider').flexslider({
+          animation: "fade",
+          controlNav: false,
+          animationLoop: false,
+          slideshow: false,
+          sync: "#carousel"
+        });
+
+
+      $('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
   }
 },
 
