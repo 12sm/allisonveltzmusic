@@ -1051,6 +1051,9 @@ margin-top: 0px;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+   .container-fluid.col {
+margin: 0 5%;
+}
    #slider.flexslider .slides > li {
 height: 60vh;
 }
