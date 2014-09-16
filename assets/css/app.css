@@ -1064,6 +1064,9 @@ padding-bottom: 50%;
 width: 100%;
 padding-bottom: 50%;
 }
+.row.blog-arc-single {
+margin-bottom: 75px;
+}
 .content {
 padding-top: 100px;
 }
