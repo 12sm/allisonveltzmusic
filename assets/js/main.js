@@ -110,7 +110,6 @@ var Roots = {
   },
 photos: {
   init: function(){
-    $(window).load(function() {
   // The slider being synced must be initialized first
   $('#carousel').flexslider({
     animation: "slide",
@@ -129,7 +128,7 @@ photos: {
     slideshow: false,
     sync: "#carousel"
   });
-});
+
   }
 },
 
