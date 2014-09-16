@@ -1097,7 +1097,7 @@ z-index: 2;
 margin-top: 200px;
 transition: margin-top .5s;
 }
-.row.carousel-bg:hover{
+.gal-hover:hover .row.carousel-bg{
    transition: margin-top .5s;
    margin-top: 0px;
 }
