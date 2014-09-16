@@ -114,7 +114,7 @@ photos: {
     $('#slider>div>ul>li>img').addClass('img-responsive');
   // The slider being synced must be initialized first
   $('#carousel').flexslider({
-    animation: "fade",
+    animation: "slide",
     controlNav: false,
     animationLoop: false,
     slideshow: false,
@@ -124,7 +124,7 @@ photos: {
   });
 
   $('#slider').flexslider({
-    animation: "slide",
+    animation: "fade",
     controlNav: false,
     animationLoop: false,
     slideshow: false,
