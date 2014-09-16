@@ -93,7 +93,8 @@ var Roots = {
       $('.fancyvid').fancybox({
             'width'     : 720,
             'height'        : 480,
-            'type'          : 'iframe'
+            'type'          : 'iframe',
+            'aspectRatio'   : true
       });
       // JavaScript to be fired on all pages
       $('.navbar-nav>li>a').click(function(){
