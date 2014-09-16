@@ -130,7 +130,8 @@ photos: {
     sync: "#carousel"
   });
 
-$('.flex-active-slide').imgLiquid();
+$('.flex-active-slide').imgLiquid({verticalAllign: 'top'});
+$('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
   }
 },
 
