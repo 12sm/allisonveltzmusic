@@ -113,7 +113,7 @@ photos: {
     $('.flexslider>ul').addClass('slides');
   // The slider being synced must be initialized first
   $('#carousel').flexslider({
-    animation: "slide",
+    animation: "fade",
     controlNav: false,
     animationLoop: false,
     slideshow: false,
