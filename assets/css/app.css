@@ -1027,7 +1027,7 @@ margin-top: 0px;
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
    #slider.flexslider .slides > li {
-height: 50vh;
+height: 60vh;
 }
    #lyrics-base {
 display: block;
