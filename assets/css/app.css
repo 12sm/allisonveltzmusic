@@ -203,7 +203,6 @@ font-size: 12px!important;
 list-style: none;
 float: left;
 margin-bottom: 0px;
-width: 14%;
 }
 
 .playlist>li {
@@ -224,7 +223,7 @@ background: #F8F8F8;
 -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
 -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
 box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
-width: 85%;
+max-width: 65%;
 }
 
 .scrubber-wrap {
