@@ -271,7 +271,12 @@ background: transparent;
 font-size: 18px;
 }
 
-
+.header li{
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 5px;
+text-transform: uppercase;
+}
 /* ==========================================================================
    Content
    ========================================================================== */
@@ -448,9 +453,12 @@ li.song {
 background: #fff;
 }
 p.song-title {
-color: rgb(131, 131, 131);
+color: #929292;
 margin-top: -5px;
 margin-right: 15px;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 1px;
 }
 div#audiojs_wrapper0 i {
 color: #929292;
