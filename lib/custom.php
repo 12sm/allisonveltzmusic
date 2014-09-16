@@ -71,15 +71,6 @@ function my_post_gallery($output, $attr) {
     return $output;
 }
 
-function enqueue_tribe_events_scripts_and_styles() {
-
-    wp_enqueue_style( 'tribe_events-calendar-style' );
-
-    wp_enqueue_script( 'tribe-events-pro-geoloc' );
-
-}
-
-add_action('wp_enqueue_scripts', 'enqueue_tribe_events_scripts_and_styles', 100 );
 
 define( 'UPLOADS', ''.'assets' );
 
