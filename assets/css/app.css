@@ -993,6 +993,8 @@ html[xmlns] .slides {display: block;}
    div#audio-player {
       max-width: 20%;
       float: right;
+      max-height: 25px;
+      margin-top: 15px;
    }
    .blog-title{
       text-align: center;
