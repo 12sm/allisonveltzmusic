@@ -1084,6 +1084,7 @@ margin: 0 -15px;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+   body.photos{overflow: hidden;}
    .container-fluid.col {
 margin: 0 5%;
 }
