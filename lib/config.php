@@ -59,11 +59,7 @@ function roots_display_sidebar() {
       'is_home',
       'is_page',
       'is_single',
-      'is_archive',
-      'tribe_is_week',
-      'tribe_is_month',
-      'tribe_is_event',
-      'tribe_is_venue'
+      'is_archive'
     ),
     /**
      * Page template checks (via is_page_template())
