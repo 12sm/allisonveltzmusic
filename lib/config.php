@@ -53,7 +53,14 @@ function roots_display_sidebar() {
      *
      * The second element must be an array even if there's only 1 argument.
      */
-    false,
+    array(
+      'is_404',
+      'is_front_page',
+      'is_home',
+      'is_page',
+      'is_single',
+      'is_archive'
+    ),
     /**
      * Page template checks (via is_page_template())
      * Any of these page templates that return true won't show the sidebar

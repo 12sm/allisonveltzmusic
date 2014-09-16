@@ -71,6 +71,9 @@ function my_post_gallery($output, $attr) {
     return $output;
 }
 
+function roots_sidebar_on_special_page($sidebar) {
+  return false;
+}
 
 define( 'UPLOADS', ''.'assets' );
 
