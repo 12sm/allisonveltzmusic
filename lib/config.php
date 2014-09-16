@@ -59,7 +59,9 @@ function roots_display_sidebar() {
       'is_home',
       'is_page',
       'is_single',
-      'is_archive'
+      'is_archive',
+      array('is_singular', array('tribe_events')),
+      array('get_post_type', array('tribe_events'))
     ),
     /**
      * Page template checks (via is_page_template())
