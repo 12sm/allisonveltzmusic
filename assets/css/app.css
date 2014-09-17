@@ -377,6 +377,10 @@ width: 1170px;
 .hentry .entry-content { }
 .hentry footer { }
 
+.news .wrap.container-fluid, .blog .wrap.container-fluid {
+width: 1200px;
+}
+
 .news .archive-image, .blog .archive-image {
 width: 100%;
 padding-bottom: 30%;
