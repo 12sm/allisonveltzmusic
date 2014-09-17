@@ -370,6 +370,9 @@ white-space: normal;
 .home-slide h1 {
 margin-top: 0px;
 margin-bottom: 0px;
+font-size: 20px;
+font-family: 'Roboto';
+text-transform: uppercase;
 }
 .date{
    color:#929292;
