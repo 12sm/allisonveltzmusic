@@ -369,6 +369,11 @@ div#slider, div#carousel{
 .hentry .entry-content { }
 .hentry footer { }
 
+.news .archive-image, .blog .archive-image {
+width: 100%;
+padding-bottom: 30%;
+}
+
 a.btn.read-more {
 background: rgba(255,255,255,.85);
 color: #555!important;
