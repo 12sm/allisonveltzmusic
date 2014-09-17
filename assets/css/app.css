@@ -1093,7 +1093,9 @@ right: 0;
 height: 200px;
 z-index: 2;
 }
-
+.hover-zone, .hover-zone *{
+   z-index: 3;
+}
    body.photos{
       overflow: hidden;
    }
