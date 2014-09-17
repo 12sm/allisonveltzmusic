@@ -215,13 +215,12 @@ font-size: 18px!important;
 }
 
 ol.playlist {
-float: right;
+float: left;
 padding: 0;
 }
 
 .playlist {
 list-style: none;
-float: left;
 margin-bottom: 0px;
 }
 
@@ -244,7 +243,7 @@ background: transparent;
 -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
 box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
 max-width: 65%;
-float: left;
+float: right;
 width: 80px;
 }
 
