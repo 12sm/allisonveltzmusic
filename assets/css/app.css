@@ -491,9 +491,8 @@ list-style: none;
 }
 
 .lyrics-container {
-border: 1px solid #ededed;
-background: #fff;
-}
+background: rgba(43, 43, 43, 0.9);
+} 
 
 #lyrics-base {
 max-height: 600px;
@@ -506,7 +505,7 @@ display: block;
 padding: 9.5px;
 margin: 0 0 10px;
 font-size: 13px;
-font-family: "museo-sans", sans-serif;
+font-family: "Roboto Condensed", sans-serif;
 line-height: 1.428571429;
 word-break: break-all;
 word-wrap: break-word;
@@ -1239,7 +1238,7 @@ height: 92vh;
 }
    #lyrics-base {
 display: block;
-background: #ffffff;
+background: transparent;
 }
    .owl-carousel .owl-wrapper-outer {
 padding: 50px 0px;
