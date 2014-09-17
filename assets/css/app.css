@@ -18,6 +18,14 @@ padding-bottom: 20px;
 background: url(../img/top-photo.jpg) no-repeat;
 background-size: contain;
 }
+.overlay {
+position: fixed;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+background: rgba(0,0,0,.7);
+}
 
 div#e2ma_signup_message {
 display: none;
@@ -73,6 +81,7 @@ p{
    font-size: 16px;
    color: #fff;
    line-height: 1.6;
+   font-weight:100;
 }
 .blue{
    font-family: 'ff-market-web';
@@ -376,6 +385,14 @@ transition: background .3s ease;
 
 a.btn.read-more:hover {
 background: rgba(255,255,255,1);
+}
+
+.blog-arc-single h1 {
+margin-bottom: 0;
+}
+
+p.meta {
+color: #929292;
 }
 
 /* ==========================================================================
