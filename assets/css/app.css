@@ -400,6 +400,7 @@ white-space: normal;
    margin-right: 25px;
    min-height: 91px;
    transition:background .3s ease;
+   padding:5px;
 }
 .home-slide:hover {
 background: rgba(73, 73, 73, 1);
