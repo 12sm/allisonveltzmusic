@@ -166,6 +166,18 @@ display: none;
 .tribe-events-event-meta.vcard {
 color: #fff;
 }
+
+.navbar-default {
+border-color: transparent!important;
+}
+
+.navbar-nav li a {
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 5px;
+text-transform: uppercase;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -340,14 +352,23 @@ div#slider, div#carousel{
 .hentry footer { }
 
 a.btn.read-more {
-background: #fff;
-color: #000;
+background: rgba(255,255,255,.85);
+color: #555;
 border-radius: 0px;
-padding: 2px;
+padding: 5px 5px 3px 5px;
 font-weight: bold;
 float: left;
 margin-top: 25px;
+text-transform: uppercase;
+font-family: "roboto";
+font-size: 12px;
+transition: background .3s ease;
 }
+
+a.btn.read-more:hover {
+background: rgba(255,255,255,1);
+}
+
 /* ==========================================================================
    HOME
    ========================================================================== */
@@ -370,7 +391,7 @@ white-space: normal;
 .home-slide h1 {
 margin-top: 0px;
 margin-bottom: 0px;
-font-size: 20px;
+font-size: 18px;
 font-family: 'Roboto';
 text-transform: uppercase;
 }
@@ -385,6 +406,12 @@ text-transform: uppercase;
 .excerpt{
    color: #929292;
    font-weight: normal;
+}
+
+.excerpt p {
+color: #929292;
+font-size: 12px;
+font-family: "roboto";
 }
 a.btn.btn-read {
 position: absolute;
@@ -469,7 +496,7 @@ p.song-title {
 color: #929292;
 line-height: 1.7;
 margin-right: 15px;
-font-size: 14px;
+font-size: 12px;
 font-weight: bold;
 letter-spacing: 1px;
 }
@@ -490,9 +517,52 @@ left: 0;
 padding-top: 0px;
 }
 
+
+/* ==========================================================================
+   VIDEO
+   ========================================================================== */
+
+.archive-image.imgLiquid_bgSize.imgLiquid_ready {
+margin-bottom: 30px;
+}
+
+.video-container .archive-image.video.imgLiquid_bgSize.imgLiquid_ready {
+margin-bottom: 0;
+}
+
+.video-container h4 {
+background-color: #000;
+padding: 10px 10px 0px 10px;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.video-container p {
+background-color: #000;
+padding: 0px 10px 10px 10px;
+margin-top: 0;
+color: #929292;
+font-size: 12px;
+}
+
+/* ==========================================================================
+   EVENTS
+   ========================================================================== */
+
+div#tribe-events-content h2, a {
+color: #FFF!important;
+font-family: "roboto"!important;
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
+
+footer {
+background: rgba(52,52,52, .9);
+width: 100%!important;
+margin: 0!important;
+}
 
 .content-info { }
 
@@ -1023,12 +1093,16 @@ background: rgba(0,0,0,.7);
    background: transparent;
 }
 
-   div#audio-player {
-      width: 35%;
-      float: right;
-      max-height: 25px;
-      margin-top: 15px;
-   }
+div#audio-player {
+width: 25%;
+float: right;
+max-height: 25px;
+margin-top: 15px;
+}
+
+.video-container {
+margin: 0 -5px;
+}
    .blog-title{
       text-align: center;
    }
