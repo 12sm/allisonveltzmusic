@@ -214,6 +214,11 @@ p.play, p.pause, .prev-track, .next-track {
 font-size: 18px!important;
 }
 
+ol.playlist {
+float: right;
+padding: 0;
+}
+
 .playlist {
 list-style: none;
 float: left;
@@ -239,6 +244,8 @@ background: transparent;
 -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
 box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
 max-width: 65%;
+float: left;
+width: 80px;
 }
 
 .scrubber-wrap {
@@ -287,11 +294,13 @@ background: transparent;
 font-size: 18px;
 }
 
-.navbar-nav li a{
-font-size: 14px;
+.navbar-nav li a {
+font-size: 12px;
 font-weight: bold;
 letter-spacing: 5px;
 text-transform: uppercase;
+color: #8B8B8B!important;
+text-rendering: optimizeLegibility;
 }
 .banner {
 margin-bottom: 0px;
