@@ -1093,14 +1093,7 @@ right: 0;
 height: 200px;
 z-index: 2;
 }
-.row.carousel-bg {
-margin-top: 200px;
-transition: margin-top .5s;
-}
-.gal-hover:hover .row.carousel-bg{
-   transition: margin-top .5s;
-   margin-top: 0px;
-}
+
    body.photos{
       overflow: hidden;
    }
