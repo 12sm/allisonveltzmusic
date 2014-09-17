@@ -362,7 +362,7 @@ div#slider, div#carousel{
 
 a.btn.read-more {
 background: rgba(255,255,255,.85);
-color: #555;
+color: #555!important;
 border-radius: 0px;
 padding: 5px 5px 3px 5px;
 font-weight: bold;
