@@ -217,6 +217,7 @@ font-size: 18px!important;
 ol.playlist {
 float: left;
 padding: 0;
+width:70%;
 }
 
 .playlist {
@@ -242,7 +243,7 @@ background: transparent;
 -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
 -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
 box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.0);
-max-width: 65%;
+width: 30%;
 float: right;
 width: 80px;
 }
