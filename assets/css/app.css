@@ -40,7 +40,7 @@ a:hover{
    text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6, p, a, *{
-   font-family: 'Roboto';
+   font-family: 'Roboto Condensed';
 }
 h1{
    font-size: 32px;
@@ -369,7 +369,7 @@ font-weight: bold;
 float: left;
 margin-top: 25px;
 text-transform: uppercase;
-font-family: "roboto";
+font-family: "Roboto Condensed";
 font-size: 12px;
 transition: background .3s ease;
 }
@@ -409,7 +409,7 @@ background: rgba(73, 73, 73, 1);
 margin-top: 0px;
 margin-bottom: 0px;
 font-size: 18px;
-font-family: 'Roboto';
+font-family: 'Roboto Condensed';
 text-transform: uppercase;
 }
 .date{
@@ -428,7 +428,7 @@ text-transform: uppercase;
 .excerpt p {
 color: #929292;
 font-size: 12px;
-font-family: "roboto";
+font-family: "Roboto Condensed";
 }
 
 a.btn.btn-read {
@@ -579,7 +579,7 @@ font-size: 12px;
 
 div#tribe-events-content h2, a {
 color: #FFF!important;
-font-family: "roboto"!important;
+font-family: "Roboto Condensed"!important;
 }
 
 /* ==========================================================================
