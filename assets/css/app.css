@@ -178,7 +178,7 @@ letter-spacing: 5px;
 text-transform: uppercase;
 color: #8B8B8B!important;
 text-rendering: optimizeLegibility;
-transform:  color .3s ease;
+transition:  color .3s ease;
 }
 
 .navbar-nav li a:hover {
