@@ -502,7 +502,7 @@ list-style: none;
 
 .lyrics-container {
 background: rgba(43, 43, 43, 0.9);
-} 
+}
 #lyrics-base {
 max-height: 600px;
 overflow: scroll;
@@ -578,7 +578,10 @@ left: 0;
 .photos .content.row, .single-photo-galleries .content.row {
 padding-top: 0px;
 }
-
+div#slider {
+width: 60%;
+margin: 0 auto;
+}
 
 /* ==========================================================================
    VIDEO
@@ -1142,11 +1145,11 @@ html[xmlns] .slides {display: block;}
 /* No media query since this is the default in Bootstrap */
 
 @media (max-width:767px) {
-	
+
 .news .wrap.container-fluid, .blog .wrap.container-fluid {
 width: 80%;
-}	
-	
+}
+
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -1180,7 +1183,7 @@ margin: 0 -5px;
    }
    .about .content p{
       line-height: 1.4;
-   } 
+   }
    .av-bg{
    background-size: cover;
 }
@@ -1285,7 +1288,7 @@ margin-top: 15vh;
  }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 .news .wrap.container-fluid, .blog .wrap.container-fluid {
 width: 1200px;
