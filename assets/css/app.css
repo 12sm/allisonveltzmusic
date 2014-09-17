@@ -399,6 +399,10 @@ white-space: normal;
    background: rgba(43, 43, 43, 0.9);
    margin-right: 25px;
    min-height: 91px;
+   transition:background .3s ease;
+}
+.home-slide:hover {
+background: rgba(73, 73, 73, 1);
 }
 
 .home-slide h1 {
