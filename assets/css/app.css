@@ -404,11 +404,12 @@ white-space: normal;
 .home-slide:hover {
 background: rgba(73, 73, 73, 1);
 }
-
 .home-slide h1 {
 margin-top: 0px;
 margin-bottom: 0px;
 font-size: 18px;
+font-weight: bold;
+letter-spacing: 1px;
 font-family: 'Roboto Condensed';
 text-transform: uppercase;
 }
@@ -427,21 +428,24 @@ text-transform: uppercase;
 
 .excerpt p {
 color: #929292;
-font-size: 12px;
+font-size: 13px;
 font-family: "Roboto Condensed";
+line-height: 18px;
+margin-top: 5px;
 }
 
 a.btn.btn-read {
 position: absolute;
-bottom: -26px;
+bottom: -31px;
+right: 5px;
 background: rgba(255,255,255,.85);
 color: #3A3A3A!important;
-right: 15px;
+right: 10px;
 border-radius: 0px;
 padding: 5px 5px 3px 5px;
 font-size: 12px;
 font-weight: bold;
-transition:background .3s ease;
+transition: background .3s ease;
 }
 
 a.btn.btn-read:hover {background:rgba(255,255,255,1);}
