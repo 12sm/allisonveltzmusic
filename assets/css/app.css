@@ -176,6 +176,13 @@ font-size: 12px;
 font-weight: bold;
 letter-spacing: 5px;
 text-transform: uppercase;
+color: #8B8B8B!important;
+text-rendering: optimizeLegibility;
+transform:  color .3s ease;
+}
+
+.navbar-nav li a:hover {
+color: #FFF!important;
 }
 
 /* ==========================================================================
@@ -294,14 +301,7 @@ background: transparent;
 font-size: 18px;
 }
 
-.navbar-nav li a {
-font-size: 12px;
-font-weight: bold;
-letter-spacing: 5px;
-text-transform: uppercase;
-color: #8B8B8B!important;
-text-rendering: optimizeLegibility;
-}
+
 .banner {
 margin-bottom: 0px;
 }
@@ -442,6 +442,11 @@ a.btn.btn-read:hover {background:rgba(255,255,255,1);}
 
 .button-div {
 height: 26px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: #FFF!important;
+background-color: transparent;
 }
 
 /* ==========================================================================
