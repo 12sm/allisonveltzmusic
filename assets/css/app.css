@@ -82,6 +82,8 @@ p{
    color: #fff;
    line-height: 1.6;
    font-weight:100;
+   margin-bottom:25px;
+   line-height:1.4;
 }
 .blue{
    font-family: 'ff-market-web';
@@ -1162,7 +1164,7 @@ margin: 0 -5px;
       text-align: center;
    }
    .about .content p{
-      line-height: 2;
+      line-height: 1.4;
    }
    .av-bg{
    background-size: cover;
