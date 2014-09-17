@@ -491,8 +491,6 @@ list-style: none;
 }
 
 .lyrics-container {
-box-shadow: 0px 0px 15px 1px #ededed;
--webkit-box-shadow: 0px 0px 15px 1px #ededed;
 border: 1px solid #ededed;
 background: #fff;
 }
@@ -525,14 +523,12 @@ text-transform: none;
 }
 
 .song a {
-border-bottom: 1px solid #ededed;
+border-bottom: 1px solid #333333;
    display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;;
-box-shadow: 0px 0px 15px 1px #ededed;
--webkit-box-shadow: 0px 0px 15px 1px #ededed;
 width: 100%;
 padding: 0px;
 margin:0px;
@@ -546,8 +542,9 @@ margin:0px;
 .song a.sm2_playing .song-play:before {content:"\f04c";}
 
 li.song {
-background: #fff;
+background: rgba(43, 43, 43, 0.9);
 }
+
 p.song-title {
 color: #929292;
 line-height: 1.7;
