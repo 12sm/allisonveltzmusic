@@ -1141,6 +1141,14 @@ html[xmlns] .slides {display: block;}
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
 
+@media (max-width:767px) {
+	
+.news .wrap.container-fluid, .blog .wrap.container-fluid {
+width: 80%;
+}	
+	
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
    .overlay {
