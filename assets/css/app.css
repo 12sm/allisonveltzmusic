@@ -378,7 +378,7 @@ width: 1170px;
 .hentry footer { }
 
 .news .wrap.container-fluid, .blog .wrap.container-fluid {
-width: 1200px;
+width: 1200px!important;
 }
 
 .news .archive-image, .blog .archive-image {
