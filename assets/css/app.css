@@ -57,10 +57,10 @@ h1{
    font-weight: bold;
    color: #fff;
 }
-h2{
-   font-size: 38px;
-   color: #BB2F7E;
-   font-style: italic;
+h2 {
+font-size: 38px;
+color: #F8B2DA;
+font-style: normal;
 }
 h3{
    font-size: 16px;
@@ -355,6 +355,10 @@ padding: 0;
 div#slider, div#carousel{
    border: transparent;
 }
+.news .wrap.container-fluid, .blog .wrap.container-fluid {
+width: 1170px;
+}
+
 /* ==========================================================================
    Sidebar
    ========================================================================== */
@@ -1262,4 +1266,11 @@ margin-top: 15vh;
  }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) { 
+
+.news .wrap.container-fluid, .blog .wrap.container-fluid {
+width: 1170px;
+}
+
+
+}
