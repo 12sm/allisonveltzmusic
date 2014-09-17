@@ -378,7 +378,7 @@ width: 1170px;
 .hentry footer { }
 
 .news .wrap.container-fluid, .blog .wrap.container-fluid {
-width: 1200px!important;
+width: 1200px;
 }
 
 .news .archive-image, .blog .archive-image {
@@ -1154,7 +1154,9 @@ background: rgba(0,0,0,.7);
 .home .overlay{
    background: transparent;
 }
-
+.news .wrap.container-fluid, .blog .wrap.container-fluid {
+width: 90%;
+}
 div#audio-player {
 width: 25%;
 float: right;
@@ -1225,6 +1227,11 @@ margin: 0 -15px;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+.news .wrap.container-fluid, .blog .wrap.container-fluid {
+width: 90%;
+}
+
 .gal-hover {
 position: fixed;
 bottom: 0px;
