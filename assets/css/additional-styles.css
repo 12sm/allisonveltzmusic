@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* ==========================================================================
+   HOME
+   ========================================================================== */
+
+.home-slide h1 {
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 18px;
+font-family: 'Roboto';
+text-transform: uppercase;
+}
+
+.excerpt p {
+color: #929292;
+font-size: 12px;
+font-family: "roboto";
+}
+
+i.fa.fa-chevron-right.blog-angle {
+text-align: center;
+display: block;
+font-size: 52px;
+clear: none;
+color: #fff;
+margin-top: 25%;
+}
