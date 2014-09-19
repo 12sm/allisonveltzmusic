@@ -377,6 +377,14 @@ width: 1170px;
 .hentry .entry-content { }
 .hentry footer { }
 
+ul#menu-social {
+text-align: center;
+}
+
+ul#menu-social li {
+display:inline-block;
+}
+
 .news .wrap.container-fluid, .blog .wrap.container-fluid {
 width: 1200px;
 }
