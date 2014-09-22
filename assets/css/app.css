@@ -1346,6 +1346,18 @@ margin-top: 0px;
 margin-top: 5vh;
 }
  }
+ 
+ 
+ 
+ /* Nav only adjustments */
+ @media (min-width: 1110px) {
+	 
+div#audio-player {
+width: 100%;
+}
+	 
+ }
+ 
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
