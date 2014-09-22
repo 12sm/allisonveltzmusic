@@ -679,6 +679,7 @@ background: rgba(52,52,52, .9);
 width: 100%!important;
 margin: 0!important;
 position:fixed;
+bottom:0;
 }
 
 .content-info { }
