@@ -779,6 +779,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    overflow: hidden;
    position: relative;
    width: 100%;
+   min-height: 200px;
 }
 .owl-carousel .owl-wrapper-outer.autoHeight{
    -webkit-transition: height 500ms ease-in-out;
@@ -1207,7 +1208,9 @@ width: 80%;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-   .overlay {
+
+
+.overlay {
 position: fixed;
 top: 0;
 bottom: 0;
