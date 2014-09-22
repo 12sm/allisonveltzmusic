@@ -237,7 +237,7 @@ font-size: 18px!important;
 ol.playlist {
 float: left;
 padding: 0;
-width:70%;
+width: auto;
 }
 
 .playlist {
@@ -1233,12 +1233,11 @@ background: rgba(0,0,0,.7);
 width: 90%;
 }
 div#audio-player {
-width: 25%;
+width: 18%;
 float: right;
 max-height: 25px;
 margin-top: 15px;
 }
-
 .video-container {
 margin: 0 -5px;
 }
