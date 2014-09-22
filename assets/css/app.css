@@ -524,7 +524,7 @@ list-style: none;
 background: rgba(43, 43, 43, 0.9);
 }
 #lyrics-base {
-max-height: 600px;
+max-height: 400px;
 overflow: scroll;
 min-height: 300px;
 }
