@@ -1355,6 +1355,13 @@ margin-top: 5vh;
 div#audio-player {
 width: 100%;
 }
+
+div#audio-player {
+width: 100%;
+background: #1F1F1F;
+padding: 0px 5px;
+margin-top: 0;
+}
 	 
  }
  
