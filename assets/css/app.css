@@ -228,7 +228,7 @@ display: inline-block;
 
 .fa a{
    text-decoration: none!important;
-}
+} 
 
 p.play, p.pause, .prev-track, .next-track {
 font-size: 18px!important;
