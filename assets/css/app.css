@@ -779,7 +779,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    overflow: hidden;
    position: relative;
    width: 100%;
-   min-height: 200px;
+   min-height: 230px;
 }
 .owl-carousel .owl-wrapper-outer.autoHeight{
    -webkit-transition: height 500ms ease-in-out;
