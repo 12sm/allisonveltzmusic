@@ -1237,6 +1237,8 @@ width: 18%;
 float: right;
 max-height: 25px;
 margin-top: 15px;
+background: #1F1F1F;
+padding: 0px 5px;
 }
 .video-container {
 margin: 0 -5px;
@@ -1362,8 +1364,13 @@ background: #1F1F1F;
 padding: 0px 5px;
 margin-top: 0;
 }
+
+.navbar-nav>li>a {
+padding-top: 15px;
+padding-bottom: 5px;
+}
 	 
- }
+}
  
 
 /* Large devices (large desktops, 1200px and up) */
