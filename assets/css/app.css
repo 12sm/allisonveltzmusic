@@ -1350,7 +1350,7 @@ margin-top: 5vh;
  
  
  /* Nav only adjustments */
- @media (min-width: 1110px) {
+ @media (max-width: 1110px) {
 	 
 div#audio-player {
 width: 100%;
