@@ -603,7 +603,13 @@ list-style: none;
 padding: 15px;
 }
 
+ul.songs-list li {
+transition: background;
+}
 
+ul.songs-list li:hover {
+background: rgb(65,65,65);
+}
 
 
 /* ==========================================================================
