@@ -72,7 +72,7 @@ var Roots = {
         $('body').addClass(link[3]);
         }
       });
-      $.backstretch('/wp-content/themes/allisonveltzmusic/assets/img/bg.jpg', {centeredY:false});
+      $.backstretch('/wp-content/themes/allisonveltzmusic/assets/img/bg2.jpg', {centeredY:false});
     }
   },
   // Home page
