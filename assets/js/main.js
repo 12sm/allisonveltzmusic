@@ -22,7 +22,7 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-
+      $('vid-container').fitVids();
        $('.flexslider>ul').addClass('slides');
         $('#slider>ul>li').imgLiquid({verticalAlign: '15%'});
         var gallery = $('#slider').find('.slides').clone();
