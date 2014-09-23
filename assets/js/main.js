@@ -46,7 +46,7 @@ var Roots = {
           sync: "#carousel"
         });
 
-      $('#carousel>div>ul>li').imgLiquid({verticalAllign: 'top'});
+      $('#carousel>div>ul>li').imgLiquid({verticalAlign: 'top'});
 
       $('.fancyvid').fancybox({
             'autoSize'      : false,
