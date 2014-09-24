@@ -76,7 +76,7 @@ var Roots = {
 
       $('.navbar-nav>li>a').click(function(){
         bodyClassChange();
-      }
+      });
 
       $.backstretch('/wp-content/themes/allisonveltzmusic/assets/img/bg2.jpg', {centeredY:false});
     }
