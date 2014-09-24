@@ -62,6 +62,7 @@ var Roots = {
       $('.archive-image').imgLiquid();
       //body class update
       function bodyClassChange(){
+        alert('bodyClassChange is firing');
         link = $(this).attr('href').split('/');
         $('body').removeAttr('class');
 
