@@ -697,7 +697,7 @@ padding-top: 5px;
 .content-info { }
 
 #social ul {margin:0px; padding:0px; list-style: none;}
-#social li {margin:0px; padding: 0px list-style:none; display: block; float:left;}
+#social li {margin:0px; padding: 0px; list-style:none; display: block; float:left;}
 #social li a {padding: 10px;}
 
 #social-float>ul{
@@ -741,6 +741,9 @@ color: #13A468!important;
 text-align: center;
 color: #6F6F6F!important;
 font-size: 13px;
+}
+.email-signup {
+color: #6F6F6F;
 }
 
 /* ==========================================================================
