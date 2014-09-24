@@ -5,7 +5,7 @@
       	<?php dynamic_sidebar('sidebar-footer'); ?>
       </div>
 	  <div class="row footer-nav"> 
-			<div class="col-sm-12"> 
+			<div class="col-sm-12">TEST 
 				<?php
 			 if (has_nav_menu('footer_navigation')) :
 			   wp_nav_menu(array('theme_location' => 'footer_navigation', 'menu_class' => ''));
