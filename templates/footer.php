@@ -19,20 +19,7 @@
 				<p class="credits">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>  |  <a href="http://12southmusic.com/" target="_blank">built by 12SM</a></p>
 			</div>
 	  </div>
-         
-	<div id="social" class="row social-nav">
-			<div class="col-sm-6 col-md-6 col-lg-6">
-			  Email Sign Up
-			</div>
-			<div class="col-sm-6 col-md-6 col-lg-6">
-				  <?php
-					 if (has_nav_menu('social_navigation')) :
-					   wp_nav_menu(array('theme_location' => 'social_navigation', 'menu_class' => ''));
-					 endif;
-				  ?>
-				  <p class="credits">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>  |  <a href="http://12southmusic.com/" target="_blank">built by 12SM</a></p>
-			</div>
-	</div>
+
       
     </div>
   </div>
