@@ -5,17 +5,17 @@
       	<?php dynamic_sidebar('sidebar-footer'); ?>
       </div>
 	  <div class="row footer-nav"> 
-			<div class="col-sm-4 col-md-4 col-lg-4">
+			<div class="col-xs-12 col-sm-4 col-md-5 col-lg-5">
 			  Email Sign Up
 			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4">TEST 
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5"> 
 				<?php
 			 if (has_nav_menu('footer_navigation')) :
 			   wp_nav_menu(array('theme_location' => 'footer_navigation', 'menu_class' => ''));
 			 endif;
 		  ?>
 			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4">
+			<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
 				<p class="credits">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>  |  <a href="http://12southmusic.com/" target="_blank">built by 12SM</a></p>
 			</div>
 	  </div>
