@@ -74,7 +74,7 @@ var Roots = {
         }
       };
 
-      $('.navbar-nav>li>a').click(function(){
+      $('a').click(function(){
         bodyClassChange();
       });
 
