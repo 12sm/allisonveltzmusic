@@ -378,7 +378,6 @@ width: 1170px;
 .hentry footer { }
 
 ul#menu-social {
-text-align: center;
 padding:5px;
 }
 
@@ -1214,6 +1213,10 @@ html[xmlns] .slides {display: block;}
 
 .news .wrap.container-fluid, .blog .wrap.container-fluid {
 width: 80%;
+}
+
+ul#menu-social {
+text-align:center;
 }
 
 }
