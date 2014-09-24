@@ -736,6 +736,11 @@ color: #13A468!important;
 #social-float{
    display: none;
 }
+.credits, p.credits a {
+text-align: center;
+color: #6F6F6F!important;
+font-size: 13px;
+}
 
 /* ==========================================================================
    Events
