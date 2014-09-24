@@ -61,7 +61,7 @@ var Roots = {
       });
       $('.archive-image').imgLiquid();
       //body class update
-      /*$('.navbar-nav>li>a').click(function(){
+      function bodyClassChange(){
         link = $(this).attr('href').split('/');
         $('body').removeAttr('class');
 
@@ -71,7 +71,12 @@ var Roots = {
         $('body').addClass(link[1]);
         $('body').addClass(link[3]);
         }
-      });*/
+      });
+
+      $('.navbar-nav>li>a').click(function(){
+        bodyClassChange();
+      }
+
       $.backstretch('/wp-content/themes/allisonveltzmusic/assets/img/bg2.jpg', {centeredY:false});
     }
   },
