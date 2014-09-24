@@ -72,7 +72,7 @@ var Roots = {
         $('body').addClass(link[1]);
         $('body').addClass(link[3]);
         }
-      });
+      };
 
       $('.navbar-nav>li>a').click(function(){
         bodyClassChange();
