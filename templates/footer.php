@@ -8,14 +8,14 @@
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-5">
 			  Email Sign Up
 			</div>
-			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5"> 
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-4"> 
 				<?php
 			 if (has_nav_menu('footer_navigation')) :
 			   wp_nav_menu(array('theme_location' => 'footer_navigation', 'menu_class' => ''));
 			 endif;
 		  ?>
 			</div>
-			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 				<p class="credits">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>  |  <a href="http://12southmusic.com/" target="_blank">built by 12SM</a></p>
 			</div>
 	  </div>
