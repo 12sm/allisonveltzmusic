@@ -691,6 +691,7 @@ width: 100%!important;
 margin: 0!important;
 position:fixed;
 bottom:0;
+padding-top: 5px;
 }
 
 .content-info { }
