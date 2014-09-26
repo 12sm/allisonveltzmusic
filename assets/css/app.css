@@ -1232,6 +1232,10 @@ ul#menu-social {
 text-align:center;
 }
 
+header.banner.navbar.navbar-default.navbar-static-top {
+margin-bottom: 20px;
+}
+
 }
 
 /* Small devices (tablets, 768px and up) */
