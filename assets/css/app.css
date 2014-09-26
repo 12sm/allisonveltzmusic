@@ -1407,7 +1407,8 @@ width: 1200px!important;
 margin: 0 auto;
 }
 
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,
+.single .wrap.container-fluid {
 width: 1200px;
 }
 
