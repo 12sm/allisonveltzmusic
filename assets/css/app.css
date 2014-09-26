@@ -356,7 +356,8 @@ padding: 0;
 div#slider, div#carousel{
    border: transparent;
 }
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,
+body.single.single-post .wrap.container-fluid {
 width: 1170px;
 }
 
@@ -397,7 +398,8 @@ ul#menu-social li a i:hover {
 color: #FF5182;
 }
 
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,
+body.single.single-post .wrap.container-fluid {
 width: 1200px;
 }
 
@@ -1221,7 +1223,8 @@ html[xmlns] .slides {display: block;}
 
 @media (max-width:767px) {
 
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,
+body.single.single-post .wrap.container-fluid {
 width: 80%;
 }
 
@@ -1250,7 +1253,8 @@ background: rgba(0,0,0,.7);
 .home .overlay{
    background: transparent;
 }
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,,
+body.single.single-post .wrap.container-fluid {
 width: 90%;
 }
 div#audio-player {
@@ -1330,7 +1334,8 @@ width: 970px;
 margin: 0 auto;
 }
 
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,,
+body.single.single-post .wrap.container-fluid {
 width: 90%;
 }
 
@@ -1402,12 +1407,8 @@ padding-bottom: 5px;
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-body.single.single-post .wrap.container-fluid {
-width: 1200px!important;
-}
-
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
-{
+body.single.single-post .wrap.container-fluid {
 width: 1200px;
 }
 
