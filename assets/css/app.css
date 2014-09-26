@@ -1411,7 +1411,7 @@ width:1170px;
 }
 
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
-body.single-post .container-fluid {
+body.single-post .wrap.container-fluid {
 width: 1200px;
 }
 
