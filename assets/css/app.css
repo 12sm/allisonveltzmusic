@@ -1336,7 +1336,7 @@ width: 90%;
 
 .gal-hover {
 position: fixed;
-bottom: 0px;
+bottom: 0px; 
 left: 0;
 right: 0;
 height: 200px;
