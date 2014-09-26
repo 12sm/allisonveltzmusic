@@ -1242,6 +1242,10 @@ font-size: 22px!important;
 
 footer {position:inherit;}
 
+.tribe-events-event-meta.vcard {
+color: #555;
+}
+
 }
 
 /* Small devices (tablets, 768px and up) */
