@@ -1236,6 +1236,10 @@ header.banner.navbar.navbar-default.navbar-static-top {
 margin-bottom: 20px;
 }
 
+i.fa.fa-chevron-right.blog-angle {
+font-size: 22px;
+}
+
 }
 
 /* Small devices (tablets, 768px and up) */
