@@ -1402,13 +1402,12 @@ padding-bottom: 5px;
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-.hentry .entry-content {
+body.single.single-post .wrap.container-fluid {
 width: 1200px!important;
-margin: 0 auto;
 }
 
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
-.single .wrap.container-fluid {
+{
 width: 1200px;
 }
 
