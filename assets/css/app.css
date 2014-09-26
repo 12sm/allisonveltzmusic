@@ -198,6 +198,12 @@ transition:  color .3s ease;
 color: #FFF!important;
 }
 
+body.single-post .container-fluid {
+margin-left:auto;
+margin-right:auto;
+padding-left:15px;
+padding-right:15px;
+}
 
 /* ==========================================================================
    Header
@@ -1234,6 +1240,9 @@ text-align:center;
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+body.single-post .container-fluid {
+width:750px;
+}
 
 .overlay {
 position: fixed;
@@ -1321,6 +1330,9 @@ margin: 0 -15px;
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+body.single-post .container-fluid {
+width:970px;
+}
 
 .news .wrap.container-fluid, .blog .wrap.container-fluid {
 width: 90%;
@@ -1393,7 +1405,11 @@ padding-bottom: 5px;
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	
+
+body.single-post .container-fluid {
+width:1170px;
+}
+
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
 body.single-post .container-fluid {
 width: 1200px;
