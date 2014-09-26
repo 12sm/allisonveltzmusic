@@ -1407,7 +1407,7 @@ padding-bottom: 5px;
 @media (min-width: 1200px) {
 
 body.single-post .container-fluid {
-width:1170px;
+max-width:1170px;
 }
 
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
