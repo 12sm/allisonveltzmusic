@@ -1240,6 +1240,8 @@ i.fa.fa-chevron-right.blog-angle {
 font-size: 22px!important;  
 }
 
+footer {position:inherit;}
+
 }
 
 /* Small devices (tablets, 768px and up) */
