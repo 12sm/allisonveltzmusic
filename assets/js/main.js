@@ -101,7 +101,23 @@ var Roots = {
       // JavaScript to be fired on the about us page
     }
   },
+  instagram: {
+  init: function(){
+    function liquidWrap(){
+        $('.insta-photo').addClass('col-sm-6 col-md-4 col-lg-3');
+        $('.insta-photo > a').wrap('<div class="img-pad"></div>');
+        $('.img-pad').imgLiquid();
+      };
 
+      $('.instagram-grid').embedagram({
+        instagram_id: 189755470,
+        thumb_width: 306,
+        limit: 20,
+        wrap_tag: 'div class=insta-photo',
+        success: liquidWrap
+      });
+    }
+  },
 photos: {
   init: function(){
     function liquidWrap(){
