@@ -375,6 +375,9 @@ width: initial;
 .photo-galleries .content{
    padding-top: 0px;
 }
+#slider ul {
+padding: 0px;
+}
 /* ==========================================================================
    Sidebar
    ========================================================================== */
@@ -660,11 +663,6 @@ left: 0;
 .photos .content.row, .single-photo-galleries .content.row {
 padding-top: 0px;
 }
-div#slider {
-width: 45%;
-margin: 0 auto;
-}
-
 .photo-full-width{
    background: rgba(43, 43, 43, 0.9);
 }
@@ -675,6 +673,17 @@ padding: 0 20px;
 .img-pad a {
 padding-bottom: 100%;
 position: absolute;
+}
+.hover-zone {
+display: none;
+}
+.flexslider img {
+height: auto;
+width: 100%;
+padding: 10px 10px;
+}
+.flexslider{
+   background: transparent;
 }
 /* ==========================================================================
    VIDEO
@@ -1271,7 +1280,10 @@ html[xmlns] .slides {display: block;}
 /* No media query since this is the default in Bootstrap */
 
 @media (max-width:767px) {
-
+div#slider {
+width: 45%;
+margin: 0 auto;
+}
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
 body.single.single-post .wrap.container-fluid {
 width: 80%;
@@ -1299,6 +1311,9 @@ color: #555;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+   .hover-zone {
+display: block;
+}
 
 .hentry .entry-content {
 width: 750px;

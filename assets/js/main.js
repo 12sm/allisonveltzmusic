@@ -26,7 +26,7 @@ var Roots = {
       $('.entry-content-asset').fitVids();
       $('.vid-container').fitVids();
        
-if ($(window).width() > 777){
+if ($(window).width() > 767){
        $('.flexslider>ul').addClass('slides');
         $('#slider>ul>li').imgLiquid({verticalAlign: '15%'});
         var gallery = $('#slider').find('.slides').clone();
