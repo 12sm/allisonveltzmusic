@@ -25,6 +25,8 @@ var Roots = {
      $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
       $('.entry-content-asset').fitVids();
       $('.vid-container').fitVids();
+       
+if ($(window).width() < 777){
        $('.flexslider>ul').addClass('slides');
         $('#slider>ul>li').imgLiquid({verticalAlign: '15%'});
         var gallery = $('#slider').find('.slides').clone();
@@ -49,6 +51,7 @@ var Roots = {
         });
 
       $('#carousel>div>ul>li').imgLiquid({verticalAlign: 'top'});
+}
 
       $('.fancyvid').fancybox({
             'autoSize'      : false,
@@ -125,7 +128,7 @@ photos: {
         $('.insta-photo > a').wrap('<div class="img-pad"></div>');
         $('.img-pad').imgLiquid();
       };
-      if ($(window).width() < 777){
+      
       $('.instagram-grid').embedagram({
         instagram_id: 189755470,
         thumb_width: 306,
@@ -133,7 +136,6 @@ photos: {
         wrap_tag: 'div class=insta-photo',
         success: liquidWrap
       });
-    }
 /*
     $('.gal-hover').mouseenter(function(){
       $('#slider.flexslider .slides > li').animate({height : '66vh'}, 500);
