@@ -201,6 +201,7 @@ color: #FFF!important;
 max-width: 100%;
 height: auto;
 }
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -358,7 +359,8 @@ padding: 0;
 div#slider, div#carousel{
    border: transparent;
 }
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,
+body.single.single-post .wrap.container-fluid {
 width: 1170px;
 }
 
@@ -399,7 +401,8 @@ ul#menu-social li a i:hover {
 color: #FF5182;
 }
 
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,
+body.single.single-post .wrap.container-fluid {
 width: 1200px;
 }
 
@@ -1223,7 +1226,8 @@ html[xmlns] .slides {display: block;}
 
 @media (max-width:767px) {
 
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,
+body.single.single-post .wrap.container-fluid {
 width: 80%;
 }
 
@@ -1231,11 +1235,29 @@ ul#menu-social {
 text-align:center;
 }
 
+header.banner.navbar.navbar-default.navbar-static-top {
+margin-bottom: 20px;
+}
+
+i.fa.fa-chevron-right.blog-angle {
+font-size: 22px!important;  
+}
+
+footer {position:inherit;}
+
+.tribe-events-event-meta.vcard {
+color: #555;
+}
+
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+.hentry .entry-content {
+width: 750px;
+margin: 0 auto;
+}
 
 .overlay {
 position: fixed;
@@ -1248,7 +1270,8 @@ background: rgba(0,0,0,.7);
 .home .overlay{
    background: transparent;
 }
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,,
+body.single.single-post .wrap.container-fluid {
 width: 90%;
 }
 div#audio-player {
@@ -1323,13 +1346,19 @@ margin: 0 -15px;
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.hentry .entry-content {
+width: 970px;
+margin: 0 auto;
+}
+
+.news .wrap.container-fluid, .blog .wrap.container-fluid,,
+body.single.single-post .wrap.container-fluid {
 width: 90%;
 }
 
 .gal-hover {
 position: fixed;
-bottom: 0px;
+bottom: 0px; 
 left: 0;
 right: 0;
 height: 200px;
@@ -1395,7 +1424,8 @@ padding-bottom: 5px;
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-.news .wrap.container-fluid, .blog .wrap.container-fluid {
+.news .wrap.container-fluid, .blog .wrap.container-fluid,
+body.single.single-post .wrap.container-fluid {
 width: 1200px;
 }
 
