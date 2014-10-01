@@ -672,7 +672,7 @@ padding: 0 20px;
 padding-bottom: 100%;
 position: absolute;
 }
-.hover-zone {
+.carousel-bg{
 display: none;
 }
 .flexslider img {
@@ -682,6 +682,11 @@ padding: 10px 10px;
 }
 .flexslider{
    background: transparent;
+}
+.instagram .row.gal-list-bg {
+position: fixed;
+width: 100%;
+z-index: 4;
 }
 /* ==========================================================================
    VIDEO
@@ -1278,8 +1283,11 @@ html[xmlns] .slides {display: block;}
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
 
-@media (max-width:767px) {
-
+@media (max-width:767px) {.row.gal-list-bg {
+position: fixed;
+width: 100%;
+z-index: 4;
+}
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
 body.single.single-post .wrap.container-fluid {
 width: 80%;
