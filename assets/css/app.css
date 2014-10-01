@@ -653,7 +653,10 @@ margin: 0 auto;
 .photo-full-width{
    background: rgba(43, 43, 43, 0.9);
 }
-
+h3.gal-title {
+display: inline-block;
+padding: 0 20px;
+}
 /* ==========================================================================
    VIDEO
    ========================================================================== */
@@ -1409,6 +1412,7 @@ margin-top: 5vh;
 max-width: 978px;
 margin: 0 auto;
 }
+
  }
 
 
