@@ -22,7 +22,7 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      $('.entry-content').children().children('iframe').wrap("<div class='fitvids'></div>");
+     $('.entry-content').find('iframe').wrap("<div class='fitvids'></div>");
       $('.entry-content-asset').fitVids();
       $('.vid-container').fitVids();
        $('.flexslider>ul').addClass('slides');
