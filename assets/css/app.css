@@ -111,9 +111,6 @@ width: 100%!important;
 }
 input#e2ma_signup_submit_button {
 border: transparent;
-margin: 0 auto;
-width: 99%!important;
-background: transparent;
 }
 .sign-up {
 background: url(../img/sign-up.png);
