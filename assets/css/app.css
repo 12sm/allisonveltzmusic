@@ -778,6 +778,10 @@ color: #6F6F6F;
 border: transparent!important;
 color: #6F6F6F!important;
 padding: 2px 15px;
+letter-spacing: 2px;
+width: 100%;
+font-size: 14px;
+font-family: "Roboto Condensed", sans-serif;
 }
 .e2ma_signup_form input[type=text] {
 border-radius: 45px;
