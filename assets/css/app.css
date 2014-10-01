@@ -514,7 +514,9 @@ font-weight: bold;
 transition: background .3s ease;
 text-transform: uppercase;
 }
-
+div#e2ma_signup_form_button_row {
+display: inline-block;
+}
 a.btn.btn-read:hover {background:rgba(255,255,255,1);}
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
