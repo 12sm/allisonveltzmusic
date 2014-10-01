@@ -1375,6 +1375,10 @@ margin: 0 5%;
 #slider.flexslider .slides > li {
 height: 60vh;
 }
+.img-pad {
+padding-bottom: 100%;
+margin-bottom: 30px;
+}
    #lyrics-base {
 display: block;
 background: transparent;
