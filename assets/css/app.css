@@ -713,6 +713,7 @@ font-size: 12px;
 }
 .vid-container {
 margin-bottom: 50px;
+clear: both;
 }
 /* ==========================================================================
    EVENTS
