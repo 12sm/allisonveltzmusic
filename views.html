@@ -99,3 +99,26 @@
 		[wpml-string context="wpv-views"]<strong>No videos found</strong>[/wpml-string]
 	[/wpv-no-items-found]
 [wpv-layout-end]
+
+
+<!-- INSTAGRAM GALLERY <!-->
+<div class="row">
+	<div class="col-sm-12">
+	[wpv-view gallery list]
+	</div>
+</div>
+<script>
+function liquidWrap(){
+        $('.insta-photo').addClass('col-sm-6 col-md-4 col-lg-3');
+        $('.insta-photo > a').wrap('<div class="img-pad"></div>');
+        $('.img-pad').imgLiquid();
+      };
+
+      $('.instagram-grid').embedagram({
+        instagram_id: 179338873,
+        thumb_width: 306,
+        limit: 20,
+        wrap_tag: 'div class=insta-photo',
+        success: liquidWrap
+      });
+</script>
