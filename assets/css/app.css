@@ -1283,6 +1283,7 @@ html[xmlns] .slides {display: block;}
 position: fixed;
 width: 100%;
 z-index: 4;
+top: 97px;
 }
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
 body.single.single-post .wrap.container-fluid {
