@@ -80,7 +80,7 @@ h4{
    font-weight: bold;
 }
 h5.list-title{
-   color: #fff;
+   color: #6F6F6F!important;
    font-size: 18px;
    display: inline-block;
 }
@@ -98,7 +98,7 @@ p{
    color: #13A468;
 }
 div.e2ma_signup_form_label {
-color: #fff;
+color: #6F6F6F!important;
 }
 .e2ma_signup_form_element{
    margin-left: 0px!important;
@@ -778,7 +778,7 @@ border-radius: 45px;
 width: 100%!important;
 background: rgba(36,36,36, .9);
 border: transparent!important;
-color: #fff;
+color: #6F6F6F!important;
 }
 /* ==========================================================================
    Events
