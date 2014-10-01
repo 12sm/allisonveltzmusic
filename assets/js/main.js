@@ -71,7 +71,8 @@ var Roots = {
           $('body').addClass('home');
         } else{
         $('body').addClass(link[1]);
-        $('body').addClass(link[0]);
+        $('body').addClass(link[3]);
+        $('body').addClass(link[4]);
         }
       });
 
