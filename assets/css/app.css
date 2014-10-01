@@ -500,7 +500,7 @@ line-height: 18px;
 margin-top: 5px;
 }
 
-a.btn.btn-read {
+a.btn.btn-read, #e2ma_signup_submit_button{
 position: absolute;
 bottom: -31px;
 right: 5px;
