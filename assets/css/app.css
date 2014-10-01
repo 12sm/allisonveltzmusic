@@ -641,7 +641,7 @@ left: 0;
 padding-top: 0px;
 }
 div#slider {
-width: 60%;
+width: 45%;
 margin: 0 auto;
 }
 
@@ -1373,7 +1373,7 @@ z-index: 2;
 margin: 0 5%;
 }
 #slider.flexslider .slides > li {
-height: 92vh;
+height: 60vh;
 }
    #lyrics-base {
 display: block;
