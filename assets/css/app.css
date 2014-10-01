@@ -393,6 +393,7 @@ width: initial;
 
 ul#menu-social {
 padding:5px;
+text-align: right;
 }
 
 ul#menu-social li {
@@ -770,6 +771,8 @@ text-align: center;
 color: #6F6F6F!important;
 font-size: 16px;
 font-weight: 500;
+margin-top: 10px;
+margin-bottom: 15px;
 }
 .email-signup {
 color: #6F6F6F;
