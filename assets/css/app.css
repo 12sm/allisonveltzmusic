@@ -109,7 +109,7 @@ margin: 0 auto;
 border: transparent!important;
 }
 div.e2ma_signup_form {
-width: 325px;
+width: 475px;
 display: inline-block;
 padding: 0px 50px;
 }
@@ -778,6 +778,7 @@ border-radius: 45px;
 width: 100%!important;
 background: rgba(36,36,36, .9);
 border: transparent!important;
+color: #fff;
 }
 /* ==========================================================================
    Events
