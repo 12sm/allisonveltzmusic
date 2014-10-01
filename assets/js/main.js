@@ -125,7 +125,7 @@ photos: {
         $('.insta-photo > a').wrap('<div class="img-pad"></div>');
         $('.img-pad').imgLiquid();
       };
-
+      if ($(window).width() < 777){
       $('.instagram-grid').embedagram({
         instagram_id: 189755470,
         thumb_width: 306,
@@ -133,6 +133,7 @@ photos: {
         wrap_tag: 'div class=insta-photo',
         success: liquidWrap
       });
+    }
 /*
     $('.gal-hover').mouseenter(function(){
       $('#slider.flexslider .slides > li').animate({height : '66vh'}, 500);
