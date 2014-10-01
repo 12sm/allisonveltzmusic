@@ -109,7 +109,7 @@ margin: 0 auto;
 border: transparent!important;
 }
 div.e2ma_signup_form {
-width: 400px;
+width: 325px;
 display: inline-block;
 padding: 0px 50px;
 }
@@ -773,7 +773,12 @@ font-size: 13px;
 .email-signup {
 color: #6F6F6F;
 }
-
+.e2ma_signup_form input[type=text] {
+border-radius: 45px;
+width: 100%!important;
+background: rgba(36,36,36, .9);
+border: transparent!important;
+}
 /* ==========================================================================
    Events
    ========================================================================== */
