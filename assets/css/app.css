@@ -109,9 +109,8 @@ margin: 0 auto;
 border: transparent!important;
 }
 div.e2ma_signup_form {
-width: 500px;
+width: 100%;
 display: inline-block;
-padding: 0px 50px;
 }
 .e2ma_signup_form_button_row {
  float: none!important;
@@ -1308,6 +1307,10 @@ color: #555;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+   div.e2ma_signup_form {
+padding: 0px 50px;
+width: 500px;
+}
    .floatright{
    float: right;
 }
