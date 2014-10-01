@@ -683,11 +683,6 @@ padding: 10px 10px;
 .flexslider{
    background: transparent;
 }
-.instagram .row.gal-list-bg {
-position: fixed;
-width: 100%;
-z-index: 4;
-}
 /* ==========================================================================
    VIDEO
    ========================================================================== */
@@ -1283,7 +1278,8 @@ html[xmlns] .slides {display: block;}
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
 
-@media (max-width:767px) {.row.gal-list-bg {
+@media (max-width:767px) {
+   .row.gal-list-bg {
 position: fixed;
 width: 100%;
 z-index: 4;
