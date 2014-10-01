@@ -700,7 +700,7 @@ bottom:0;
 padding-top: 5px;
 }
 
-.content-info { }
+.content-info {z-index: 4;}
 
 #social ul {margin:0px; padding:0px; list-style: none;}
 #social li {margin:0px; padding: 0px; list-style:none; display: block; float:left;}
