@@ -8,7 +8,9 @@
    ========================================================================== */
 
 body {}
-
+.floatright{
+   float: right;
+}
 div#e2ma_signup_image_container {
 display: none;
 }
