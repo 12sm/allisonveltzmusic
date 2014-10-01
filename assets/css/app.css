@@ -363,7 +363,7 @@ div#slider, div#carousel{
 body.single.single-post .wrap.container-fluid {
 width: 1170px;
 }
-.photo-galleries .entry-content {
+.photo-galleries div.entry-content {
 width: initial;
 }
 .photos-galleries .content{
