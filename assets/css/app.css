@@ -1405,6 +1405,10 @@ margin-top: 0px;
 .row.about-row {
 margin-top: 5vh;
 }
+.instagram-grid {
+max-width: 978px;
+margin: 0 auto;
+}
  }
 
 
@@ -1439,5 +1443,9 @@ body.single.single-post .wrap.container-fluid {
 width: 1200px;
 }
 
+.instagram-grid {
+max-width: 1170px;
+margin: 0 auto;
+}
 
 }
