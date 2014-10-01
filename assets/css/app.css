@@ -108,8 +108,8 @@ display: inline-block;
 margin: 0 auto;
 border: transparent!important;
 }
-.e2ma_signup_form {
-min-width: 300px;
+div.e2ma_signup_form {
+width: 300px;
 display: inline-block;
 padding: 0px 50px;
 }
