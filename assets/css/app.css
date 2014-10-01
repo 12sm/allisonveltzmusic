@@ -768,7 +768,8 @@ color: #13A468!important;
 .credits, p.credits a, footer p, footer p a, footer a {
 text-align: center;
 color: #6F6F6F!important;
-font-size: 13px;
+font-size: 16px;
+font-weight: 500;
 }
 .email-signup {
 color: #6F6F6F;
