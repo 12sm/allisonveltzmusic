@@ -66,7 +66,7 @@ if ($(window).width() > 767){
       });
       $('.archive-image').imgLiquid();
       //body class update
-      $('a').click(function(){
+      $('a[href!=#]').click(function(){
         link = $(this).attr('href').split('/');
         $('body').removeAttr('class');
 
