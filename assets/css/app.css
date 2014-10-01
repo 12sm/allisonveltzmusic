@@ -1295,6 +1295,8 @@ text-align:center;
 
 header.banner.navbar.navbar-default.navbar-static-top {
 margin-bottom: 20px;
+position: fixed;
+width: 100%;
 }
 
 i.fa.fa-chevron-right.blog-angle {
