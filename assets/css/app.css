@@ -1280,10 +1280,7 @@ html[xmlns] .slides {display: block;}
 /* No media query since this is the default in Bootstrap */
 
 @media (max-width:767px) {
-div#slider {
-width: 45%;
-margin: 0 auto;
-}
+
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
 body.single.single-post .wrap.container-fluid {
 width: 80%;
@@ -1311,6 +1308,10 @@ color: #555;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+   div#slider {
+width: 45%;
+margin: 0 auto;
+}
    .hover-zone {
 display: block;
 }
