@@ -560,6 +560,10 @@ background-color: transparent;
    Music
    ========================================================================== */
 
+.album-image img {
+margin-top: 60px;
+}
+
 .songs-list,
 .songs-list-container {
 padding: 0px!important;
@@ -570,9 +574,8 @@ list-style: none;
 background: rgba(43, 43, 43, 0.9);
 }
 #lyrics-base {
-max-height: 400px;
+max-height: 300px;
 overflow: scroll;
-min-height: 300px;
 }
 .lyrics-container pre {
 display: block;
