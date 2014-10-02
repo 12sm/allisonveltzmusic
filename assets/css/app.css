@@ -115,9 +115,17 @@ color: #6F6F6F!important;
 display: inline-block;
 margin: 0 auto;
 border: transparent!important;
+width:30%;
+}
+form#e2ma_signup {
+width: 100%;
+margin: 0;
+}
+div#e2ma_signup_form_container {
+width: 540px;
 }
 div.e2ma_signup_form {
-width: 100%;
+width: 80%;
 display: inline-block;
 }
 .e2ma_signup_form_button_row {
