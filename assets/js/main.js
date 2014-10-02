@@ -111,7 +111,7 @@ if ($(window).width() > 767){
       $('.vid-container').click(function(){
         alert('vid-container clicked');
         window.audioPause();
-      } 
+      } );
     }
   },
   post_type_archive_video: {
@@ -120,7 +120,7 @@ if ($(window).width() > 767){
       $('.vid-container').click(function(){
         alert('vid-container clicked');
         window.audioPause();
-      } 
+      } );
     }
   },
   // About us page, note the change from about-us to about_us.
