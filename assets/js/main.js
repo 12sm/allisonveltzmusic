@@ -27,7 +27,7 @@ var Roots = {
       function audioPause(){
       $('audio').trigger("pause");
       };
-      player.onPlayerStateChange(1){
+      player.onStateChange(1){
         audioPause();
         alert('video playing1');
       };
