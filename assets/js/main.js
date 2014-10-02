@@ -116,6 +116,7 @@ if ($(window).width() > 767){
   },
   post_type_archive_video: {
     init: function() {
+      alert('yo js is firing');
       // JavaScript to be fired on the home page
       $('.vid-container').click(function(){
         alert('vid-container clicked');
