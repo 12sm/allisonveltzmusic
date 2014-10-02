@@ -27,9 +27,8 @@ var Roots = {
       function audioPause(){
       $('audio').trigger("pause");
       };
-      var tag = document.createElement('script');
 
-      tag.src = "https://www.youtube.com/iframe_api";
+      player = $('#player');
       player.addEventListener('onStateChange', function(e) {
         console.log('State is:', e.data);
     });
