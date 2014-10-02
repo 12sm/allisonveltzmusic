@@ -108,7 +108,10 @@ if ($(window).width() > 767){
   video: {
     init: function() {
       // JavaScript to be fired on the home page
-      $('.vid-container').click(function audioPause());
+      $('.vid-container').click(function(){
+        alert('vid-container clicked');
+        window.audioPause());
+      } 
     }
   },
   // About us page, note the change from about-us to about_us.
