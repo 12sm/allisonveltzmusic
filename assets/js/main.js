@@ -27,12 +27,14 @@ var Roots = {
       function audioPause(){
       $('audio').trigger("pause");
       };
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
       var ytplayer = null;
 
 // event that will be fired when the player is fully loaded
-function onYouTubePlayerReady(pid) {
-   ytplayer = document.getElementById("ytplayer");
-   ytplayer.addEventListener("onStateChange", "onPlayerStateChange");
+function onYouTubePlayerReady(pid){
+   ytplayer = document.getElementById("player");
 }
 
 // event that will be fired when the state of the player changes
