@@ -118,6 +118,7 @@ if ($(window).width() > 767){
     init: function() {
       alert('yo js is firing');
       // JavaScript to be fired on the home page
+      debugger;
       ytplayer = $('#player');
       ytplayer.addEventListener('onStateChange', 'ytcallback');
       function ytcallback(){
