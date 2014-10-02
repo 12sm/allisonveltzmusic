@@ -40,7 +40,7 @@ function onPlayerStateChange(state) {
   // check if it's playing
   if(state == 1) {
     // is playing
-    alert(is playing!);
+    alert('is playing!');
   }
 }
 
