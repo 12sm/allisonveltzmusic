@@ -6,7 +6,7 @@
       </div>
 	  <div class="row footer-nav"> 
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-5 email-signup">
-			  <a href="https://app.e2ma.net/app2/audience/signup/1763819/1738434/?v=a" onclick="window.open('https://app.e2ma.net/app2/audience/signup/1763819/1738434/?v=a', 'signup', 'menubar=no, location=no, toolbar=no, scrollbars=yes, height=580, width=650'); return false;">Join Allison's Exclusive Email List</a>
+			  <a href="https://app.e2ma.net/app2/audience/signup/1763819/1738434/?v=a" onclick="window.open('https://app.e2ma.net/app2/audience/signup/1763819/1738434/?v=a', 'signup', 'menubar=no, location=no, toolbar=no, scrollbars=yes, height=580, width=650'); return false;">Join Allison's Email List</a>
 			</div>
 			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-4"> 
 				<?php

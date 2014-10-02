@@ -1246,6 +1246,10 @@ footer {position:inherit;}
 color: #555;
 }
 
+.tribe-events-list-separator-month span {
+background-color: #eee;
+}
+
 }
 
 /* Small devices (tablets, 768px and up) */
