@@ -1294,7 +1294,12 @@ html[xmlns] .slides {display: block;}
 /* No media query since this is the default in Bootstrap */
 
 @media (max-width:767px) {
-   .row.gal-list-bg {
+
+#lyrics-base {
+height: auto;
+overflow: scroll;
+}
+.row.gal-list-bg {
 position: fixed;
 width: 100%;
 z-index: 4;
