@@ -28,11 +28,6 @@ var Roots = {
       $('audio').trigger("pause");
       };
 
-      player = $('#player');
-      player.addEventListener('onStateChange', function(e) {
-        console.log('State is:', e.data);
-    });
-
      $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
       $('.entry-content-asset').fitVids();
       $('.vid-container').fitVids();
