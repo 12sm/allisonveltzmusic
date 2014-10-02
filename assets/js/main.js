@@ -108,7 +108,7 @@ if ($(window).width() > 767){
   video: {
     init: function() {
       // JavaScript to be fired on the home page
-      $('iframe').click(function(){
+      $('.vid-container').mousedown(function(){
         alert('vid-container clicked');
         window.audioPause();
       } );
