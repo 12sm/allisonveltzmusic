@@ -120,7 +120,7 @@ if ($(window).width() > 767){
       // JavaScript to be fired on the home page
       debugger;
       ytplayer = $('#player');
-      ytplayer.addEventListener('window.onStateChange', 'ytcallback');
+      ytplayer.window.addEventListener('onStateChange', 'ytcallback');
       function ytcallback(){
         alert('vid-container clicked');
         window.audioPause();
