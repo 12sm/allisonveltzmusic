@@ -22,6 +22,16 @@ var Roots = {
   // All pages
   common: {
     init: function() {
+
+      //Audio auto pause scripts
+      function audioPause(){
+      $('audio').trigger("pause");
+      }
+      player.onPlayerStateChange(1){
+        audioPause();
+        alert('video playing1');
+      }
+
      $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
       $('.entry-content-asset').fitVids();
       $('.vid-container').fitVids();
