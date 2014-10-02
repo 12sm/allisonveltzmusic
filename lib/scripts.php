@@ -28,6 +28,7 @@ function roots_scripts() {
     wp_enqueue_script('comment-reply');
   }
 
+  wp_register_script('youtube', "https://www.youtube.com/iframe_api", array(), null, false);
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.7.0.min.js', array(), null, false);
   wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '01d073428e4e54f227f8a0a3bad4b804', false);
   wp_register_script('roots_activate', get_template_directory_uri() . '/assets/js/main.js', false, null, false);
@@ -38,6 +39,7 @@ function roots_scripts() {
   wp_enqueue_script('roots_scripts');
   wp_enqueue_script('roots_activate');
   wp_enqueue_script('audiojs');
+  wp_enqueue_script('youtube');
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);
 

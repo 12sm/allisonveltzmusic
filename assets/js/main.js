@@ -30,21 +30,9 @@ var Roots = {
       var tag = document.createElement('script');
 
       tag.src = "https://www.youtube.com/iframe_api";
-      var ytplayer = null;
-
-// event that will be fired when the player is fully loaded
-function onYouTubePlayerReady(pid){
-   ytplayer = document.getElementById("player");
-}
-
-// event that will be fired when the state of the player changes
-function onPlayerStateChange(state) {
-  // check if it's playing
-  if(state == 1) {
-    // is playing
-    alert('is playing!');
-  }
-}
+      player.addEventListener('onStateChange', function(e) {
+        console.log('State is:', e.data);
+    });
 
      $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
       $('.entry-content-asset').fitVids();
