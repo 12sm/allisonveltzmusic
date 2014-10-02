@@ -110,7 +110,16 @@ if ($(window).width() > 767){
       // JavaScript to be fired on the home page
       $('.vid-container').click(function(){
         alert('vid-container clicked');
-        window.audioPause());
+        window.audioPause();
+      } 
+    }
+  },
+  post_type_archive_video: {
+    init: function() {
+      // JavaScript to be fired on the home page
+      $('.vid-container').click(function(){
+        alert('vid-container clicked');
+        window.audioPause();
       } 
     }
   },
