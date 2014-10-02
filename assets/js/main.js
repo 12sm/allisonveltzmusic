@@ -119,7 +119,7 @@ if ($(window).width() > 767){
       alert('yo js is firing');
       // JavaScript to be fired on the home page
       debugger;
-      ytplayer = $('#player');
+      ytplayer = $('iframe');
       ytplayer.window.addEventListener('onStateChange', 'ytcallback');
       function ytcallback(){
         alert('vid-container clicked');
