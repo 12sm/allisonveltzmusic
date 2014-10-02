@@ -5,10 +5,12 @@
       	<?php dynamic_sidebar('sidebar-footer'); ?>
       </div>
 	  <div class="row footer-nav"> 
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-5 email-signup">
-			  <a href="https://app.e2ma.net/app2/audience/signup/1763819/1738434/?v=a" onclick="window.open('https://app.e2ma.net/app2/audience/signup/1763819/1738434/?v=a', 'signup', 'menubar=no, location=no, toolbar=no, scrollbars=yes, height=580, width=650'); return false;">Join Allison's Email List</a>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-6 email-signup">
+				<div class="floatright">
+			  <h5 class='list-title'>Join Allison's Email List</h5><link href="https://app.e2ma.net/css/signup.sml.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="https://app.e2ma.net/app2/audience/tts_signup/1763819/55ccffe82334411b90c492e32a9982ae/1738434/?v=a"></script><div id="load_check" class="signup_form_message" >This form needs Javascript to display, which your browser doesn't support. <a href="https://app.e2ma.net/app2/audience/signup/1763819/1738434/?v=a"> Sign up here</a> instead </div><script type="text/javascript">signupFormObj.drawForm();</script>
+				</div>
 			</div>
-			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-4"> 
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-3"> 
 				<?php
 			 if (has_nav_menu('footer_navigation')) :
 			   wp_nav_menu(array('theme_location' => 'footer_navigation', 'menu_class' => ''));

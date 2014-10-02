@@ -7,8 +7,16 @@
    Base
    ========================================================================== */
 
-body { }
-
+body {}
+/*Spinner CSS*/
+center {
+position: absolute;
+top: 50%;
+bottom: 50%;
+left: 50%;
+right: 50%;
+}
+/* /Spinner CSS*/
 div#e2ma_signup_image_container {
 display: none;
 }
@@ -79,6 +87,11 @@ h4{
    color: #fff;
    font-weight: bold;
 }
+h5.list-title{
+   color: #6F6F6F!important;
+   font-size: 14px;
+   display: inline-block;
+}
 p{
    font-size: 16px;
    color: #fff;
@@ -92,28 +105,26 @@ p{
    font-size: 21px;
    color: #13A468;
 }
-.e2ma_signup_form_label {
-display: none;
+div.e2ma_signup_form_label {
+color: #6F6F6F!important;
 }
 .e2ma_signup_form_element{
    margin-left: 0px!important;
 }
 .e2ma_signup_form_row {
-width: 70%;
+display: inline-block;
 margin: 0 auto;
 border: transparent!important;
 }
-.e2ma_signup_form {
-width: 100%!important;
+div.e2ma_signup_form {
+width: 100%;
+display: inline-block;
 }
 .e2ma_signup_form_button_row {
  float: none!important;
 }
 input#e2ma_signup_submit_button {
 border: transparent;
-margin: 0 auto;
-width: 99%!important;
-background: transparent;
 }
 .sign-up {
 background: url(../img/sign-up.png);
@@ -197,7 +208,10 @@ transition:  color .3s ease;
 .navbar-nav li a:hover {
 color: #FFF!important;
 }
-
+.post img {
+max-width: 100%;
+height: auto;
+}
 
 /* ==========================================================================
    Header
@@ -355,12 +369,21 @@ padding: 0;
 }
 div#slider, div#carousel{
    border: transparent;
+   background: transparent;
 }
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
 body.single.single-post .wrap.container-fluid {
 width: 1170px;
 }
-
+.photo-galleries div.entry-content {
+width: initial;
+}
+.photo-galleries .content{
+   padding-top: 0px;
+}
+#slider ul {
+padding: 0px;
+}
 /* ==========================================================================
    Sidebar
    ========================================================================== */
@@ -381,6 +404,9 @@ width: 1170px;
 
 ul#menu-social {
 padding:5px;
+text-align: right;
+margin-bottom: 0px;
+margin-top: 10px;
 }
 
 ul#menu-social li {
@@ -492,10 +518,13 @@ line-height: 18px;
 margin-top: 5px;
 }
 
-a.btn.btn-read {
+a.btn.btn-read{
 position: absolute;
 bottom: -31px;
 right: 5px;
+}
+
+a.btn.btn-read{
 background: rgba(255,255,255,.85);
 color: #3A3A3A!important;
 right: 10px;
@@ -504,8 +533,11 @@ padding: 5px 5px 3px 5px;
 font-size: 12px;
 font-weight: bold;
 transition: background .3s ease;
+text-transform: uppercase;
 }
-
+div#e2ma_signup_form_button_row {
+display: inline-block;
+}
 a.btn.btn-read:hover {background:rgba(255,255,255,1);}
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -637,15 +669,28 @@ left: 0;
 .photos .content.row, .single-photo-galleries .content.row {
 padding-top: 0px;
 }
-div#slider {
-width: 60%;
-margin: 0 auto;
-}
-
 .photo-full-width{
    background: rgba(43, 43, 43, 0.9);
 }
-
+h3.gal-title {
+display: inline-block;
+padding: 0 20px;
+}
+.img-pad a {
+padding-bottom: 100%;
+position: absolute;
+}
+.carousel-bg{
+display: none;
+}
+.flexslider img {
+height: auto;
+width: 100%;
+padding: 10px 10px;
+}
+.flexslider{
+   background: transparent;
+}
 /* ==========================================================================
    VIDEO
    ========================================================================== */
@@ -674,6 +719,7 @@ font-size: 12px;
 }
 .vid-container {
 margin-bottom: 50px;
+clear: both;
 }
 /* ==========================================================================
    EVENTS
@@ -697,7 +743,7 @@ bottom:0;
 padding-top: 5px;
 }
 
-.content-info { }
+.content-info {z-index: 4;}
 
 #social ul {margin:0px; padding:0px; list-style: none;}
 #social li {margin:0px; padding: 0px; list-style:none; display: block; float:left;}
@@ -743,12 +789,31 @@ color: #13A468!important;
 .credits, p.credits a, footer p, footer p a, footer a {
 text-align: center;
 color: #6F6F6F!important;
-font-size: 13px;
+font-size: 16px;
+font-weight: 500;
+margin-top: 20px;
+margin-bottom: 5px;
 }
 .email-signup {
 color: #6F6F6F;
 }
-
+#e2ma_signup_submit_button{
+   background: rgba(36,36,36, .9);
+border: transparent!important;
+color: #6F6F6F!important;
+padding: 2px 15px;
+letter-spacing: 2px;
+width: 85px!important;
+font-size: 14px;
+font-family: "Roboto Condensed", sans-serif;
+}
+.e2ma_signup_form input[type=text] {
+border-radius: 45px;
+width: 100%!important;
+background: rgba(36,36,36, .9);
+border: transparent!important;
+color: #6F6F6F!important;
+}
 /* ==========================================================================
    Events
    ========================================================================== */
@@ -1222,7 +1287,12 @@ html[xmlns] .slides {display: block;}
 /* No media query since this is the default in Bootstrap */
 
 @media (max-width:767px) {
-
+   .row.gal-list-bg {
+position: fixed;
+width: 100%;
+z-index: 4;
+top: 97px;
+}
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
 body.single.single-post .wrap.container-fluid {
 width: 80%;
@@ -1234,6 +1304,8 @@ text-align:center;
 
 header.banner.navbar.navbar-default.navbar-static-top {
 margin-bottom: 20px;
+position: fixed;
+width: 100%;
 }
 
 i.fa.fa-chevron-right.blog-angle {
@@ -1254,6 +1326,20 @@ background-color: #eee;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+   div.e2ma_signup_form {
+padding: 0px 50px;
+width: 500px;
+}
+   .floatright{
+   float: right;
+}
+   div#slider {
+width: 45%;
+margin: 0 auto;
+}
+.carousel-bg {
+display: block;
+}
 
 .hentry .entry-content {
 width: 750px;
@@ -1331,7 +1417,7 @@ margin-bottom: 75px;
 }
 .content {
 padding-top: 70px;
-padding-bottom: 50px;
+padding-bottom: 55px;
 }
 .music.type-music {
 padding-top: 15vh;
@@ -1341,6 +1427,7 @@ margin-top: 0px;
 }
 .video-container {
 margin: 0 -15px;
+margin-bottom: 25px;
 }
  }
 
@@ -1373,7 +1460,11 @@ z-index: 2;
 margin: 0 5%;
 }
 #slider.flexslider .slides > li {
-height: 92vh;
+height: 60vh;
+}
+.img-pad {
+padding-bottom: 100%;
+margin-bottom: 30px;
 }
    #lyrics-base {
 display: block;
@@ -1396,6 +1487,11 @@ margin-top: 0px;
 .row.about-row {
 margin-top: 5vh;
 }
+.instagram-grid {
+max-width: 978px;
+margin: 0 auto;
+}
+
  }
 
 
@@ -1430,5 +1526,9 @@ body.single.single-post .wrap.container-fluid {
 width: 1200px;
 }
 
+.instagram-grid {
+max-width: 1170px;
+margin: 0 auto;
+}
 
 }

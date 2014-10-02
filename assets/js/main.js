@@ -22,7 +22,11 @@ var Roots = {
   // All pages
   common: {
     init: function() {
+     $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
+      $('.entry-content-asset').fitVids();
       $('.vid-container').fitVids();
+       
+if ($(window).width() > 767){
        $('.flexslider>ul').addClass('slides');
         $('#slider>ul>li').imgLiquid({verticalAlign: '15%'});
         var gallery = $('#slider').find('.slides').clone();
@@ -47,6 +51,7 @@ var Roots = {
         });
 
       $('#carousel>div>ul>li').imgLiquid({verticalAlign: 'top'});
+}
 
       $('.fancyvid').fancybox({
             'autoSize'      : false,
@@ -61,7 +66,7 @@ var Roots = {
       });
       $('.archive-image').imgLiquid();
       //body class update
-      function bodyClassChange(){
+      $('a[href!=#]').click(function(){
         link = $(this).attr('href').split('/');
         $('body').removeAttr('class');
 
@@ -70,12 +75,10 @@ var Roots = {
         } else{
         $('body').addClass(link[1]);
         $('body').addClass(link[3]);
+        $('body').addClass(link[4]);
         }
-      };
-
-      $('a').click(function(){
-        bodyClassChange();
       });
+
 
       $.backstretch('/wp-content/themes/allisonveltzmusic/assets/img/bg2.jpg', {centeredY:false});
     }
@@ -101,8 +104,38 @@ var Roots = {
       // JavaScript to be fired on the about us page
     }
   },
+  instagram: {
+  init: function(){
+    function liquidWrap(){
+        $('.insta-photo').addClass('col-sm-6 col-md-4 col-lg-3');
+        $('.insta-photo > a').wrap('<div class="img-pad"></div>');
+        $('.img-pad').imgLiquid();
+      };
+
+      $('.instagram-grid').embedagram({
+        instagram_id: 189755470,
+        thumb_width: 306,
+        limit: 20,
+        wrap_tag: 'div class=insta-photo',
+        success: liquidWrap
+      });
+    }
+  },
 photos: {
   init: function(){
+    function liquidWrap(){
+        $('.insta-photo').addClass('col-sm-6 col-md-4 col-lg-3');
+        $('.insta-photo > a').wrap('<div class="img-pad"></div>');
+        $('.img-pad').imgLiquid();
+      };
+      
+      $('.instagram-grid').embedagram({
+        instagram_id: 189755470,
+        thumb_width: 306,
+        limit: 20,
+        wrap_tag: 'div class=insta-photo',
+        success: liquidWrap
+      });
 /*
     $('.gal-hover').mouseenter(function(){
       $('#slider.flexslider .slides > li').animate({height : '66vh'}, 500);
