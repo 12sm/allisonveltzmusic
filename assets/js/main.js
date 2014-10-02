@@ -118,10 +118,12 @@ if ($(window).width() > 767){
     init: function() {
       alert('yo js is firing');
       // JavaScript to be fired on the home page
-      $('iframe').click(function(){
+      ytplayer = $('#player');
+      ytplayer.addEventListener('onStateChange', 'ytcallback');
+      function ytcallback(){
         alert('vid-container clicked');
         window.audioPause();
-      } );
+      };
     }
   },
   // About us page, note the change from about-us to about_us.
