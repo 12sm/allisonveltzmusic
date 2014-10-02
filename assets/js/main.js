@@ -27,10 +27,22 @@ var Roots = {
       function audioPause(){
       $('audio').trigger("pause");
       };
-      player.onStateChange(1){
-        audioPause();
-        alert('video playing1');
-      };
+      var ytplayer = null;
+
+// event that will be fired when the player is fully loaded
+function onYouTubePlayerReady(pid) {
+   ytplayer = document.getElementById("ytplayer");
+   ytplayer.addEventListener("onStateChange", "onPlayerStateChange");
+}
+
+// event that will be fired when the state of the player changes
+function onPlayerStateChange(state) {
+  // check if it's playing
+  if(state == 1) {
+    // is playing
+    alert(is playing!);
+  }
+}
 
      $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
       $('.entry-content-asset').fitVids();
