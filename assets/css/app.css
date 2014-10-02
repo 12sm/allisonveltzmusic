@@ -1298,6 +1298,7 @@ html[xmlns] .slides {display: block;}
 #lyrics-base {
 height: auto;
 overflow: scroll;
+max-height:none;
 }
 .row.gal-list-bg {
 position: fixed;
