@@ -74,7 +74,7 @@ if ($(window).width() > 767){
       });
       $('.archive-image').imgLiquid();
       //body class update
-      $('a[href!=#]').not('[href$="mp3"]').click(function(){
+      $('a[href!=#]:not("[href$='mp3']")').not.click(function(){
         link = $(this).attr('href').split('/');
         $('body').removeAttr('class');
 
