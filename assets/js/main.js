@@ -175,7 +175,7 @@ photos: {
 
  single_music: {
     init: function(){
-      $('.play-pause').click(function(){
+      $('.play-pause>.play').click(function(){
   inlinePlayer.stopSound(inlinePlayer.lastSound);
 });
 $('.sm2_link').click(audioPause);
@@ -229,9 +229,11 @@ soundManager.setup({
   },
   music: {
     init: function(){
-$('.play-pause').click(function(){
+
+$('.play-pause>.play').click(function(){
   inlinePlayer.stopSound(inlinePlayer.lastSound);
 });
+
 soundManager.setup({
   // disable or enable debug output
   debugMode: true,
@@ -282,8 +284,8 @@ soundManager.setup({
   },
   post_type_archive_music : {
     init: function(){
-  $('.play-pause').click(function(){
-    inlinePlayer.stopSound(inlinePlayer.lastSound);
+  $('.play-pause>.play').click(function(){
+  inlinePlayer.stopSound(inlinePlayer.lastSound);
   });
 
 soundManager.setup({
