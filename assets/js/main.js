@@ -199,6 +199,7 @@ soundManager.setup({
         $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
+            window.audioPause();
             var lyrics = $(this).find('.lyric-output').clone();
 
             if (lyrics.length) {
@@ -226,11 +227,6 @@ soundManager.setup({
   },
   music: {
     init: function(){
-      debugger;
-      $('.sm2_link').click(function(){
-        window.audioPause();
-        alert('click');
-      });
 
 soundManager.setup({
   // disable or enable debug output
@@ -254,6 +250,7 @@ soundManager.setup({
         $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
+            window.audioPause();
             var lyrics = $(this).find('.lyric-output').clone();
 
             if (lyrics.length) {
