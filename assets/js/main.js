@@ -117,7 +117,7 @@ if ($(window).width() > 767){
   post_type_archive_video: {
     init: function() {
       // JavaScript to be fired on the home page
-      };
+
     }
   },
   // About us page, note the change from about-us to about_us.
