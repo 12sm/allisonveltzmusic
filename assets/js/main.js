@@ -303,7 +303,10 @@ soundManager.setup({
 
         $('.play').on('click', function(e){
             var lyrics = $(this).find('.lyric-output').clone();
-
+            //stop Audiojs
+            $('audio').trigger("pause");
+            $('.audiojs').removeClass('playing');
+            
             if (lyrics.length) {
                 $("#lyrics-base").html(lyrics).parent().removeClass("closed");
                 $("#lyrics-base").children().removeClass("hide");
