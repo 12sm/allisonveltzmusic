@@ -71,6 +71,15 @@ function my_post_gallery($output, $attr) {
     return $output;
 }
 
+//For Video BGs
+add_shortcode('video-id', 'parse_Id');
+function parse_Id($atts){
+  $defaults_array = array('url' => null);
+  shortcode_atts( $defaults_array, $atts );
+  $link = $atts['url'];
+  preg_match("#(?<=v=)[a-zA-Z0-9-]+(?=&)|(?<=v\/)[^&\n]+(?=\?)|(?<=v=)[^&\n]+|(?<=youtu.be/)[^&\n]+#", $link, $matches);
+  return "{$matches[0]}";
+  }
 
 define( 'UPLOADS', ''.'assets' );
 
