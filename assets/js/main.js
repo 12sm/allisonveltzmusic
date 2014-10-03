@@ -22,7 +22,7 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-
+      soundManager.stop();
       //Audio auto pause scripts
       function audioPause(){
       $('audio').trigger("pause");
@@ -306,7 +306,7 @@ soundManager.setup({
             //stop Audiojs
             $('audio').trigger("pause");
             $('.audiojs').removeClass('playing');
-            
+
             if (lyrics.length) {
                 $("#lyrics-base").html(lyrics).parent().removeClass("closed");
                 $("#lyrics-base").children().removeClass("hide");
