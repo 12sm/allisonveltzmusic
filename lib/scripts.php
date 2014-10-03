@@ -37,7 +37,6 @@ function roots_scripts() {
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_scripts');
-   wp_enqueue_script('youtube');
   wp_enqueue_script('roots_activate');
   wp_enqueue_script('audiojs');
 
