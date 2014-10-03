@@ -22,7 +22,7 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      debugger;
+
       //Audio auto pause scripts
       function audioPause(){
       $('audio').trigger("pause");
