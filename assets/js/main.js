@@ -228,7 +228,7 @@ soundManager.setup({
   music: {
     init: function(){
       debugger;
-      $('.sm2_link').click(audioPause);
+      $('.sm2_link').click(function(){audioPause();});
 
 soundManager.setup({
   // disable or enable debug output
