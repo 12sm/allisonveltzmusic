@@ -28,7 +28,6 @@ var Roots = {
       $('audio').trigger("pause");
       $('.audiojs').removeClass('playing');
       };
-
      $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
       $('.entry-content-asset').fitVids();
       $('.vid-container').fitVids();
@@ -176,7 +175,7 @@ photos: {
  single_music: {
     init: function(){
 
-
+$('.sm2_link').click(audioPause);
 soundManager.setup({
   // disable or enable debug output
   debugMode: true,
@@ -226,7 +225,7 @@ soundManager.setup({
   },
   music: {
     init: function(){
-
+      $('.sm2_link').click(audioPause);
 
 soundManager.setup({
   // disable or enable debug output
