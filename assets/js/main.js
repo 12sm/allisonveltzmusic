@@ -60,14 +60,6 @@ if ($(window).width() > 767){
 
       $('#carousel>div>ul>li').imgLiquid({verticalAlign: 'top'});
 }
-
-      $('.fancyvid').fancybox({
-            'autoSize'      : false,
-            'width'         : "80%",
-            'height'        : "80%",
-            'type'          : 'iframe',
-            'aspectRatio'   : true
-      });
       // JavaScript to be fired on all pages
       $('.navbar-nav>li>a').click(function(){
         $('.navbar-collapse').collapse('hide');
@@ -117,11 +109,6 @@ if ($(window).width() > 767){
   post_type_archive_video: {
     init: function() {
       // JavaScript to be fired on the home page
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     }
   },
   // About us page, note the change from about-us to about_us.
