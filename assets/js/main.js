@@ -75,7 +75,6 @@ if ($(window).width() > 767){
       $('.archive-image').imgLiquid();
       //body class update
       $("a:not([href$='mp3'], [href='#'])").click(function(){
-        alert('wrong');
         link = $(this).attr('href').split('/');
         $('body').removeAttr('class');
 
@@ -111,7 +110,6 @@ if ($(window).width() > 767){
     init: function() {
       // JavaScript to be fired on the home page
       $('.vid-container').mousedown(function(){
-        alert('vid-container clicked');
         window.audioPause();
       } );
     }
@@ -229,7 +227,10 @@ soundManager.setup({
   music: {
     init: function(){
       debugger;
-      $('.sm2_link').click(function(){window.audioPause();});
+      $('.sm2_link').click(function(){
+        window.audioPause();
+        alert('click');
+      });
 
 soundManager.setup({
   // disable or enable debug output
