@@ -117,11 +117,6 @@ if ($(window).width() > 767){
   post_type_archive_video: {
     init: function() {
       // JavaScript to be fired on the home page
-      ytplayer = $('iframe');
-      ytplayer.addEventListener('onStateChange', 'ytcallback');
-      function ytcallback(){
-        alert('vid-container clicked');
-        window.audioPause();
       };
     }
   },
