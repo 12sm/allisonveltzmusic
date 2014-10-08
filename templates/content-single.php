@@ -6,8 +6,11 @@
     </div>
     <footer>
     </footer>
-	<div class="col black-bg post-comments-wrapper">
+	<div class="row">
+	<div class="black-bg post-comments-wrapper col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
     <?php comments_template('/templates/comments.php'); ?>
+	</div>
+	</div>
   </article>
-  </div>
+  
 <?php endwhile; ?>
