@@ -6,6 +6,8 @@
     </div>
     <footer>
     </footer>
+	<div class="col black-bg">
     <?php comments_template('/templates/comments.php'); ?>
   </article>
+  </div>
 <?php endwhile; ?>
