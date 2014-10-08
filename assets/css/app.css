@@ -479,6 +479,19 @@ margin-top: 40px;
 margin-bottom: 30px;
 }
 
+.black-bg {
+background: rgba(82, 82, 82, 0.9);
+padding-top: 15px;
+}
+
+body.single-post img.alignright {
+margin-left: 20px;
+}
+
+body.single-post img.alignleft {
+margin-right: 20px;
+}
+
 /* ==========================================================================
    HOME
    ========================================================================== */
