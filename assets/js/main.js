@@ -272,6 +272,10 @@ soundManager.setup({
   post_type_archive_music: {
     init: function(){
     debugger;
+     $('.play-pause>.play').click(function(){
+          debugger;
+          window.inlinePlayer.stopSound(inlinePlayer.lastSound);
+          });
 
 soundManager.setup({
   // disable or enable debug output
@@ -320,10 +324,7 @@ soundManager.setup({
             }
         });
 
-        $('.play-pause>.play').click(function(){
-          debugger;
-          window.inlinePlayer.stopSound(inlinePlayer.lastSound);
-          });
+       
 
     }
   }
