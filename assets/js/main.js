@@ -272,10 +272,7 @@ soundManager.setup({
   post_type_archive_music: {
     init: function(){
     debugger;
-     $('.play-pause>.play').click(function(){
-          debugger;
-          window.inlinePlayer.stopSound(inlinePlayer.lastSound);
-          });
+
 
 soundManager.setup({
   // disable or enable debug output
@@ -292,6 +289,10 @@ soundManager.setup({
       soundManager.onready(function() {
     // soundManager.createSound() etc. may now be called
     inlinePlayer = new InlinePlayer();
+    //pause functionality
+    $('.play-pause>.play').click(function(){
+    window.inlinePlayer.stopSound(inlinePlayer.lastSound);
+    });
   });
       /** Lyrics display **/
       /** Load first lyric **/
