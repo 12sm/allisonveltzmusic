@@ -663,6 +663,7 @@ background: rgb(65,65,65);
 }
 .lyric-output p {
 line-height: 1;
+white-space: pre-line;
 }
 /* ==========================================================================
    About
