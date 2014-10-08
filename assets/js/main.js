@@ -163,7 +163,7 @@ photos: {
  single_music: {
     init: function(){
       $('.play-pause>.play').click(function(){
-  inlinePlayer.stopSound(inlinePlayer.lastSound);
+  window.inlinePlayer.stopSound(inlinePlayer.lastSound);
 });
 $('.sm2_link').click(audioPause);
 soundManager.setup({
@@ -218,7 +218,7 @@ soundManager.setup({
     init: function(){
 
 $('.play-pause>.play').click(function(){
-  inlinePlayer.stopSound(inlinePlayer.lastSound);
+  window.inlinePlayer.stopSound(inlinePlayer.lastSound);
 });
 
 soundManager.setup({
@@ -272,7 +272,7 @@ soundManager.setup({
   post_type_archive_music : {
     init: function(){
   $('.play-pause>.play').click(function(){
-  inlinePlayer.stopSound(inlinePlayer.lastSound);
+  window.inlinePlayer.stopSound(inlinePlayer.lastSound);
   });
 
 soundManager.setup({
