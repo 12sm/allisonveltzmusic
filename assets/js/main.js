@@ -218,7 +218,6 @@ soundManager.setup({
     init: function(){
 
 $('.play-pause>.play').click(function(){
-  debugger;
   window.inlinePlayer.stopSound(inlinePlayer.lastSound);
 });
 
@@ -270,9 +269,10 @@ soundManager.setup({
 
     }
   },
-  post_type_archive_music : {
+  post_type_archive_music: {
     init: function(){
   $('.play-pause>.play').click(function(){
+    debugger;
   window.inlinePlayer.stopSound(inlinePlayer.lastSound);
   });
 
