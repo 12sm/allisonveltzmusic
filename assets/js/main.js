@@ -181,6 +181,10 @@ soundManager.setup({
       soundManager.onready(function() {
     // soundManager.createSound() etc. may now be called
     inlinePlayer = new InlinePlayer();
+
+    $('.play-pause>.play').click(function(){
+    window.inlinePlayer.stopSound(inlinePlayer.lastSound);
+    });
   });
       /** Lyrics display **/
       /** Load first lyric **/
@@ -236,6 +240,10 @@ soundManager.setup({
       soundManager.onready(function() {
     // soundManager.createSound() etc. may now be called
     inlinePlayer = new InlinePlayer();
+
+    $('.play-pause>.play').click(function(){
+    window.inlinePlayer.stopSound(inlinePlayer.lastSound);
+    });
   });
       /** Lyrics display **/
       /** Load first lyric **/
@@ -271,10 +279,7 @@ soundManager.setup({
   },
   post_type_archive_music: {
     init: function(){
-    debugger;
-
-
-soundManager.setup({
+  soundManager.setup({
   // disable or enable debug output
   debugMode: true,
   // use HTML5 audio for MP3/MP4, if available
