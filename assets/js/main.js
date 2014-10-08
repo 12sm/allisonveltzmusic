@@ -218,6 +218,7 @@ soundManager.setup({
     init: function(){
 
 $('.play-pause>.play').click(function(){
+  debugger;
   window.inlinePlayer.stopSound(inlinePlayer.lastSound);
 });
 
