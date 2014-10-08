@@ -447,10 +447,6 @@ width: 100%;
 padding-bottom: 30%;
 }
 
-.archive-image {
-margin-bottom: 50px;
-}
-
 a.btn.read-more {
 background: rgba(255,255,255,.85);
 color: #555!important;
@@ -1401,9 +1397,6 @@ padding: 0px 5px;
 .video-container {
 margin: 0 -5px;
 }
-   .blog-title{
-      text-align: center;
-   }
    .about .content p{
       line-height: 1.4;
    }
