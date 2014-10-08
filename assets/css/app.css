@@ -447,6 +447,10 @@ width: 100%;
 padding-bottom: 30%;
 }
 
+.archive-image {
+margin-bottom: 50px;
+}
+
 a.btn.read-more {
 background: rgba(255,255,255,.85);
 color: #555!important;
@@ -471,6 +475,12 @@ margin-bottom: 0;
 
 p.meta {
 color: #929292;
+}
+
+.blog-title {
+text-align: left;
+margin-top: 40px;
+margin-bottom: 30px;
 }
 
 /* ==========================================================================
