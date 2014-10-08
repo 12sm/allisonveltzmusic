@@ -6,7 +6,7 @@
     </div>
     <footer>
     </footer>
-	<div class="col black-bg">
+	<div class="col black-bg post-comments-wrapper">
     <?php comments_template('/templates/comments.php'); ?>
   </article>
   </div>
