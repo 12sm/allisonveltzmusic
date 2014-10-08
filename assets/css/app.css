@@ -500,7 +500,7 @@ display: inline-block;
 margin-bottom: 50px;
 }
 
-.post-comments-wrapper {padding:15px;}
+.post-comments-wrapper {padding:15px;margin-top:60px;}
 
 /* ==========================================================================
    HOME
