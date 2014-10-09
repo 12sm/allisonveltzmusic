@@ -253,7 +253,8 @@ photos: {
   },
   post_type_archive_music: {
     init: function(){
-
+      $('.menu-news').removeClass('active');
+      $('.menu-music').addClass('active');
       /** Lyrics display **/
       /** Load first lyric **/
         var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
