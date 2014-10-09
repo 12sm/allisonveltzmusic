@@ -1387,7 +1387,7 @@ background-color: #eee;
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
    div.e2ma_signup_form {
-padding: 0px 50px;
+padding: 0px 10px;
 width: 500px;
 }
    .floatright{
@@ -1494,6 +1494,9 @@ margin-bottom: 25px;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+   div.e2ma_signup_form {
+padding: 0px 50px;
+}
 .email-signup .floatright{
    float: right;
 }
