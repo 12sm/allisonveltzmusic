@@ -162,11 +162,7 @@ photos: {
 
  single_music: {
     init: function(){
-      $('.play-pause>.play').click(function(){
-  window.inlinePlayer.stopSound(inlinePlayer.lastSound);
-});
-$('.sm2_link').click(audioPause);
-soundManager.setup({
+      soundManager.setup({
   // disable or enable debug output
   debugMode: true,
   // use HTML5 audio for MP3/MP4, if available
@@ -181,7 +177,7 @@ soundManager.setup({
       soundManager.onready(function() {
     // soundManager.createSound() etc. may now be called
     inlinePlayer = new InlinePlayer();
-
+    //pause functionality
     $('.play-pause>.play').click(function(){
     window.inlinePlayer.stopSound(inlinePlayer.lastSound);
     });
@@ -192,8 +188,10 @@ soundManager.setup({
         $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
-            window.audioPause();
             var lyrics = $(this).find('.lyric-output').clone();
+            //stop Audiojs
+            $('audio').trigger("pause");
+            $('.audiojs').removeClass('playing');
 
             if (lyrics.length) {
                 $("#lyrics-base").html(lyrics).parent().removeClass("closed");
@@ -215,6 +213,7 @@ soundManager.setup({
             }
         });
 
+       
 
     }
   },
@@ -273,8 +272,6 @@ soundManager.setup({
         });
 
        
-
-    }
 
     }
   },
