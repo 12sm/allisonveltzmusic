@@ -121,9 +121,7 @@ form#e2ma_signup {
 width: 100%;
 margin: 0;
 }
-div#e2ma_signup_form_container {
-width: 540px;
-}
+
 div.e2ma_signup_form {
 width: 80%;
 display: inline-block;
