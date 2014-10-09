@@ -221,10 +221,6 @@ soundManager.setup({
   music: {
     init: function(){
 
-$('.play-pause>.play').click(function(){
-  window.inlinePlayer.stopSound(inlinePlayer.lastSound);
-});
-
 soundManager.setup({
   // disable or enable debug output
   debugMode: true,
@@ -240,7 +236,7 @@ soundManager.setup({
       soundManager.onready(function() {
     // soundManager.createSound() etc. may now be called
     inlinePlayer = new InlinePlayer();
-
+    //pause functionality
     $('.play-pause>.play').click(function(){
     window.inlinePlayer.stopSound(inlinePlayer.lastSound);
     });
@@ -251,8 +247,10 @@ soundManager.setup({
         $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
-            audioPause();
             var lyrics = $(this).find('.lyric-output').clone();
+            //stop Audiojs
+            $('audio').trigger("pause");
+            $('.audiojs').removeClass('playing');
 
             if (lyrics.length) {
                 $("#lyrics-base").html(lyrics).parent().removeClass("closed");
@@ -274,6 +272,9 @@ soundManager.setup({
             }
         });
 
+       
+
+    }
 
     }
   },
