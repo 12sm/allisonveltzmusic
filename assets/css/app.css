@@ -415,7 +415,7 @@ display: inline-block;
 
 ul#menu-social {
 padding:5px;
-text-align: right;
+text-align: center;
 margin-bottom: 0px;
 margin-top: 10px;
 }
@@ -1392,6 +1392,9 @@ width: 500px;
 }
    .floatright{
    float: right;
+}
+.email-signup .floatright{
+   text-align: center;
 }
    div#slider {
 width: 45%;
