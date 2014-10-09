@@ -84,6 +84,5 @@ function parse_Id($atts){
 define( 'UPLOADS', ''.'assets' );
 
 
-add_filter('oembed_result','strip_related_videos',10,3);
  
 ?>
