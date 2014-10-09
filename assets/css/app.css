@@ -773,7 +773,7 @@ margin-bottom: 50px;
 clear: both;
 }
 .video .entry-content {
-width: initial;
+width: initial!important;
 }
 /* ==========================================================================
    EVENTS
