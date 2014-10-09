@@ -22,10 +22,18 @@ var Roots = {
   // All pages
   common: {
     init: function() {
+      $('.sm2_link').click(function(){
+        if ($(this).hasClass('sm2_playing')) {
+          $(this).removeClass('sm2_playing');
+        }
+        else {
+          $(this).addClass('sm2_playing');
+        }
+      });
                 
       //Audio auto pause scripts
       
-
+      soundManager.stop();
      $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
       $('.entry-content-asset').fitVids();
       $('.vid-container').fitVids();

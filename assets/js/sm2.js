@@ -14,7 +14,7 @@ soundManager.setup({
             // soundManager.createSound() etc. may now be called
             inlinePlayer = new InlinePlayer();
             //pause functionality
-            $('.play-pause>.play').click(function(){
+            $('.audiojs').click(function(){
               debugger;
             window.inlinePlayer.stopSound(inlinePlayer.lastSound);
             });
