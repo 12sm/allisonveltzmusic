@@ -32,12 +32,15 @@ function roots_scripts() {
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.7.0.min.js', array(), null, false);
   wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '01d073428e4e54f227f8a0a3bad4b804', false);
   wp_register_script('roots_activate', get_template_directory_uri() . '/assets/js/main.js', false, null, false);
+    wp_register_script('soundmanager', get_template_directory_uri() . '/assets/js/sm2.js', false, null, false);
+
     wp_register_script('audiojs', get_template_directory_uri() . '/assets/js/audio.js', false, null, false);
 
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_scripts');
   wp_enqueue_script('roots_activate');
+  wp_enqueue_script('soundmanager');
   wp_enqueue_script('audiojs');
 
 }
