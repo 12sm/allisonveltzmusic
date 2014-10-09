@@ -83,4 +83,13 @@ function parse_Id($atts){
 
 define( 'UPLOADS', ''.'assets' );
 
+
+add_filter('embed_oembed_html','strip_related_videos',10,3);
+ 
+function strip_related_videos($return, $data, $url) {
+    if ($data->provider_name == 'YouTube') {
+        $data->html = str_replace('feature=oembed', 'feature=oembed&#038;rel=0', $data->html);
+        return $data->html;
+    } else return $return;
+}
 ?>
