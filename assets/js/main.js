@@ -27,6 +27,7 @@ var Roots = {
           $(this).removeClass('sm2_playing');
         }
         else {
+          $('.sm2_playing').removeClass('sm2_playing');
           $(this).addClass('sm2_playing');
         }
       });
