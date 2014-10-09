@@ -15,6 +15,10 @@
  * ======================================================================== */
 
 (function($) {
+function audioPause(){
+      $('audio').trigger("pause");
+      $('.audiojs').removeClass('playing');
+      };
 
 // Use this variable to set up the common and page specific functions. If you
 // rename this variable, you will also need to rename the namespace below.
@@ -24,11 +28,7 @@ var Roots = {
     init: function() {
       soundManager.stop();
       //Audio auto pause scripts
-      function audioPause(){
-      $('audio').trigger("pause");
-      $('.audiojs').removeClass('playing');
-      };
-
+      
 
      $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
       $('.entry-content-asset').fitVids();
@@ -251,7 +251,7 @@ soundManager.setup({
         $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
-            window.audioPause();
+            audioPause();
             var lyrics = $(this).find('.lyric-output').clone();
 
             if (lyrics.length) {
