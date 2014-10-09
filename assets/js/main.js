@@ -15,15 +15,7 @@
  * ======================================================================== */
 
 (function($) {
-      
-
-// Use this variable to set up the common and page specific functions. If you
-// rename this variable, you will also need to rename the namespace below.
-var Roots = {
-  // All pages
-  common: {
-    init: function() {
-                soundManager.setup({
+      soundManager.setup({
           // disable or enable debug output
           debugMode: true,
           // use HTML5 audio for MP3/MP4, if available
@@ -45,6 +37,14 @@ var Roots = {
             });
           });
       soundManager.stop();
+
+// Use this variable to set up the common and page specific functions. If you
+// rename this variable, you will also need to rename the namespace below.
+var Roots = {
+  // All pages
+  common: {
+    init: function() {
+                
       //Audio auto pause scripts
       
 
