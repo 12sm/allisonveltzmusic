@@ -783,7 +783,9 @@ div#tribe-events-content h2, a {
 color: #FFF!important;
 font-family: "Roboto Condensed"!important;
 }
-
+.tribe-events-single-section.tribe-events-event-meta.primary.tribe-clearfix {
+color: #fff;
+}
 /* ==========================================================================
    Footer
    ========================================================================== */
