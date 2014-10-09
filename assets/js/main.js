@@ -23,6 +23,27 @@ var Roots = {
   // All pages
   common: {
     init: function() {
+                soundManager.setup({
+          // disable or enable debug output
+          debugMode: true,
+          // use HTML5 audio for MP3/MP4, if available
+          preferFlash: false,
+          useFlashBlock: true,
+          // path to directory containing SM2 SWF
+          url: '/assets/js',
+          // optional: enable MPEG-4/AAC support (requires flash 9)
+          flashVersion: 9
+          });
+
+              soundManager.onready(function() {
+            // soundManager.createSound() etc. may now be called
+            inlinePlayer = new InlinePlayer();
+            //pause functionality
+            $('.play-pause>.play').click(function(){
+              debugger;
+            window.inlinePlayer.stopSound(inlinePlayer.lastSound);
+            });
+          });
       soundManager.stop();
       //Audio auto pause scripts
       
@@ -159,28 +180,7 @@ photos: {
 
  single_music: {
     init: function(){
-      soundManager.setup({
-  // disable or enable debug output
-  debugMode: true,
-  // use HTML5 audio for MP3/MP4, if available
-  preferFlash: false,
-  useFlashBlock: true,
-  // path to directory containing SM2 SWF
-  url: '/assets/js',
-  // optional: enable MPEG-4/AAC support (requires flash 9)
-  flashVersion: 9
-  });
 
-      soundManager.onready(function() {
-    // soundManager.createSound() etc. may now be called
-    inlinePlayer = new InlinePlayer();
-    //pause functionality
-    $('.play-pause>.play').click(function(){
-      debugger;
-      var audioCall = 1;
-    window.inlinePlayer.stopSound(inlinePlayer.lastSound);
-    });
-  });
       /** Lyrics display **/
       /** Load first lyric **/
         var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
@@ -218,29 +218,6 @@ photos: {
   },
   music: {
     init: function(){
-
-soundManager.setup({
-  // disable or enable debug output
-  debugMode: true,
-  // use HTML5 audio for MP3/MP4, if available
-  preferFlash: false,
-  useFlashBlock: true,
-  // path to directory containing SM2 SWF
-  url: '/assets/js',
-  // optional: enable MPEG-4/AAC support (requires flash 9)
-  flashVersion: 9
-  });
-
-      soundManager.onready(function() {
-    // soundManager.createSound() etc. may now be called
-    inlinePlayer = new InlinePlayer();
-    //pause functionality
-    $('.play-pause>.play').click(function(){
-      debugger;
-      var audioCall = 1;
-    window.inlinePlayer.stopSound(inlinePlayer.lastSound);
-    });
-  });
       /** Lyrics display **/
       /** Load first lyric **/
         var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
@@ -278,26 +255,7 @@ soundManager.setup({
   },
   post_type_archive_music: {
     init: function(){
-  soundManager.setup({
-  // disable or enable debug output
-  debugMode: true,
-  // use HTML5 audio for MP3/MP4, if available
-  preferFlash: false,
-  useFlashBlock: true,
-  // path to directory containing SM2 SWF
-  url: '/assets/js',
-  // optional: enable MPEG-4/AAC support (requires flash 9)
-  flashVersion: 9
-  });
 
-      soundManager.onready(function() {
-    // soundManager.createSound() etc. may now be called
-    inlinePlayer = new InlinePlayer();
-    //pause functionality
-    $('.play-pause>.play').click(function(){
-    window.inlinePlayer.stopSound(inlinePlayer.lastSound);
-    });
-  });
       /** Lyrics display **/
       /** Load first lyric **/
         var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
