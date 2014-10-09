@@ -15,10 +15,7 @@
  * ======================================================================== */
 
 (function($) {
-function audioPause(){
-      $('audio').trigger("pause");
-      $('.audiojs').removeClass('playing');
-      };
+      
 
 // Use this variable to set up the common and page specific functions. If you
 // rename this variable, you will also need to rename the namespace below.
@@ -179,6 +176,8 @@ photos: {
     inlinePlayer = new InlinePlayer();
     //pause functionality
     $('.play-pause>.play').click(function(){
+      debugger;
+      var audioCall = 1;
     window.inlinePlayer.stopSound(inlinePlayer.lastSound);
     });
   });
@@ -237,6 +236,8 @@ soundManager.setup({
     inlinePlayer = new InlinePlayer();
     //pause functionality
     $('.play-pause>.play').click(function(){
+      debugger;
+      var audioCall = 1;
     window.inlinePlayer.stopSound(inlinePlayer.lastSound);
     });
   });
