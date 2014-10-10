@@ -37,25 +37,28 @@ background: rgba(0,0,0,.7);
 .col {
 margin: 0 5%;
 }
+header .col {
+  margin: 0;
+}
 div#e2ma_signup_message {
-display: none;
+  display: none;
 }
 input#e2ma_signup_reset_button{
-   display: none!important;
+  display: none!important;
 }
 .e2ma_signup_form_required_footnote {
-display: none!important;
+  display: none!important;
 }
 .sign-up{
-   background: url(../img/sign-up.png);
+  background: url(../img/sign-up.png);
 }
 a{
-   color: #BB2F7E;
-   text-decoration: none;
+  color: #BB2F7E;
+  text-decoration: none;
 }
 a:hover{
-   color: #13A468;
-   text-decoration: none;
+  color: #13A468;
+  text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6, p, a, *{
    font-family: 'Roboto Condensed';
@@ -225,7 +228,7 @@ width: 100%;
    Header
    ========================================================================== */
 
-.banner {background: rgba(43, 43, 43, 0.9); color: color: #929292;}
+.banner {background: rgba(43, 43, 43, 1); color: color: #929292;}
 
 /*Music Controls*/
 .music-controls>li {
@@ -1489,6 +1492,9 @@ margin-top: 0px;
 .video-container {
 margin: 0 -15px;
 margin-bottom: 25px;
+}
+header .col {
+  margin: initial;
 }
  }
 
