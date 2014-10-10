@@ -1351,7 +1351,10 @@ html[xmlns] .slides {display: block;}
 /* No media query since this is the default in Bootstrap */
 
 @media (max-width:767px) {
-
+.backstretch img {
+top: 30px !important;
+left: -500px!important;
+}
 #lyrics-base {
 height: auto;
 overflow: scroll;
