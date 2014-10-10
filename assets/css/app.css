@@ -384,7 +384,7 @@ div#slider, div#carousel{
 }
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
 body.single.single-post .wrap.container-fluid {
-width: 1170px;
+max-width: 1170px;
 }
 .photo-galleries div.entry-content {
 width: initial;
@@ -440,7 +440,7 @@ color: #FF5182;
 
 .news .wrap.container-fluid, .blog .wrap.container-fluid,
 body.single.single-post .wrap.container-fluid {
-width: 1200px;
+max-width: 1200px;
 }
 
 .news .archive-image, .blog .archive-image {
