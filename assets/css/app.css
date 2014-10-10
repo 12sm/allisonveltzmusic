@@ -1352,8 +1352,8 @@ html[xmlns] .slides {display: block;}
 
 @media (max-width:767px) {
   div#audio-player {
-width: 70%;
-}
+    width: 70%;
+  }
 .backstretch img {
 top: 60px !important;
 left: -450px!important;
