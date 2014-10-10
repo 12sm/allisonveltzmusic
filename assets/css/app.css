@@ -783,6 +783,13 @@ clear: both;
 .video .entry-content {
 width: initial!important;
 }
+.video-container{
+  margin-bottom: 25px;
+}
+.archive-image.video.imgLiquid_bgSize.imgLiquid_ready {
+padding-bottom: 40%;
+}
+
 /* ==========================================================================
    EVENTS
    ========================================================================== */
