@@ -1352,8 +1352,8 @@ html[xmlns] .slides {display: block;}
 
 @media (max-width:767px) {
 .backstretch img {
-top: 30px !important;
-left: -500px!important;
+top: 60px !important;
+left: -450px!important;
 }
 #lyrics-base {
 height: auto;
