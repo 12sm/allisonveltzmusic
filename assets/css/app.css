@@ -1385,6 +1385,9 @@ background-color: #eee;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #slider.flexslider .slides > li {
+height: 60vh;
+}
    div.e2ma_signup_form {
 padding: 0px 10px;
 width: 500px;
