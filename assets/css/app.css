@@ -228,7 +228,7 @@ width: 100%;
    Header
    ========================================================================== */
 
-.banner {background: rgba(43, 43, 43, 1); color: color: #929292;}
+.banner {background: rgba(43, 43, 43, 1); color:#929292;}
 
 /*Music Controls*/
 .music-controls>li {
@@ -1495,6 +1495,9 @@ margin-bottom: 25px;
 }
 header .col {
   margin: initial;
+}
+.banner {
+background: rgba(43, 43, 43, .9);
 }
  }
 
