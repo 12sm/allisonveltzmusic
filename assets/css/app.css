@@ -1614,7 +1614,9 @@ padding-top: 15px;
 padding-bottom: 5px;
 padding: 10px 7px;
 }
-
+pre {
+overflow: scroll;
+}
 }
 
 
