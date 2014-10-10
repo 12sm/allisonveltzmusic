@@ -1351,6 +1351,9 @@ html[xmlns] .slides {display: block;}
 /* No media query since this is the default in Bootstrap */
 
 @media (max-width:767px) {
+  div#audio-player {
+width: 70%;
+}
 .backstretch img {
 top: 60px !important;
 left: -450px!important;
