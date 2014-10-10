@@ -1475,6 +1475,10 @@ margin-top: 90px;
 }
 .owl-carousel.home-carousel.owl-theme {
 }
+.archive-image {
+width: 100%;
+padding-bottom: 50%;
+}
 .news .archive-image, .blog .archive-image{
 width: 100%;
 padding-bottom: 30%;
