@@ -616,7 +616,7 @@ background: rgba(43, 43, 43, 0.9);
 }
 #lyrics-base {
 max-height: 300px;
-overflow: scroll;
+overflow: auto;
 }
 .lyrics-container pre {
 display: block;
@@ -703,6 +703,7 @@ background: rgb(65,65,65);
 .lyric-output p {
 line-height: 1;
 white-space: pre-line;
+word-break: break-word;
 }
 /* ==========================================================================
    About
