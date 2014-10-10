@@ -1358,6 +1358,7 @@ html[xmlns] .slides {display: block;}
 /* No media query since this is the default in Bootstrap */
 
 @media (max-width:767px) {
+ 
   div#audio-player {
     width: 70% !important;
   }
@@ -1407,7 +1408,9 @@ padding: 75px 0;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+ ul#menu-social {
+margin-top: 35px;
+}
   #slider.flexslider .slides > li {
 height: 60vh;
 }
@@ -1525,6 +1528,9 @@ background: rgba(43, 43, 43, .9);
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+   ul#menu-social {
+margin-top: 10px;
+}
    div.e2ma_signup_form {
 padding: 0px 50px;
 }
