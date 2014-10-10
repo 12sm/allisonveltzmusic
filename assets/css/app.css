@@ -1387,7 +1387,9 @@ color: #555;
 .tribe-events-list-separator-month span {
 background-color: #eee;
 }
-
+div#ajaxcontent {
+padding: 35px 0;
+}
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -1488,7 +1490,7 @@ margin-bottom: 75px;
 }
 .content {
 padding-top: 70px;
-padding-bottom: 125px;
+padding-bottom: 125MuzzBuzz!1px;
 }
 .music.type-music {
 padding-top: 15vh;
