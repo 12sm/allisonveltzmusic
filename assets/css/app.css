@@ -747,6 +747,10 @@ padding: 10px 10px;
 .flexslider{
    background: transparent;
 }
+.img-pad {
+    padding-bottom: 100%;
+    margin-bottom: 30px;
+  }
 /* ==========================================================================
    VIDEO
    ========================================================================== */
@@ -1385,6 +1389,7 @@ background-color: #eee;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
   #slider.flexslider .slides > li {
 height: 60vh;
 }
@@ -1531,10 +1536,6 @@ margin: 0 5%;
 }
 #slider.flexslider .slides > li {
 height: 60vh;
-}
-.img-pad {
-padding-bottom: 100%;
-margin-bottom: 30px;
 }
    #lyrics-base {
 display: block;
