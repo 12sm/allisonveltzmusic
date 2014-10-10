@@ -1356,10 +1356,6 @@ width: 100%;
 z-index: 4;
 top: 97px;
 }
-.news .wrap.container-fluid, .blog .wrap.container-fluid,
-body.single.single-post .wrap.container-fluid {
-width: 80%;
-}
 
 ul#menu-social {
 text-align:center;
