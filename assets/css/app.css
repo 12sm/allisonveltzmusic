@@ -1640,7 +1640,9 @@ width: 1200px;
 max-width: 1170px;
 margin: 0 auto;
 }
-
+i.fa.fa-chevron-right.blog-angle {
+margin-top: 25%;
+}
 }
 /*Ipad Portrait*/
 @media only screen
