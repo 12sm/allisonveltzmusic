@@ -22,6 +22,10 @@ var Roots = {
   // All pages
   common: {
     init: function() {
+      $('#e2ma_signup').submimt(function(){
+        $('#e2ma_signup')[0].reset();
+      });
+
       $('.sm2_link').click(function(){
         if ($(this).hasClass('sm2_playing')) {
           $(this).removeClass('sm2_playing');
