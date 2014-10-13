@@ -1647,6 +1647,6 @@ and (orientation : portrait) {
 div#audio-player {
 width: 50%;
 margin: 0px auto;
-float: none;
+float: left;
 }
 }
