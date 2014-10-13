@@ -1636,3 +1636,17 @@ margin: 0 auto;
 }
 
 }
+/*Ipad Portrait*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+.music-btn{
+   display: none;
+}
+div#audio-player {
+width: 50%;
+margin: 0px auto;
+float: none;
+}
+}
