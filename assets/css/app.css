@@ -1657,4 +1657,7 @@ width: 50%;
 margin: 0px auto;
 float: left;
 }
+div#slider {
+width: 60%;
+}
 }
