@@ -87,7 +87,7 @@ if ($(window).width() > 767){
       });
       $('.archive-image').imgLiquid();
       //body class update
-      $("a:not([href$='mp3'], [href='#'])").click(function(){
+      $("a:not([href$='mp3'], [href='#'], [target!='_blank'])").click(function(){
         link = $(this).attr('href').split('/');
         $('body').removeAttr('class');
 
