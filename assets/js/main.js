@@ -22,7 +22,7 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      $('#e2ma_signup')[0].submimt(function(){
+      $('#e2ma_signup')[0].subimt(function(){
         $('#e2ma_signup')[0].reset();
       });
 
