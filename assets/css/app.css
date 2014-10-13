@@ -1617,6 +1617,7 @@ padding: 10px 7px;
 #lyrics-base {
 max-height: 300px;
 overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
 }
 }
 
