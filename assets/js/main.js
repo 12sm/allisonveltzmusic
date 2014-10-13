@@ -22,7 +22,8 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      $('#e2ma_signup')[0].submit(function(){
+      $('#e2ma_signup').submit(function(){
+        alert('submit is working');
         $('#e2ma_signup')[0].reset();
       });
 
