@@ -23,8 +23,7 @@ var Roots = {
   common: {
     init: function() {
       $('#e2ma_signup').submit(function(){
-        alert('submit is working');
-        $('#e2ma_signup')[0].reset();
+        //  $('#e2ma_signup')[0].reset();
       });
 
       $('.sm2_link').click(function(){
