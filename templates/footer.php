@@ -8,6 +8,9 @@
 			<div class="col-sm-6 col-lg-6 email-signup">
 				<div class="floatright">
 				    <h5 class='list-title'>Join Allison's Email List</h5>
+				    <link href="https://app.e2ma.net/css/signup.sml.css" rel="stylesheet" type="text/css">
+				    <div class="e2ma_signup_form" id="e2ma_signup_form">
+				    <div class="e2ma_signup_form_container" id="e2ma_signup_form_container">
 				    <form target="_new" method="post" id="e2ma_signup" action="https://app.e2ma.net/app2/audience/signup/1763819/1738434/?v=a">
 				        <input type="hidden" name="prev_member_email" id="id_prev_member_email">    
 				        <input type="hidden" name="source" id="id_source">  
@@ -41,7 +44,8 @@
 				                <input id="e2ma_signup_reset_button" class="e2ma_signup_form_button" type="reset" value="Clear" {disabled}="">
 				            </div>
 				    </form>
-			  
+				    </div>
+				    </div>
 			  
 			  
 			  
