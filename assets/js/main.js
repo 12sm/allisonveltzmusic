@@ -23,7 +23,9 @@ var Roots = {
   common: {
     init: function() {
       $('#e2ma_signup').submit(function(){
-        //  $('#e2ma_signup')[0].reset();
+        setTimeout(function(){
+          $('#e2ma_signup')[0].reset();
+        }, 1500);
       });
 
       $('.sm2_link').click(function(){
