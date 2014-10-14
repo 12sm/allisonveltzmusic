@@ -7,7 +7,44 @@
 	  <div class="row footer-nav"> 
 			<div class="col-sm-6 col-lg-6 email-signup">
 				<div class="floatright">
-			  <h5 class='list-title'>Join Allison's Email List</h5><link href="https://app.e2ma.net/css/signup.sml.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="https://app.e2ma.net/app2/audience/tts_signup/1763819/55ccffe82334411b90c492e32a9982ae/1738434/?v=a"></script><div id="load_check" class="signup_form_message" >This form needs Javascript to display, which your browser doesn't support. <a href="https://app.e2ma.net/app2/audience/signup/1763819/1738434/?v=a"> Sign up here</a> instead </div><script type="text/javascript">signupFormObj.drawForm();</script>
+				    <h5 class='list-title'>Join Allison's Email List</h5>
+				    <form target="_new" method="post" id="e2ma_signup" action="https://app.e2ma.net/app2/audience/signup/1763819/1738434/?v=a">
+				        <input type="hidden" name="prev_member_email" id="id_prev_member_email">    
+				        <input type="hidden" name="source" id="id_source">  
+				        <input type="hidden" name="group_1236674" value="1236674" id="id_group_1236674">
+				        <input type="hidden" name="private_set" value="{num_private}"> 
+				            <div class="e2ma_signup_form_row">
+				                <div class="e2ma_signup_form_label">
+				                    <span class="e2ma_signup_form_required_asterix">*</span>
+				                    Email
+				                </div>
+				                <div class="e2ma_signup_form_element">
+				                    <input type="text" name="email" id="id_email">
+				                </div>
+				            </div> 
+				            <div class="e2ma_signup_form_row">
+				                <div class="e2ma_signup_form_label">
+				                    <span class="e2ma_signup_form_required_asterix">*</span>
+				                    Postal code
+				                </div>
+				                <div class="e2ma_signup_form_element">
+				                    <input type="text" field_id="331458" name="member_field_postal_code" id="id_member_field_postal_code">
+				                </div>
+				            </div>
+				            <div class="e2ma_signup_form_required_footnote">
+				                <span class="e2ma_signup_form_required_asterix">*</span>
+				                required
+				            </div>
+				            <div class="e2ma_signup_form_button_row" id="e2ma_signup_form_button_row">
+				                <input id="e2ma_signup_submit_button" class="e2ma_signup_form_button" type="submit" name="Submit" value="Submit" {disabled}="">
+				                &nbsp;
+				                <input id="e2ma_signup_reset_button" class="e2ma_signup_form_button" type="reset" value="Clear" {disabled}="">
+				            </div>
+				    </form>
+			  
+			  
+			  
+			  
 				</div>
 			</div>
 			<div class="col-sm-6 col-lg-3"> 
