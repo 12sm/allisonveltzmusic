@@ -221,7 +221,7 @@ color: #FFF!important;
 max-width: 100%;
 height: auto;
 }
-.video .entry-content {
+body.video .entry-content {
 width: 100%;
 }
 /* ==========================================================================
@@ -780,7 +780,7 @@ font-size: 12px;
 margin-bottom: 50px;
 clear: both;
 }
-.video .entry-content {
+body.video .entry-content {
 width: initial!important;
 }
 .video-container{
