@@ -1,3 +1,7 @@
+(function($) {
+
+$(document).ready(function() {
+
 soundManager.onready(function() {
 	// soundManager.createSound() etc. may now be called
     inlinePlayer = new InlinePlayer();
@@ -7,4 +11,6 @@ soundManager.onready(function() {
         $('.sm2_playing').removeClass('sm2_playing');
      });
 });
-      
+});
+
+})(jQuery);
