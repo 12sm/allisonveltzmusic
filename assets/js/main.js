@@ -228,6 +228,8 @@ photos: {
         $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
+        	soundManager.reboot();
+        	console.log('sm2 just got rebooted');
             var lyrics = $(this).find('.lyric-output').clone();
             //stop Audiojs
             $('audio').trigger("pause");
