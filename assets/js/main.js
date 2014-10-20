@@ -37,27 +37,32 @@ var Roots = {
           $(this).addClass('sm2_playing');
         }
       });
-              soundManager.setup({
-          // disable or enable debug output
-          debugMode: true,
-          // use HTML5 audio for MP3/MP4, if available
-          preferFlash: false,
-          useFlashBlock: true,
-          // path to directory containing SM2 SWF
-          url: '/assets/js',
-          // optional: enable MPEG-4/AAC support (requires flash 9)
-          flashVersion: 9
-          });
-  
-      //Audio auto pause scripts
       
+      soundManager.setup({
+      	// disable or enable debug output
+        debugMode: true,
+        // use HTML5 audio for MP3/MP4, if available
+        preferFlash: false,
+        useFlashBlock: true,
+        // path to directory containing SM2 SWF
+        url: '/assets/js',
+        // optional: enable MPEG-4/AAC support (requires flash 9)
+        flashVersion: 9
+      });
+  
+      soundManager.onready(function() {
+	     // soundManager.createSound() etc. may now be called
+	     inlinePlayer = new InlinePlayer();
+	  });
+      
+      //Audio auto pause scripts 
       soundManager.stop();
-     $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
+      $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
       $('.entry-content-asset').fitVids();
       $('.vid-container').fitVids();
        
-if ($(window).width() > 767){
-       $('.flexslider>ul').addClass('slides');
+      if ($(window).width() > 767){
+      	$('.flexslider>ul').addClass('slides');
         $('#slider>ul>li').imgLiquid({verticalAlign: '15%'});
         var gallery = $('#slider').find('.slides').clone();
         $('#carousel').html(gallery);
@@ -80,8 +85,8 @@ if ($(window).width() > 767){
           sync: "#carousel"
         });
 
-      $('#carousel>div>ul>li').imgLiquid({verticalAlign: 'top'});
-}
+        $('#carousel>div>ul>li').imgLiquid({verticalAlign: 'top'});
+      }
       // JavaScript to be fired on all pages
       $('.navbar-nav>li>a').click(function(){
         $('.navbar-collapse').collapse('hide');
