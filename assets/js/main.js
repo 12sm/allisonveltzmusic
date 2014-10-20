@@ -222,14 +222,26 @@ photos: {
   },
   music: {
     init: function(){
-      /** Lyrics display **/
-      /** Load first lyric **/
+      	
+      	soundManager.reboot();
+        console.log('sm2 just got rebooted');
+        
+        soundManager.onready(function() {
+	        inlinePlayer = new InlinePlayer();
+	        //pause functionality
+	        $('.audiojs').click(function(){
+		    	window.inlinePlayer.stopSound(inlinePlayer.lastSound);
+		    	$('.sm2_playing').removeClass('sm2_playing');
+		    });
+		    console.log('sm2.js just got called');
+		});
+      	
+      	/** Lyrics display **/
+      	/** Load first lyric **/
         var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
         $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
-        	soundManager.reboot();
-        	console.log('sm2 just got rebooted');
             var lyrics = $(this).find('.lyric-output').clone();
             //stop Audiojs
             $('audio').trigger("pause");
