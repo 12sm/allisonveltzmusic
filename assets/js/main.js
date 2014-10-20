@@ -49,12 +49,7 @@ var Roots = {
         // optional: enable MPEG-4/AAC support (requires flash 9)
         flashVersion: 9
       });
-  
-      soundManager.onready(function() {
-	     // soundManager.createSound() etc. may now be called
-	     inlinePlayer = new InlinePlayer();
-	  });
-      
+        
       //Audio auto pause scripts 
       soundManager.stop();
       $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
