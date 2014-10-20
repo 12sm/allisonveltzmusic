@@ -10,6 +10,7 @@ soundManager.onready(function() {
     	window.inlinePlayer.stopSound(inlinePlayer.lastSound);
         $('.sm2_playing').removeClass('sm2_playing');
      });
+     console.log('sm2.js just got called');
 });
 });
 
