@@ -1439,7 +1439,7 @@ margin: 0 auto;
 display: block;
 }
 
-.hentry .entry-content {
+.type-post .entry-content {
 width: 750px;
 margin: 0 auto;
 }
@@ -1543,7 +1543,7 @@ padding: 0px 50px;
 .email-signup .floatright{
    float: right;
 }
-.hentry .entry-content {
+.type-post .entry-content {
 width: 970px;
 margin: 0 auto;
 }

@@ -154,6 +154,11 @@ var Roots = {
       YTclick();	
     }
   },
+  single_video: {
+    init: function() {    
+      YTclick();	
+    }
+  },
   // About us page, note the change from about-us to about_us.
   about_us: {
     init: function() {
