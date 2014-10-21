@@ -382,10 +382,7 @@ div#slider, div#carousel{
    border: transparent;
    background: transparent;
 }
-.news .wrap.container-fluid, .blog .wrap.container-fluid,
-body.single.single-post .wrap.container-fluid {
-max-width: 1170px;
-}
+
 .photo-galleries div.entry-content {
 width: initial;
 }
@@ -438,9 +435,9 @@ ul#menu-social li a i:hover {
 color: #FF5182;
 }
 
-.news .wrap.container-fluid, .blog .wrap.container-fluid,
-body.single.single-post .wrap.container-fluid {
+.blog-row {
 max-width: 1200px;
+margin: 0px auto;
 }
 
 .news .archive-image, .blog .archive-image {
@@ -1630,11 +1627,6 @@ overflow-y: scroll;
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
-.news .wrap.container-fluid, .blog .wrap.container-fluid,
-body.single.single-post .wrap.container-fluid {
-width: 1200px;
-}
 
 .instagram-grid {
 max-width: 1170px;

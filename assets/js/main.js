@@ -112,10 +112,10 @@ var Roots = {
       });
       $('.archive-image').imgLiquid();
       //body class update
+      
       $("a:not([href$='mp3'], [href='#'], [target='_blank'])").click(function(){
         link = $(this).attr('href').split('/');
         $('body').removeAttr('class');
-
         if ( link.length < 3){
           $('body').addClass('home');
         } else{
