@@ -320,26 +320,31 @@ photos: {
   },
   post_type_archive_music: {
     init: function(){
-      debugger;
-      soundManager.reset();
-      soundManager.reboot();
-      console.log('sm2 reset');
-      
       soundManager.setup({
       	// disable or enable debug output
         debugMode: true,
+        useConsole: true,
+        debugFlash: true,
+        consoleOnly: true,
         // use HTML5 audio for MP3/MP4, if available
         preferFlash: false,
         useFlashBlock: true,
         // path to directory containing SM2 SWF
         url: '/assets/js',
         // optional: enable MPEG-4/AAC support (requires flash 9)
-        flashVersion: 9
-      });
-      
+        flashVersion: 9,
+        onready: function() {
+	      if (inlinePlayer != null) {
+	      	console.log('inlinePlayer is not null')
+	      }else{
+	      	console.log('inlinePlayer is null, making new')
+	        inlinePlayer = new InlinePlayer();
+	        inlinePlayer.init();
+	        console.log(inlinePlayer);
+	      }	        
+	    }
+        });      
       soundManager.onready(function() {
-	      // soundManager.createSound() etc. may now be called
-	      inlinePlayer = new InlinePlayer();
 	      //pause functionality
 	      $('.audiojs').click(function(){
 		      window.inlinePlayer.stopSound(inlinePlayer.lastSound);
