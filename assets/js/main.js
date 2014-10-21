@@ -273,6 +273,7 @@ photos: {
   },
   post_type_archive_music: {
     init: function(){
+      console.log('post_type_archive_music just got called');
       $('.menu-news').removeClass('active');
       $('.menu-music').addClass('active');
       /** Lyrics display **/
