@@ -260,9 +260,6 @@ photos: {
   },
   music: {
     init: function(){
-    	
-    	inlinePlayer.unload(inlinePlayer.lastSound);
-    	inlinePlayer.destruct();
       	soundManager.reset();
       	soundManager.reboot();
       	console.log('sm2 reset');
