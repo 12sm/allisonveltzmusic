@@ -276,8 +276,6 @@ photos: {
         flashVersion: 9,
         onready: function() {
 	        console.log('SM2 ready!');
-	        inlinePlayer = new InlinePlayer();
-	        console.log('New InlinePlayer');
         }
         });
         
@@ -310,10 +308,8 @@ photos: {
 
             if (inlinePlayer) {
                 inlinePlayer.events.finish = function() {
-
                     // Remove Playing Class
                     $('a.sm2_playing').removeClass('sm2_playing');
-
                     // Blow away the last played track
                     inlinePlayer.stopSound(inlinePlayer.lastSound);
                 };
