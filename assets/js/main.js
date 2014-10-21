@@ -262,6 +262,7 @@ photos: {
     init: function(){
     
       	soundManager.reset();
+      	soundManager.reboot();
       	console.log('sm2 reset');
       	soundManager.setup({
       	// disable or enable debug output
@@ -272,16 +273,19 @@ photos: {
         // path to directory containing SM2 SWF
         url: '/assets/js',
         // optional: enable MPEG-4/AAC support (requires flash 9)
-        flashVersion: 9
+        flashVersion: 9,
+        onready: function() {
+	        console.log('SM2 ready!');
+	        inlinePlayer = new InlinePlayer();
+	        console.log('New InlinePlayer');
+        }
         });
         
         soundManager.onready(function() {
-	        inlinePlayer = new InlinePlayer();
 	        //pause functionality
 	        $('.audiojs').click(function(){
 		    	window.inlinePlayer.stopSound(inlinePlayer.lastSound);
 		    	$('.sm2_playing').removeClass('sm2_playing');
-		    	console.log('Inline called again');
 		    });
 		});
       	
