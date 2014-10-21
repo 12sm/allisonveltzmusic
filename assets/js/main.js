@@ -261,7 +261,6 @@ photos: {
         // optional: enable MPEG-4/AAC support (requires flash 9)
         flashVersion: 9
         });
-        InlinePlayer.init()
         
         soundManager.onready(function() {
         	if (window.inline)
