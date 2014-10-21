@@ -252,17 +252,15 @@ photos: {
   music: {
     init: function(){
        	soundManager.setup({
-      	// disable or enable debug output
+       	stream: true,
+       	autoload: true,
         debugMode: true,
         useConsole: true,
         debugFlash: true,
         consoleOnly: true,
-        // use HTML5 audio for MP3/MP4, if available
         preferFlash: false,
         useFlashBlock: true,
-        // path to directory containing SM2 SWF
         url: '/assets/js',
-        // optional: enable MPEG-4/AAC support (requires flash 9)
         flashVersion: 9,
         onready: function() {
 	      if (inlinePlayer != null) {
@@ -321,26 +319,22 @@ photos: {
   post_type_archive_music: {
     init: function(){
       soundManager.setup({
-      	// disable or enable debug output
+      	stream: true,
+       	autoload: true,
         debugMode: true,
         useConsole: true,
         debugFlash: true,
         consoleOnly: true,
-        // use HTML5 audio for MP3/MP4, if available
         preferFlash: false,
         useFlashBlock: true,
-        // path to directory containing SM2 SWF
         url: '/assets/js',
-        // optional: enable MPEG-4/AAC support (requires flash 9)
         flashVersion: 9,
         onready: function() {
 	      if (inlinePlayer != null) {
-	      	console.log('inlinePlayer is not null')
+	      	
 	      }else{
-	      	console.log('inlinePlayer is null, making new')
 	        inlinePlayer = new InlinePlayer();
 	        inlinePlayer.init();
-	        console.log(inlinePlayer);
 	      }	        
 	    }
         });      
@@ -350,7 +344,6 @@ photos: {
 		      window.inlinePlayer.stopSound(inlinePlayer.lastSound);
 		      $('.sm2_playing').removeClass('sm2_playing');
 		   });
-		   console.log('sm2 ready and inline called');
 	  });    
     
       $('.menu-news').removeClass('active');
