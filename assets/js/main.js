@@ -277,13 +277,7 @@ photos: {
         onready: function() {
 	        console.log('SM2 ready!');
 	        inlinePlayer.init();
-	        if (inlinePlayer){
-		        console.log('Inline already created, moving on.');
-	        }else{
-		        inlinePlayer = new InlinePlayer();
-		        console.log('Inline didnt exist, so I created it.');
-	        }
-        }
+	    }
         });
         
         soundManager.onready(function() {
@@ -312,6 +306,8 @@ photos: {
             }else{
                 $("#lyrics-base").parent().addClass("closed");
             }
+            
+            inlinePlayer.stopSound(inlinePlayer.lastSound);
 
             if (inlinePlayer) {
                 inlinePlayer.events.finish = function() {
