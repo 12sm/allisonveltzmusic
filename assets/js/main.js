@@ -37,18 +37,6 @@ var Roots = {
           $(this).addClass('sm2_playing');
         }
       });
-      
-      soundManager.setup({
-      	// disable or enable debug output
-        debugMode: true,
-        // use HTML5 audio for MP3/MP4, if available
-        preferFlash: false,
-        useFlashBlock: true,
-        // path to directory containing SM2 SWF
-        url: '/assets/js',
-        // optional: enable MPEG-4/AAC support (requires flash 9)
-        flashVersion: 9
-      });
         
       //Audio auto pause scripts 
       soundManager.stop();
@@ -122,15 +110,18 @@ var Roots = {
   },
   video: {
     init: function() {
-      // JavaScript to be fired on the home page
       $('.vid-container').mousedown(function(){
         window.audioPause();
+        console.log('Audio Paused?');
       } );
     }
   },
   post_type_archive_video: {
     init: function() {
-      // JavaScript to be fired on the home page
+      $('.fluid-width-video-wrapper iframe').bind('click', function(event) { 
+	    window.audioPause();
+        console.log('Audio Paused?');
+      });
     }
   },
   // About us page, note the change from about-us to about_us.
@@ -235,7 +226,6 @@ photos: {
         // optional: enable MPEG-4/AAC support (requires flash 9)
         flashVersion: 9
         });
-        console.log('MUSIC just got called and sm2 just got reset');
         
         soundManager.onready(function() {
 	        inlinePlayer = new InlinePlayer();
@@ -244,7 +234,6 @@ photos: {
 		    	window.inlinePlayer.stopSound(inlinePlayer.lastSound);
 		    	$('.sm2_playing').removeClass('sm2_playing');
 		    });
-		    console.log('inlinePlayer just got initialized');
 		});
       	
       	/** Lyrics display **/
@@ -284,7 +273,6 @@ photos: {
   },
   post_type_archive_music: {
     init: function(){
-      console.log('post_type_archive_music just got called');
       $('.menu-news').removeClass('active');
       $('.menu-music').addClass('active');
       /** Lyrics display **/
