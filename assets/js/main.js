@@ -249,7 +249,7 @@ photos: {
   music: {
     init: function(){
       	
-      	soundManager.reset()
+      	soundManager.reset();
       	soundManager.setup({
       	// disable or enable debug output
         debugMode: true,
