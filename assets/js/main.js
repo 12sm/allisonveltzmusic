@@ -296,7 +296,7 @@ photos: {
         $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
-        	if(!$this).hasClass('sm2_playing')) {
+        	if(!$(this).hasClass('sm2_playing')) {
 	        	soundManager.pauseAll();	
         	}
             var lyrics = $(this).find('.lyric-output').clone();
