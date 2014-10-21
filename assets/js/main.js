@@ -251,10 +251,7 @@ photos: {
   },
   music: {
     init: function(){
-      	soundManager.reset();
-      	soundManager.reboot();
-      	console.log('sm2 reset');
-      	soundManager.setup({
+       	soundManager.setup({
       	// disable or enable debug output
         debugMode: true,
         useConsole: true,
@@ -268,13 +265,8 @@ photos: {
         // optional: enable MPEG-4/AAC support (requires flash 9)
         flashVersion: 9,
         onready: function() {
-	        console.log('SM2 ready!');
-	        console.log(inlinePlayer);
-	        var inlinePlayer = null;
-	        console.log(inlinePlayer);
 	        inlinePlayer = new InlinePlayer();
 	        inlinePlayer.init();
-	        console.log('Inline Player Loaded');
 	        console.log(inlinePlayer);	        
 	    }
         });
