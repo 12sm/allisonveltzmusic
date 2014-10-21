@@ -223,8 +223,8 @@ photos: {
   music: {
     init: function(){
       	
-      	soundManager.reboot();
-        console.log('MUSIC just got called and sm2 just got rebooted');
+      	soundManager.reset();
+        console.log('MUSIC just got called and sm2 just got reset');
         
         soundManager.onready(function() {
 	        inlinePlayer = new InlinePlayer();
