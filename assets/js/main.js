@@ -257,6 +257,9 @@ photos: {
       	soundManager.setup({
       	// disable or enable debug output
         debugMode: true,
+        useConsole: true,
+        debugFlash: true,
+        consoleOnly: true,
         // use HTML5 audio for MP3/MP4, if available
         preferFlash: false,
         useFlashBlock: true,
