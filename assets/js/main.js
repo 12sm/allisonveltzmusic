@@ -118,10 +118,44 @@ var Roots = {
   },
   post_type_archive_video: {
     init: function() {
-      $('.fluid-width-video-wrapper iframe').bind('click', function(event) { 
-	    window.audioPause();
-        console.log('Audio Paused?');
-      });
+    
+    		$(window).on('blur',function(e) {    
+				if($(this).data('mouseIn') != 'yes')return;
+				$('iframe').filter(function(){
+					return $(this).data('mouseIn') == 'yes';
+				}).trigger('iframeclick');    
+			});
+
+			$(window).mouseenter(function(){
+				$(this).data('mouseIn', 'yes');
+			}).mouseleave(function(){
+				$(this).data('mouseIn', 'no');
+			});
+
+			$('iframe').mouseenter(function(){
+				$(this).data('mouseIn', 'yes');
+				$(window).data('mouseIn', 'yes');
+			}).mouseleave(function(){
+				$(this).data('mouseIn', null);
+			});
+
+			$('iframe').on('iframeclick', function(){
+				console.log('Clicked inside iframe');
+			});
+			$(window).on('click', function(){
+				console.log('Clicked inside window');
+			}).blur(function(){
+				console.log('window blur');
+			});
+
+			$('<input type="text" style="position:absolute;opacity:0;height:0px;width:0px;"/>').appendTo(document.body).blur(function(){
+					$(window).trigger('blur');
+				}).focus();
+    
+    
+    
+    
+    
     }
   },
   // About us page, note the change from about-us to about_us.
