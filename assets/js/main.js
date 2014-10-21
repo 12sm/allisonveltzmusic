@@ -74,6 +74,10 @@ var Roots = {
         }
       });
       
+      soundManager.reset();
+      soundManager.reboot();
+      console.log('sm2 reset');
+      
       soundManager.setup({
       	// disable or enable debug output
         debugMode: true,
