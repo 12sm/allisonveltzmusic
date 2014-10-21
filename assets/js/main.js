@@ -265,9 +265,14 @@ photos: {
         // optional: enable MPEG-4/AAC support (requires flash 9)
         flashVersion: 9,
         onready: function() {
+	      if (inlinePlayer != null) {
+	      	console.log('inlinePlayer is not null')
+	      }else{
+	      	console.log('inlinePlayer is null, making new')
 	        inlinePlayer = new InlinePlayer();
 	        inlinePlayer.init();
-	        console.log(inlinePlayer);	        
+	        console.log(inlinePlayer);
+	      }	        
 	    }
         });
         
