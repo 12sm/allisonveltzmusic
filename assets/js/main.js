@@ -276,6 +276,7 @@ photos: {
         flashVersion: 9,
         onready: function() {
 	        console.log('SM2 ready!');
+	        InlinePlayer.init();
 	        if (inlinePlayer){
 		        console.log('Inline already created, moving on.');
 	        }else{
