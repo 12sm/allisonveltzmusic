@@ -296,6 +296,7 @@ photos: {
         $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
+        	soundManager.pauseAll();
             var lyrics = $(this).find('.lyric-output').clone();
             //stop Audiojs
             $('audio').trigger("pause");
