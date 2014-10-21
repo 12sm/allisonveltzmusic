@@ -249,6 +249,7 @@ photos: {
   music: {
     init: function(){
       	
+      	window.inlinePlayer.destruct();
       	soundManager.reset();
       	soundManager.setup({
       	// disable or enable debug output
