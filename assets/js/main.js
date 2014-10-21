@@ -78,7 +78,7 @@ var Roots = {
       });
               
       //Audio auto pause scripts 
-      soundManager.stop();
+      soundManager.stopAll();
       $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
       $('.entry-content-asset').fitVids();
       $('.vid-container').fitVids();
@@ -290,6 +290,7 @@ photos: {
         $("#lyrics-base").html(lyrics[0]);
 
         $('.play').on('click', function(e){
+        	console.log(inlinePlayer);
             var lyrics = $(this).find('.lyric-output').clone();
             //stop Audiojs
             $('audio').trigger("pause");
