@@ -260,7 +260,8 @@ photos: {
   },
   music: {
     init: function(){
-    
+    	
+    	var inlinePlayer = null;
       	soundManager.reset();
       	soundManager.reboot();
       	console.log('sm2 reset');
@@ -307,8 +308,6 @@ photos: {
                 $("#lyrics-base").parent().addClass("closed");
             }
             
-            inlinePlayer.stopSound(inlinePlayer.lastSound);
-
             if (inlinePlayer) {
                 inlinePlayer.events.finish = function() {
                     // Remove Playing Class
