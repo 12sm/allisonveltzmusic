@@ -262,6 +262,7 @@ photos: {
     init: function(){
     
       	soundManager.reset();
+      	console.log('sm2 reset');
       	soundManager.setup({
       	// disable or enable debug output
         debugMode: true,
@@ -275,12 +276,12 @@ photos: {
         });
         
         soundManager.onready(function() {
-        	if (window.inline)
 	        inlinePlayer = new InlinePlayer();
 	        //pause functionality
 	        $('.audiojs').click(function(){
 		    	window.inlinePlayer.stopSound(inlinePlayer.lastSound);
 		    	$('.sm2_playing').removeClass('sm2_playing');
+		    	console.log('Inline called again');
 		    });
 		});
       	
