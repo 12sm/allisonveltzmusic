@@ -323,6 +323,7 @@ photos: {
   },
   post_type_archive_music: {
     init: function(){
+      debugger;
       soundManager.reset();
       soundManager.reboot();
       console.log('sm2 reset');
