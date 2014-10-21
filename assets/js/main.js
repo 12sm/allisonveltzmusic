@@ -223,7 +223,18 @@ photos: {
   music: {
     init: function(){
       	
-      	soundManager.reset();
+      	soundManager.reset()
+      	soundManager.setup({
+      	// disable or enable debug output
+        debugMode: true,
+        // use HTML5 audio for MP3/MP4, if available
+        preferFlash: false,
+        useFlashBlock: true,
+        // path to directory containing SM2 SWF
+        url: '/assets/js',
+        // optional: enable MPEG-4/AAC support (requires flash 9)
+        flashVersion: 9
+        });
         console.log('MUSIC just got called and sm2 just got reset');
         
         soundManager.onready(function() {
