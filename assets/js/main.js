@@ -276,6 +276,12 @@ photos: {
         flashVersion: 9,
         onready: function() {
 	        console.log('SM2 ready!');
+	        if (inlinePlayer){
+		        console.log('Inline already created, moving on.');
+	        }else{
+		        inlinePlayer = new InlinePlayer();
+		        console.log('Inline didnt exist, so I created it.');
+	        }
         }
         });
         
