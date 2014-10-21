@@ -278,8 +278,8 @@ photos: {
 	        console.log(inlinePlayer);
 	        var inlinePlayer = null;
 	        console.log(inlinePlayer);
-	        inlinePlayer.init();
 	        inlinePlayer = new InlinePlayer();
+	        inlinePlayer.init();
 	        console.log('Inline Player Loaded');
 	        console.log(inlinePlayer);	        
 	    }
