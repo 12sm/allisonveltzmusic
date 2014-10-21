@@ -16,6 +16,42 @@
 
 (function($) {
 
+	function YTclick() {
+		$(window).on('blur',function(e) {    
+			if($(this).data('mouseIn') != 'yes')return;
+			$('iframe').filter(function(){
+				return $(this).data('mouseIn') == 'yes';
+			}).trigger('iframeclick');    
+		});
+
+		$(window).mouseenter(function(){
+			$(this).data('mouseIn', 'yes');
+		}).mouseleave(function(){
+			$(this).data('mouseIn', 'no');
+		});
+
+		$('iframe').mouseenter(function(){
+			$(this).data('mouseIn', 'yes');
+			$(window).data('mouseIn', 'yes');
+		}).mouseleave(function(){
+			$(this).data('mouseIn', null);
+		});
+
+		$('iframe').on('iframeclick', function(){
+			 $('audio').trigger("pause");
+			 $('.audiojs').removeClass('playing');
+		});
+		$(window).on('click', function(){
+			console.log('Clicked inside window');
+		}).blur(function(){
+			console.log('window blur');
+		});
+		$('<input type="text" style="position:absolute;opacity:0;height:0px;width:0px;"/>').appendTo(document.body).blur(function(){
+			$(window).trigger('blur');
+		}).focus();		
+	}
+
+
 // Use this variable to set up the common and page specific functions. If you
 // rename this variable, you will also need to rename the namespace below.
 var Roots = {
@@ -110,55 +146,12 @@ var Roots = {
   },
   video: {
     init: function() {
-      $('.vid-container').mousedown(function(){
-        window.audioPause();
-        console.log('Audio Paused?');
-      } );
+      YTclick();
     }
   },
   post_type_archive_video: {
-    init: function() {
-    
-    		$(window).on('blur',function(e) {    
-				if($(this).data('mouseIn') != 'yes')return;
-				$('iframe').filter(function(){
-					return $(this).data('mouseIn') == 'yes';
-				}).trigger('iframeclick');    
-			});
-
-			$(window).mouseenter(function(){
-				$(this).data('mouseIn', 'yes');
-			}).mouseleave(function(){
-				$(this).data('mouseIn', 'no');
-			});
-
-			$('iframe').mouseenter(function(){
-				$(this).data('mouseIn', 'yes');
-				$(window).data('mouseIn', 'yes');
-			}).mouseleave(function(){
-				$(this).data('mouseIn', null);
-			});
-
-			$('iframe').on('iframeclick', function(){
-				console.log('Clicked inside iframe');
-				 $('audio').trigger("pause");
-				 $('.audiojs').removeClass('playing');
-				 console.log('Audio Paused');
-			});
-			$(window).on('click', function(){
-				console.log('Clicked inside window');
-			}).blur(function(){
-				console.log('window blur');
-			});
-
-			$('<input type="text" style="position:absolute;opacity:0;height:0px;width:0px;"/>').appendTo(document.body).blur(function(){
-					$(window).trigger('blur');
-				}).focus();
-    
-    
-    
-    
-    
+    init: function() {    
+      YTclick();	
     }
   },
   // About us page, note the change from about-us to about_us.
