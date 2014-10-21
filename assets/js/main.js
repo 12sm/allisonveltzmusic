@@ -233,7 +233,7 @@ photos: {
 		    	window.inlinePlayer.stopSound(inlinePlayer.lastSound);
 		    	$('.sm2_playing').removeClass('sm2_playing');
 		    });
-		    console.log('sm2.js just got called');
+		    console.log('inlinePlayer just got initialized');
 		});
       	
       	/** Lyrics display **/
