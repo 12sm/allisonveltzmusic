@@ -261,7 +261,6 @@ photos: {
   music: {
     init: function(){
     	
-    	var inlinePlayer = null;
       	soundManager.reset();
       	soundManager.reboot();
       	console.log('sm2 reset');
@@ -277,6 +276,8 @@ photos: {
         flashVersion: 9,
         onready: function() {
 	        console.log('SM2 ready!');
+	        var inlinePlayer = null;
+	        inlinePlayer = new InlinePlayer();
 	        inlinePlayer.init();
 	    }
         });
