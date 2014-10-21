@@ -141,8 +141,9 @@ var Roots = {
 
 			$('iframe').on('iframeclick', function(){
 				console.log('Clicked inside iframe');
-				window.audioPause();
-				console.log('Audio Paused?');
+				 $('audio').trigger("pause");
+				 $('.audiojs').removeClass('playing');
+				 console.log('Audio Paused');
 			});
 			$(window).on('click', function(){
 				console.log('Clicked inside window');
