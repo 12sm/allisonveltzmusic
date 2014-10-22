@@ -1528,6 +1528,12 @@ header .col {
 .banner {
 background: rgba(43, 43, 43, .9);
 }
+
+.owl-item {
+max-width:200px;
+margin:15px;
+}
+
 }
  
 
