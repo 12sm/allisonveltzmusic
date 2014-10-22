@@ -220,40 +220,7 @@
        pagination: false,
        scrollPerPage : true
       });
-      
-        soundManager.onready(function() {
-          //pause functionality
-          $('.audiojs').click(function() {
-            window.inlinePlayer.stopSound(inlinePlayer.lastSound);
-            $('.sm2_playing').removeClass('sm2_playing');
-          });
-        });
-      
-        /** Lyrics display **/
-        /** Load first lyric **/
-        var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
-        $("#lyrics-base").html(lyrics[0]);
-        $('.play').on('click', function(e){
-          var lyrics = $(this).find('.lyric-output').clone();
-          //stop Audiojs
-          $('audio').trigger("pause");
-          $('.audiojs').removeClass('playing');
-          if (lyrics.length) {
-            $("#lyrics-base").html(lyrics).parent().removeClass("closed");
-            $("#lyrics-base").children().removeClass("hide");
-            $("#lyrics-base").scrollTop(0,0);
-          }else{
-            $("#lyrics-base").parent().addClass("closed");
-          }
-          if (inlinePlayer) {
-            inlinePlayer.events.finish = function() {
-              // Remove Playing Class
-              $('a.sm2_playing').removeClass('sm2_playing');
-              // Blow away the last played track
-              inlinePlayer.stopSound(inlinePlayer.lastSound);
-            };
-          }
-        });
+     
       }
     },
     music: {
@@ -273,38 +240,6 @@
        scrollPerPage : true
       });
 
-        soundManager.onready(function() {
-          //pause functionality
-          $('.audiojs').click(function(){
-            window.inlinePlayer.stopSound(inlinePlayer.lastSound);
-            $('.sm2_playing').removeClass('sm2_playing');
-          });
-        });
-        /** Lyrics display **/
-        /** Load first lyric **/
-        var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
-        $("#lyrics-base").html(lyrics[0]);
-        $('.play').on('click', function(e){
-          var lyrics = $(this).find('.lyric-output').clone();
-          //stop Audiojs
-          $('audio').trigger("pause");
-          $('.audiojs').removeClass('playing');
-          if (lyrics.length) {
-            $("#lyrics-base").html(lyrics).parent().removeClass("closed");
-            $("#lyrics-base").children().removeClass("hide");
-            $("#lyrics-base").scrollTop(0,0);
-          }else{
-            $("#lyrics-base").parent().addClass("closed");
-          }
-          if (inlinePlayer) {
-            inlinePlayer.events.finish = function() {
-              // Remove Playing Class
-              $('a.sm2_playing').removeClass('sm2_playing');
-              // Blow away the last played track
-              inlinePlayer.stopSound(inlinePlayer.lastSound);
-            };
-          }
-        });
       }
     },
     post_type_archive_music: {
@@ -324,40 +259,6 @@
        scrollPerPage : true
       });
 
-        soundManager.onready(function() {
-          //pause functionality
-          $('.audiojs').click(function() {
-            window.inlinePlayer.stopSound(inlinePlayer.lastSound);
-            $('.sm2_playing').removeClass('sm2_playing');
-          });
-        });
-        $('.menu-news').removeClass('active');
-        $('.menu-music').addClass('active');
-        /** Lyrics display **/
-        /** Load first lyric **/
-        var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
-        $("#lyrics-base").html(lyrics[0]);
-        $('.play').on('click', function(e){
-          var lyrics = $(this).find('.lyric-output').clone();
-          //stop Audiojs
-          $('audio').trigger("pause");
-          $('.audiojs').removeClass('playing');
-          if (lyrics.length) {
-            $("#lyrics-base").html(lyrics).parent().removeClass("closed");
-            $("#lyrics-base").children().removeClass("hide");
-            $("#lyrics-base").scrollTop(0,0);
-          }else{
-            $("#lyrics-base").parent().addClass("closed");
-          }
-          if (inlinePlayer) {
-            inlinePlayer.events.finish = function() {
-              // Remove Playing Class
-              $('a.sm2_playing').removeClass('sm2_playing');
-              // Blow away the last played track
-              inlinePlayer.stopSound(inlinePlayer.lastSound);
-            };
-          }
-        });
       }
     }
   };
