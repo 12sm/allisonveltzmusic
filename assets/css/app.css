@@ -1528,10 +1528,47 @@ header .col {
 .banner {
 background: rgba(43, 43, 43, .9);
 }
- }
+}
+ 
+
+ /* Nav only adjustments */
+@media only screen
+and (min-width: 769px) 
+and (max-width: 992px) {
+
+div#audio-player {
+width: 100%;
+}
+
+div#audio-player {
+width: 21%;
+background: #1F1F1F;
+padding: 0px 5px;
+margin-top: 10px;
+}
+
+.navbar-nav>li>a {
+padding: 15px 4px 10px 4px;
+font-size: 10px;
+}
+#lyrics-base {
+max-height: 300px;
+overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
+}
+} 
+
+ 
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+.navbar-nav>li>a {
+padding-top: 15px;
+padding-bottom: 15px;
+padding: 15px 10px;
+}
+
    ul#menu-social {
 margin-top: 10px;
 }
@@ -1594,41 +1631,16 @@ margin-top: 5vh;
 max-width: 978px;
 margin: 0 auto;
 }
-
- }
-
-
-
- /* Nav only adjustments */
-@media only screen
-and (min-width: 769px) 
-and (max-width: 992px) {
-
-div#audio-player {
-width: 100%;
 }
 
-div#audio-player {
-width: 21%;
-background: #1F1F1F;
-padding: 0px 5px;
-margin-top: 10px;
-}
-
-.navbar-nav>li>a {
-padding: 15px 4px 10px 4px;
-font-size: 10px;
-}
-#lyrics-base {
-max-height: 300px;
-overflow-y: scroll;
--webkit-overflow-scrolling: touch;
-}
-}
 
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+.navbar-nav>li>a {
+padding: 15px 20px;
+}
 
 .instagram-grid {
 max-width: 1170px;
