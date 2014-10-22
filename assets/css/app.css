@@ -797,13 +797,7 @@ padding-bottom: 40%;
 /* ==========================================================================
    EVENTS
    ========================================================================== */
-
-.tour-date {
-color: #FFF!important;
-font-family: "Roboto Condensed"!important;
-margin-bottom:15px;
-}
-
+   
 .tour-header {
 color: #F8B2DA;
 font-family: "Roboto Condensed"!important;
@@ -825,6 +819,8 @@ transition: background .1s ease;
 background: rgba(43, 43, 43, 0.5);
 padding:15px;
 color:#fff!important;
+font-family: "Roboto Condensed"!important;
+margin-bottom:15px;
 }
 
 .tour-date:hover {
