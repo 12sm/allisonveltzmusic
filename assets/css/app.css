@@ -804,7 +804,9 @@ font-family: "Roboto Condensed"!important;
 
 .tour-header {
 color: #F8B2DA;
-font-family: "Roboto Condensed"!important;	
+font-family: "Roboto Condensed"!important;
+padding: 15px;
+background: rgba(43,43,43,0.9); 
 }
 
 .tour-date a {
@@ -819,10 +821,12 @@ padding: 0px;
 margin: 0px;
 transition: background .1s ease;
 background: rgba(43, 43, 43, 0.5);
+padding:15px;
+color:#fff!important;
 }
 
 .tour-date a:hover {
-background: rgba(43, 43, 43, 0.9);	
+background: rgba(100, 100, 100, 0.9);	
 }
 
 /* ==========================================================================
