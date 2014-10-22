@@ -50,10 +50,8 @@
       $(window).trigger('blur');
     }).focus();
   }
-
-
-// Use this variable to set up the common and page specific functions. If you
-// rename this variable, you will also need to rename the namespace below.
+  // Use this variable to set up the common and page specific functions. If you
+  // rename this variable, you will also need to rename the namespace below.
   var Roots = {
     // All pages
     common: {
@@ -122,9 +120,9 @@
           if ( link.length < 3){
             $('body').addClass('home');
           } else{
-	          $('body').addClass(link[1]);
-	          $('body').addClass(link[3]);
-	          $('body').addClass(link[4]);
+            $('body').addClass(link[1]);
+            $('body').addClass(link[3]);
+            $('body').addClass(link[4]);
           }
         });
 
