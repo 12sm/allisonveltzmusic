@@ -108,6 +108,9 @@ p{
    font-size: 21px;
    color: #13A468;
 }
+
+.img-responsive {width:100%!important;}
+
 div.e2ma_signup_form_label {
 color: #6F6F6F!important;
 }

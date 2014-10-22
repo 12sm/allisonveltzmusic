@@ -248,7 +248,6 @@
         var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
         $("#lyrics-base").html(lyrics[0]);
         $('.play').on('click', function(e){
-          console.log(inlinePlayer);
           var lyrics = $(this).find('.lyric-output').clone();
           //stop Audiojs
           $('audio').trigger("pause");
