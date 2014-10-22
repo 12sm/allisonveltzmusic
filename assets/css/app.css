@@ -1600,7 +1600,7 @@ margin: 0 auto;
 
 
  /* Nav only adjustments */
- @media (max-width: 992px) {
+ @media (min-width: 769) and (max-width: 992px) {
 
 div#audio-player {
 width: 100%;
