@@ -90,21 +90,21 @@
           $('#carousel').html(gallery);
           // The slider being synced must be initialized first
           $('#carousel').flexslider({
-            animation: "slide",
-            controlNav: false,
-            animationLoop: false,
-            slideshow: false,
-            itemWidth: 210,
-            itemMargin: 5,
-            asNavFor: '#slider'
+            animation     : "slide",
+            controlNav    : false,
+            animationLoop : false,
+            slideshow     : false,
+            itemWidth     : 210,
+            itemMargin    : 5,
+            asNavFor      : '#slider'
           });
 
           $('#slider').flexslider({
-            animation: "fade",
-            controlNav: false,
-            animationLoop: false,
-            slideshow: false,
-            sync: "#carousel"
+            animation     : "fade",
+            controlNav    : false,
+            animationLoop : false,
+            slideshow     : false,
+            sync          : "#carousel"
           });
 
           $('#carousel>div>ul>li').imgLiquid({verticalAlign: 'top'});
@@ -122,9 +122,9 @@
           if ( link.length < 3){
             $('body').addClass('home');
           } else{
-          $('body').addClass(link[1]);
-          $('body').addClass(link[3]);
-          $('body').addClass(link[4]);
+	          $('body').addClass(link[1]);
+	          $('body').addClass(link[3]);
+	          $('body').addClass(link[4]);
           }
         });
 
