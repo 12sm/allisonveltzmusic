@@ -235,28 +235,7 @@
     },
     music: {
       init: function(){
-        soundManager.setup({
-          stream        : true,
-          autoload      : true,
-          debugMode     : true,
-          useConsole    : true,
-          debugFlash    : true,
-          consoleOnly   : true,
-          preferFlash   : false,
-          useFlashBlock : true,
-          url           : '/assets/js',
-          flashVersion  : 9,
-          onready: function() {
-            if (inlinePlayer != null) {
-              console.log('inlinePlayer is not null');
-            }else{
-              console.log('inlinePlayer is null, making new');
-              inlinePlayer = new InlinePlayer();
-              inlinePlayer.init();
-              console.log(inlinePlayer);
-            }
-          }
-        });
+
         soundManager.onready(function() {
           //pause functionality
           $('.audiojs').click(function(){
@@ -294,26 +273,7 @@
     },
     post_type_archive_music: {
       init: function(){
-        soundManager.setup({
-          stream        : true,
-          autoload      : true,
-          debugMode     : true,
-          useConsole    : true,
-          debugFlash    : true,
-          consoleOnly   : true,
-          preferFlash   : false,
-          useFlashBlock : true,
-          url           : '/assets/js',
-          flashVersion  : 9,
-          onready: function() {
-            if (inlinePlayer != null) {
 
-            }else{
-              inlinePlayer = new InlinePlayer();
-              inlinePlayer.init();
-            }
-          }
-        });
         soundManager.onready(function() {
           //pause functionality
           $('.audiojs').click(function() {
