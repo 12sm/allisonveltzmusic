@@ -1460,7 +1460,7 @@ body.single.single-post .wrap.container-fluid {
 width: 90%;
 }
 div#audio-player {
-width: 18%;
+width: 160px;
 float: right;
 max-height: 25px;
 margin-top: 15px;
@@ -1533,19 +1533,8 @@ background: rgba(43, 43, 43, .9);
 
  /* Nav only adjustments */
 @media only screen
-and (min-width: 769px) 
+and (min-width: 768px) 
 and (max-width: 992px) {
-
-div#audio-player {
-width: 100%;
-}
-
-div#audio-player {
-width: 21%;
-background: #1F1F1F;
-padding: 0px 5px;
-margin-top: 10px;
-}
 
 .navbar-nav>li>a {
 padding: 15px 4px 10px 4px;
@@ -1556,6 +1545,15 @@ max-height: 300px;
 overflow-y: scroll;
 -webkit-overflow-scrolling: touch;
 }
+
+ol.playlist {
+float: left;
+padding: 0;
+width: 60px;
+height: 25px;
+overflow: hidden;
+}
+
 } 
 
  
@@ -1567,6 +1565,10 @@ overflow-y: scroll;
 padding-top: 15px;
 padding-bottom: 15px;
 padding: 15px 10px;
+}
+
+div#audio-player {
+width:200px;
 }
 
    ul#menu-social {
