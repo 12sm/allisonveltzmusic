@@ -809,7 +809,7 @@ padding: 15px;
 background: rgba(43,43,43,0.9); 
 }
 
-.tour-date a {
+.tour-date {
 border-bottom: 1px solid #333333;
 display: -webkit-inline-box;
 display: -moz-inline-box;
@@ -825,7 +825,7 @@ padding:15px;
 color:#fff!important;
 }
 
-.tour-date a:hover {
+.tour-date:hover {
 background: rgba(100, 100, 100, 0.9);	
 }
 
