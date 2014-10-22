@@ -797,13 +797,34 @@ padding-bottom: 40%;
    EVENTS
    ========================================================================== */
 
-div#tribe-events-content h2, a {
+.tour-date {
 color: #FFF!important;
 font-family: "Roboto Condensed"!important;
 }
-.tribe-events-single-section.tribe-events-event-meta.primary.tribe-clearfix {
-color: #fff;
+
+.tour-header {
+color: #F8B2DA;
+font-family: "Roboto Condensed"!important;	
 }
+
+.tour-date a {
+border-bottom: 1px solid #333333;
+display: -webkit-inline-box;
+display: -moz-inline-box;
+display: -ms-inline-flexbox;
+display: -webkit-inline-flex;
+display: inline-flex;
+width: 100%;
+padding: 0px;
+margin: 0px;
+transition: background .1s ease;
+background: rgba(43, 43, 43, 0.5);
+}
+
+.tour-date a:hover {
+background: rgba(43, 43, 43, 0.9);	
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
