@@ -206,6 +206,29 @@
     },
     single_music: {
       init: function(){
+      
+      $('.owl-carousel').owlCarousel({
+                itemsCustom : [
+       [0, 2],
+       [480, 3],
+       [768, 4],
+       [1200, 4],
+       [1600, 4]
+       ],
+       navigation : true,
+       navigationText: ['<i class="fa fa-arrow-circle-left fa-3x"></i>','<i class="fa fa-arrow-circle-right fa-3x"></i>'],
+       pagination: false,
+       scrollPerPage : true
+      });
+      
+        soundManager.onready(function() {
+          //pause functionality
+          $('.audiojs').click(function() {
+            window.inlinePlayer.stopSound(inlinePlayer.lastSound);
+            $('.sm2_playing').removeClass('sm2_playing');
+          });
+        });
+      
         /** Lyrics display **/
         /** Load first lyric **/
         var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
@@ -235,6 +258,20 @@
     },
     music: {
       init: function(){
+      
+      $('.owl-carousel').owlCarousel({
+                itemsCustom : [
+       [0, 2],
+       [480, 3],
+       [768, 4],
+       [1200, 4],
+       [1600, 4]
+       ],
+       navigation : true,
+       navigationText: ['<i class="fa fa-arrow-circle-left fa-3x"></i>','<i class="fa fa-arrow-circle-right fa-3x"></i>'],
+       pagination: false,
+       scrollPerPage : true
+      });
 
         soundManager.onready(function() {
           //pause functionality
@@ -272,6 +309,20 @@
     },
     post_type_archive_music: {
       init: function(){
+      
+      $('.owl-carousel').owlCarousel({
+                itemsCustom : [
+       [0, 2],
+       [480, 3],
+       [768, 4],
+       [1200, 4],
+       [1600, 4]
+       ],
+       navigation : true,
+       navigationText: ['<i class="fa fa-arrow-circle-left fa-3x"></i>','<i class="fa fa-arrow-circle-right fa-3x"></i>'],
+       pagination: false,
+       scrollPerPage : true
+      });
 
         soundManager.onready(function() {
           //pause functionality
