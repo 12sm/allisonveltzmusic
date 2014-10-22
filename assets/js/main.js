@@ -143,26 +143,34 @@
     video: {
       init: function() {
         YTclick();
+        
+        $('.menu-news').removeClass('active');
+        $('.menu-video').addClass('active');
       }
     },
     post_type_archive_video: {
       init: function() {
         YTclick();
+        
+       $('.menu-news').removeClass('active');
+      $('.menu-video').addClass('active');
+        
       }
     },
     single_video: {
       init: function() {
         YTclick();
-      }
-    },
-    // About us page, note the change from about-us to about_us.
-    about_us: {
-      init: function() {
-        // JavaScript to be fired on the about us page
+        
+        $('.menu-news').removeClass('active');
+        $('.menu-video').addClass('active');
+        
       }
     },
     instagram: {
       init: function(){
+      
+      	$('.menu-photos').addClass('active');
+      	
         function liquidWrap(){
           $('.insta-photo').addClass('col-sm-6 col-md-4 col-lg-3');
           $('.insta-photo > a').wrap('<div class="img-pad"></div>');
@@ -202,8 +210,28 @@
         */
       }
     },
+    single_photo_galleries: {
+      init: function(){
+	      $('.menu-news').removeClass('active');
+	      $('.menu-photos').addClass('active');
+     }
+    },
+    live: {
+      init: function(){
+	      $('.menu-live').addClass('active');
+     }
+    },
+    single_live: {
+      init: function(){
+	      $('.menu-news').removeClass('active');
+	      $('.menu-live').addClass('active');
+     }
+    },
     single_music: {
       init: function(){
+      
+      $('.menu-news').removeClass('active');
+      $('.menu-music').addClass('active');
       
       $('.owl-carousel').owlCarousel({
                 itemsCustom : [
@@ -242,6 +270,9 @@
     music: {
       init: function(){
       
+      $('.menu-news').removeClass('active');
+      $('.menu-music').addClass('active');
+      
       $('.owl-carousel').owlCarousel({
                 itemsCustom : [
        [0, 2],
@@ -278,6 +309,9 @@
     },
     post_type_archive_music: {
       init: function(){
+      
+      $('.menu-news').removeClass('active');
+      $('.menu-music').addClass('active');
       
       $('.owl-carousel').owlCarousel({
                 itemsCustom : [
