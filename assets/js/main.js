@@ -57,8 +57,6 @@
     common: {
       init: function() {
 
-        console.log(inlinePlayer);
-
         $('#e2ma_signup').submit(function(){
           setTimeout(function(){
             $('#e2ma_signup')[0].reset();
@@ -220,6 +218,24 @@
        pagination: false,
        scrollPerPage : true
       });
+      
+      /** Lyrics display **/
+        /** Load first lyric **/
+        var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
+        $("#lyrics-base").html(lyrics[0]);
+        $('.play').on('click', function(e){
+          var lyrics = $(this).find('.lyric-output').clone();
+          //stop Audiojs
+          $('audio').trigger("pause");
+          $('.audiojs').removeClass('playing');
+          if (lyrics.length) {
+            $("#lyrics-base").html(lyrics).parent().removeClass("closed");
+            $("#lyrics-base").children().removeClass("hide");
+            $("#lyrics-base").scrollTop(0,0);
+          }else{
+            $("#lyrics-base").parent().addClass("closed");
+          }
+        });  
      
       }
     },
@@ -239,6 +255,24 @@
        pagination: false,
        scrollPerPage : true
       });
+      
+      /** Lyrics display **/
+        /** Load first lyric **/
+        var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
+        $("#lyrics-base").html(lyrics[0]);
+        $('.play').on('click', function(e){
+          var lyrics = $(this).find('.lyric-output').clone();
+          //stop Audiojs
+          $('audio').trigger("pause");
+          $('.audiojs').removeClass('playing');
+          if (lyrics.length) {
+            $("#lyrics-base").html(lyrics).parent().removeClass("closed");
+            $("#lyrics-base").children().removeClass("hide");
+            $("#lyrics-base").scrollTop(0,0);
+          }else{
+            $("#lyrics-base").parent().addClass("closed");
+          }
+        });  
 
       }
     },
@@ -258,6 +292,24 @@
        pagination: false,
        scrollPerPage : true
       });
+      
+      /** Lyrics display **/
+        /** Load first lyric **/
+        var lyrics = $(".songs-list:first-child").find('.lyric-output').clone();
+        $("#lyrics-base").html(lyrics[0]);
+        $('.play').on('click', function(e){
+          var lyrics = $(this).find('.lyric-output').clone();
+          //stop Audiojs
+          $('audio').trigger("pause");
+          $('.audiojs').removeClass('playing');
+          if (lyrics.length) {
+            $("#lyrics-base").html(lyrics).parent().removeClass("closed");
+            $("#lyrics-base").children().removeClass("hide");
+            $("#lyrics-base").scrollTop(0,0);
+          }else{
+            $("#lyrics-base").parent().addClass("closed");
+          }
+        });  
 
       }
     }
