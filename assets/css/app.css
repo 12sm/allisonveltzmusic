@@ -653,6 +653,7 @@ border-bottom: 1px solid #333333;
 width: 100%;
 padding: 0px;
 margin:0px;
+color:#fff!important;
 }
 
 .song a:before {display:none;}
@@ -800,6 +801,7 @@ padding-bottom: 40%;
 .tour-date {
 color: #FFF!important;
 font-family: "Roboto Condensed"!important;
+margin-bottom:15px;
 }
 
 .tour-header {
@@ -1574,6 +1576,10 @@ background: rgba(43, 43, 43, .9);
 .owl-item {
 max-width:200px;
 margin:15px;
+}
+
+.tour-date {
+margin-bottom:0px;
 }
 
 }
