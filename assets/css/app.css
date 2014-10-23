@@ -1709,7 +1709,7 @@ and (min-width: 1201px)
 and (max-width: 1321px) {
 
 .credits, p.credits a, footer p, footer p a, footer a {
-margin-top: 15px;
+margin-top: 35px;
 }
 
 ul#menu-social {
