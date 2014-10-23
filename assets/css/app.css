@@ -1705,8 +1705,8 @@ margin-top: 15px;
 }
 
 @media only screen
-and (min-width: 1201px;) 
-and (max-width: 1321px;) {
+and (min-width: 1201px) 
+and (max-width: 1321px) {
 
 .credits, p.credits a, footer p, footer p a, footer a {
 margin-top: 15px;
