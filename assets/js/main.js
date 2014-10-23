@@ -74,6 +74,7 @@
         });
 
         //Audio auto pause scripts
+        var inlinePlayer = null;
         soundManager.stopAll();
         $('.entry-content').find('iframe').wrap("<div class='vid-container'></div>");
         $('.entry-content-asset').fitVids();
