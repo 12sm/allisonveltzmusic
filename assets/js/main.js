@@ -56,6 +56,17 @@
     // All pages
     common: {
       init: function() {
+      
+      soundManager.setup({
+          debugMode     : false,
+          useConsole    : true,
+          debugFlash    : true,
+          consoleOnly   : true,
+          preferFlash   : false,
+          useFlashBlock : true,
+          url           : '/assets/js',
+          flashVersion  : 9
+        });
 
         $('#e2ma_signup').submit(function(){
           setTimeout(function(){
