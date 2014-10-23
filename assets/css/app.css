@@ -1700,10 +1700,26 @@ margin-top: 25%;
 }
 
 .credits, p.credits a, footer p, footer p a, footer a {
-margin-top: 20px;
+margin-top: 15px;
+}
+}
+
+@media onlyscreen
+and (min-width: 1201px;) 
+and (max-width: 1321px;){
+
+.credits, p.credits a, footer p, footer p a, footer a {
+margin-top: 15px;
+}
+
+ul#menu-social {
+margin-top: 25px;
 }
 
 }
+
+
+
 /*Ipad Portrait*/
 @media only screen
 and (min-device-width : 768px)
