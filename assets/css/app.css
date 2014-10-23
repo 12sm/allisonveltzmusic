@@ -1455,7 +1455,7 @@ padding: 75px 0;
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
  ul#menu-social {
-margin-top: 35px;
+margin-top: 15px;
 }
   #slider.flexslider .slides > li {
 height: 60vh;
@@ -1621,7 +1621,7 @@ div#audio-player {
 width:200px;
 }
 
-   ul#menu-social {
+ul#menu-social {
 margin-top: 10px;
 }
    div.e2ma_signup_form {
