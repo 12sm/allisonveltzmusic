@@ -908,7 +908,7 @@ text-align: center;
 color: #6F6F6F!important;
 font-size: 16px;
 font-weight: 500;
-margin-top: 20px;
+margin-top: 0px;
 margin-bottom: 5px;
 }
 .email-signup {
@@ -1698,6 +1698,11 @@ margin: 0 auto;
 i.fa.fa-chevron-right.blog-angle {
 margin-top: 25%;
 }
+
+.credits, p.credits a, footer p, footer p a, footer a {
+margin-top: 20px;
+}
+
 }
 /*Ipad Portrait*/
 @media only screen
